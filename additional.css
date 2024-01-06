@@ -77,6 +77,110 @@ a {
   text-decoration: none;
 }
 
+.contactPageBack iframe {
+  width: 100%;
+  height: 410px;
+}
+.contactPageBack .mainView {
+  max-width: 1290px;
+  margin: auto;
+}
+.contactPageBack .mainContactUs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+  flex-wrap: wrap;
+}
+.contactPageBack .mainContactUs .mainContactUsText {
+  padding: 70px 10px 10px 50px;
+  width: 45%;
+}
+@media screen and (max-width: 768px) {
+  .contactPageBack .mainContactUs .mainContactUsText {
+    width: 100% !important;
+  }
+}
+.contactPageBack .mainContactUs .mainContactUsText h2 {
+  color: #ddcd76;
+  font-size: 18px;
+  font-weight: 300;
+}
+.contactPageBack .mainContactUs .mainContactUsText p {
+  color: #676767;
+  font-size: 16px;
+}
+.contactPageBack .mainContactUs .mainContactUsText h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.contactPageBack .mainContactUs .mainContactUsText .information {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .contactPageBack .mainContactUs .mainContactUsText .information {
+    text-align: center;
+  }
+}
+.contactPageBack .mainContactUs .mainContactUsText .information h2 {
+  color: #2e2e2e;
+  font-weight: 700;
+}
+.contactPageBack .mainContactUs .mainContactUsText .information span {
+  color: #676767;
+}
+.contactPageBack .mainContactUs .mainContactUsText .information .informationSvg {
+  display: flex;
+  justify-content: center;
+}
+.contactPageBack .mainContactUs .mainContactUsText .information .informationSvg svg {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ddcd76;
+  fill: white;
+  display: block;
+}
+.contactPageBack .mainContactUs .mainContactUsText .information span {
+  display: inline-block;
+  position: relative;
+  padding-right: 30px;
+  margin: 5px 0;
+}
+.contactPageBack .mainContactUs .mainContactUsText .information span::before {
+  content: "";
+  position: absolute;
+  width: 12PX;
+  height: 12px;
+  top: 50%;
+  border-radius: 100%;
+  transform: translateY(-50%);
+  right: 0;
+  background-color: #ddcd76;
+}
+.contactPageBack .mainContactUs .mainContactUsForm {
+  width: 49%;
+  padding: 50px 50px 10px 50px;
+  margin: -100px 20px 0 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 30px 0px rgba(24, 22, 43, 0.14);
+}
+@media screen and (max-width: 768px) {
+  .contactPageBack .mainContactUs .mainContactUsForm {
+    width: 100% !important;
+    margin: 50px 0 0 0;
+  }
+}
+.contactPageBack .mainContactUs .mainContactUsForm input[type=email] {
+  direction: rtl;
+}
+.contactPageBack .mainContactUs .mainContactUsForm input[type=submit] {
+  margin-top: 40px;
+  width: 40%;
+  font-size: 18px;
+}
 .mainFooterBack {
   background-color: #484749;
   padding: 50px 10px;
@@ -97,7 +201,7 @@ a {
 }
 .mainFooterBack .mainFooter .calssFooterColumn1 p {
   color: #A3A2AF;
-  font-size: 14px;
+  font-size: 16px;
 }
 .mainFooterBack .mainFooter .calssFooterColumn1 .socialMedia a {
   background-color: #ddcd76;
@@ -146,7 +250,7 @@ a {
   padding: 10px;
   background-color: #ddcd76;
   border-radius: 5px;
-  width: 75%;
+  width: 95%;
 }
 @media screen and (max-width: 992px) {
   .mainFooterBack .mainFooter .calssFooterColumn4 .callUs {
@@ -159,12 +263,12 @@ a {
   }
 }
 .mainFooterBack .mainFooter .calssFooterColumn4 .callUs h4 {
-  margin: 0 0 3px 0;
-  font-size: 14px;
+  margin: 5px 0 3px 0;
+  font-size: 16px;
   color: #444444 !important;
 }
 .mainFooterBack .mainFooter .calssFooterColumn4 .callUs P {
-  font-size: 18px;
+  font-size: 22px;
   color: #676767 !important;
   vertical-align: middle;
 }
@@ -192,6 +296,7 @@ a {
 }
 .mainFooterBack .mainFooter .calssFooterColumn h3 {
   position: relative;
+  font-size: 20px;
 }
 .mainFooterBack .mainFooter .calssFooterColumn h3::before {
   content: "";
@@ -199,7 +304,7 @@ a {
   width: 70px;
   height: 1px;
   background-color: #ddcd76;
-  top: 45px;
+  top: 49px;
   bottom: 0;
   margin-top: auto;
   margin-bottom: auto;
