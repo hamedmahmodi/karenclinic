@@ -1,0 +1,263 @@
+/*!
+Theme Name: karenclinic
+Theme URI: https://underscores.me/
+Author: Automattic
+Author URI: https://automattic.com/
+Description: Hi. I'm a starter theme called <code>karenclinic</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: karenclinic
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+karenclinic is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+@import 'sass/variables';
+@import 'sass/breakpoints';
+@import 'sass/source';
+
+.clkarenTopHeaderContainer{
+    background-color: $mainColorDark;
+    *{
+        color: #fff !important;
+    }
+    .clkarenTopHeader{
+        padding: 5px 0;
+    }
+    .clkarenTopHeader , .generalFlexPart{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .topHeaderLocationPart{
+        a{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            align-items: center;
+            span{
+                height: 20px;
+                line-height: 20px;
+                font-size: 13px;
+                font-weight: 300;
+            }
+        }   
+    }
+    .topHeaderIconPart{
+        a{
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+    }
+}
+.mainDesctopHeaderContainer{
+    .mainDesctopHeader{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        .mainMenu{
+            display: flex;
+            margin-right: 15px;
+            ul{
+                padding: 0;
+                margin: 0;
+                display: flex;
+                li{
+                    &::before{
+                        display: none;
+                    }
+                    a{
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $mainColorDark;
+                    }
+                }
+            }
+        }
+        .generalButton{
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+}
+.clkarenIntroSectionContainer{
+    background-image: url('img/bannerone.jpg');
+    height: 700px;
+    @include xs{
+        height: 350px;
+    }
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        background-color: $mainColorDark;
+        opacity: 0.12;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+    .clkarenIntroSection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 999;
+        .introSectionContentPart{
+            width: 50%;
+            @include xs{
+                width: 100%;
+                backdrop-filter: blur(5px);
+                background: rgba(255,255,255,.7);
+                padding: 16px;            
+            }
+            h1{
+                font-size: 25px;
+                line-height: 45px;
+                width: 80%;
+                @include xs{
+                    font-size: 18px;
+                    line-height: 30px;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+            p{
+                font-size: 16px;
+                line-height: 35px;
+                @include xs{
+                    display: none;
+                }
+            }
+            .introSectionBtnPart{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                a{
+                    margin-left: 20px;
+                    @include xs{
+                        margin: 0;
+                    }
+                }
+                @include xs{
+                    justify-content: space-around;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .introSectionEmptyPart{
+            width: 50%;
+            @include xs{
+                display: none;
+            }
+        }
+    }
+}
+.clkarenHomeCantactUsSectionContainer{
+    position: relative;
+    top: -100px;
+    .clkarenHomeContactUsSection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .homeContactUsHowToHelpPart{
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+            position: relative;
+            border-radius: 20px;
+            padding: 30px;
+            div{
+                position: relative;
+                z-index: 9999;
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                background-image: url('img/pattern.jpeg');
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                opacity: 0.1;
+                z-index: 999;
+            }
+
+            .howToHelpPartRight{
+                width: 65%;
+            }
+            .howToHelpPartLeft{
+                width: 30%;
+            }
+        }
+        .homeContactUsConsultationPart{
+            width: 38%;
+            padding: 30px;
+            background-color: $mainColorDark;
+            border-radius: 20px;
+            *{
+                color: #fff;
+            }
+            .consultationPhonPart{
+                display: flex;
+                align-items: center;
+                border-top: 1px solid #fff;
+                padding-top: 20px;
+                span{
+                    &:first-child{
+                        width: 50px;
+                        height: 50px;
+                        background-color: #dcc15f;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 100%;
+                        padding: 5px;
+                        margin-left: 10px;
+                    }
+                    &:last-child{
+                        font-size: 25px;
+                        letter-spacing: 2px;
+                        line-height: 50px;
+                        height: 50px;
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}
+.clkarenAboutUsSectionContainer{
+    .clkarenAboutUsSrction{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+}
