@@ -139,6 +139,7 @@ add_action( 'widgets_init', 'karenclinic_widgets_init' );
  */
 function karenclinic_scripts() {
 	wp_enqueue_style( 'karenclinic-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'additional-style', get_template_directory_uri().'/additional.css', array(), _S_VERSION );
 	wp_style_add_data( 'karenclinic-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'karenclinic-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

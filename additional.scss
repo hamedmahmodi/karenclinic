@@ -1,0 +1,157 @@
+@import 'sass/breakpoints';
+@import 'sass/_variables.scss';
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+a{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+.mainFooterBack{
+    background-color: $mainColorDark;
+    padding: 50px 10px;
+    color: white;
+    .mainView{
+        max-width: 1290px;
+        margin: auto;
+    }
+    .mainFooter{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .calssFooterColumn1{
+            width: 29%;
+            padding-left: 49px;
+            p{
+                color: #A3A2AF;
+                font-size: 14px;
+            }
+            .socialMedia{
+                a{
+                    background-color: $offColor;
+                    padding: 7px;
+                    margin-left: 12px;
+                    border-radius: 100%;
+                    transition: .3s;
+                    
+                    svg{
+                        display: block;
+                        fill: $mainColorDark ;
+                        vertical-align: middle ;
+                    }
+                    &:hover{
+                        transform: scale(0.9);
+                        background-color: $textColorLight;
+                        svg{
+                          fill: $offColor;  
+                        }
+                    }
+                }
+            }
+        }
+        .calssFooterColumn4{
+            width: 24%;
+            margin-right: 30px;
+            @include md{
+                margin: 0;
+            }
+            .workTime{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 15px;
+                .workTimeSvg svg{
+                    vertical-align: middle;
+                    margin-left: 5px;
+                    fill: $offColor;
+                }
+            }
+            .callUs{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                padding: 10px;
+                background-color: $offColor;
+                border-radius: 5px;
+                width: 75%;
+                @include md{
+                    width: 80% ;
+                }
+                @include xs{
+                    width: 60%;
+                }
+                h4{
+                    margin: 0 0 3px 0;
+                    font-size: 14px;  
+                    color: $textColorLowSat !important;             
+                }
+                P{
+                    font-size: 18px;                
+                    color: $textColorLight !important;
+                    vertical-align: middle;
+                }
+                .callUsSvg{
+                    svg{
+                        vertical-align: middle;
+                        padding: 5px;
+                        display: block;
+                        background-color: #f0c93a;
+                        border-radius: 5px;
+                        margin-left: 15px;
+                    }
+                }
+            }
+            p{
+                color: white;
+                margin: 0 !important;
+            }
+        }
+        .calssFooterColumn{
+            @include md {
+                width: 50%;
+            }
+            @include xs{
+                width: 100% ;
+            }
+            h3{
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 70px;
+                    height: 1px;
+                    background-color: $offColor;
+                    top: 45px;
+                    bottom: 0;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    right: 0;
+                }
+            }
+            .footerLi{
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px;
+                li{
+                    padding: 0;
+                    margin: 5px 0; 
+                    a{
+                        transition: .3s;
+                        &:hover{
+                            color: $offColor;
+                        }
+                    }
+                    &::before{
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}
