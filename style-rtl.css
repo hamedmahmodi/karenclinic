@@ -900,4 +900,103 @@ select {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.homeAboutUsImagePart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.homeAboutUsImagePart .div1 {
+  grid-area: 1/2/4/3;
+}
+.homeAboutUsImagePart .div2 {
+  grid-area: 1/1/4/2;
+}
+.homeAboutUsImagePart .div3 {
+  grid-area: 4/1/5/3;
+}
+.homeAboutUsImagePart div {
+  display: block;
+  overflow: hidden;
+}
+.homeAboutUsImagePart div img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsContentPart {
+  width: 38%;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsContentPart .homeAboutUsCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsContentPart .homeAboutUsCard:hover .abourUsCardIconPart {
+  background-color: #ddcd76;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsContentPart .homeAboutUsCard:hover .abourUsCardIconPart svg {
+  fill: #fff;
+  stroke: #fff;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsContentPart .homeAboutUsCard:hover .middleCardIcon {
+  background-color: #fff;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsContentPart .homeAboutUsCard:hover .middleCardIcon svg {
+  fill: #ddcd76;
+  stroke: #ddcd76;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsContentPart .homeAboutUsCard .abourUsCardIconPart {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsContentPart .homeAboutUsCard .abourUsCardIconPart:hover {
+  transform: translateY(-10px);
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsContentPart .homeAboutUsCard .abourUsCardIconPart svg {
+  transition: all 0.3s;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsContentPart .homeAboutUsCard .aboutUsCardContentPart {
+  width: calc(100% - 80px);
+  padding-right: 20px;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsContentPart .homeAboutUsCard .aboutUsCardContentPart h3 {
+  margin: 0;
+  font-size: 15px;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsContentPart .homeAboutUsCard .aboutUsCardContentPart p {
+  font-size: 13.5px;
+  margin: 0;
+  line-height: 25px;
+  color: #676767;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsContentPart .homeAboutUsCard .middleCardIcon {
+  background-color: #ddcd76;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsContentPart .homeAboutUsCard .middleCardIcon svg {
+  fill: #fff;
+  stroke: #fff;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSrction .homeAboutUsImagePart {
+  width: 58%;
 }/*# sourceMappingURL=style-rtl.css.map */
