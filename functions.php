@@ -179,3 +179,79 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function get_post_primary_category(){
+	$currentID = get_the_ID();
+	  $category = get_the_category();
+  
+	  // Get primary (Yoast) term if it is set
+	  $category_display = '';
+	  $category_slug = '';
+  
+	  if ( class_exists('WPSEO_Primary_Term') ) {
+  
+		// Show the post's 'Primary' category, if this Yoast feature is available, & one is set
+		$wpseo_primary_term = new WPSEO_Primary_Term( 'category', get_the_id() );
+		$wpseo_primary_term = $wpseo_primary_term->get_primary_term();
+		$term = get_term( $wpseo_primary_term );
+  
+		if ( is_wp_error( $term ) ) {
+  
+		  // Default to first category (not Yoast) if an error is returned
+		  $category_display = $category[0]->name;
+		  $category_slug = $category[0]->slug;
+  
+		} else {
+  
+		  // Check if category has parent
+		  $category_id = $term->term_id;
+		  $category_term = get_category($category_id);
+  
+		  // if primary category is a child
+		  if( $category_term->category_parent > 0 ) {
+  
+			// Get parent category object
+			$parent = $category_term->parent;
+			$parent_object = get_category($parent);
+  
+			// Set parent category variables
+			$category_display = $parent_object->name;
+			$category_slug = $parent_object->slug;
+  
+		  // if primary cateogry is a parent
+		  } else {
+  
+			// Yoast Primary category
+			$category_display = $term->name;
+			$category_slug = $term->slug;
+  
+		  }
+  
+		}
+	  } else {
+  
+		// Default, display the first category in WP's list of assigned categories
+		$category_display = $category[0]->name;
+		$category_slug = $category[0]->slug;
+  
+	  }
+	  echo '<a href="'.get_home_url().'/category/'.$category_slug.'" class="archiveMainCategory">'.$category_display.'</a>';
+  }
+  function bbloomer_shop_product_short_description() {
+	the_excerpt();
+  }
+  function my_excerpt_length($length){
+	return 20;
+  }
+  add_filter('excerpt_length', 'my_excerpt_length');
+  
+  function new_excerpt_more( $more ) {
+	return ' ... ';
+  }
+  add_filter('excerpt_more', 'new_excerpt_more');
+
+  function filter_wpseo_breadcrumb_separator($this_options_breadcrumbs_sep) {
+    return '<svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 330 330" fill="#ddcd76" xml:space="preserve" transform="rotate(90)"><path d="M325.607 79.393c-5.857-5.857-15.355-5.858-21.213.001l-139.39 139.393L25.607 79.393c-5.857-5.857-15.355-5.858-21.213.001-5.858 5.858-5.858 15.355 0 21.213l150.004 150a14.999 14.999 0 0 0 21.212-.001l149.996-150c5.859-5.857 5.859-15.355.001-21.213z"/></svg>';
+};
+
+// add the filter
+add_filter('wpseo_breadcrumb_separator', 'filter_wpseo_breadcrumb_separator', 10, 1);

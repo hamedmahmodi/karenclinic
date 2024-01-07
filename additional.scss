@@ -116,6 +116,323 @@ a{
         }
     }
 }
+
+.blogHeader{
+    
+    background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/enlarging-lips-at-cosmetic-clinic-e1632845241540.jpg);
+    background-position: 0px 52%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    position: relative;
+    a{
+        color: inherit ;
+    }
+    .innerHeader{
+        max-width: 1290px;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        color: white;
+        z-index: 100;
+        .archivePostFooter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .innerArchive{
+                display: flex;
+                align-items: center;
+                padding: 0 20px;
+                span{
+                    color: #A3A2AF;
+                    
+                }
+            }
+            .archivePostSvg svg{
+                vertical-align: middle;
+                margin-left: 7px;
+                fill: $offColor;
+            }
+        }
+    }
+    .backgroundOverlay{
+        background-color: #18162B;
+        opacity: 0.8;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .blogHeaderText{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            position: relative;
+            z-index: 2;
+            color: white;
+            font-size: 36px;
+            margin: 0;
+        }
+        .blogBreadCrumbs{
+            a , span{
+                font-size: 18px;
+                position: relative;
+                z-index: 3;
+                color: white;
+            }
+            span{
+                margin: 7px;
+            }
+        }
+    }
+    
+}
+
+    
+
+.generalSinglePostStyle{
+    .entry-header{
+        background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/enlarging-lips-at-cosmetic-clinic-e1632845241540.jpg);
+        background-position: 0px 52%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 120px 0;
+        position: relative;
+        a{
+            color: inherit ;
+        }
+        .innerHeader{
+            max-width: 1290px;
+            margin: auto;
+            text-align: center;
+            position: relative;
+            color: white;
+            z-index: 100;
+            .archivePostFooter{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .innerArchive{
+                    display: flex;
+                    align-items: center;
+                    padding: 0 20px;
+                    span{
+                        color: #A3A2AF;
+                        
+                    }
+                }
+                .archivePostSvg svg{
+                    vertical-align: middle;
+                    margin-left: 7px;
+                    fill: $offColor;
+                }
+            }
+        }
+        .backgroundOverlay{
+            background-color: #18162B;
+            opacity: 0.8;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+    }
+    .entry-content-parent{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1290px;
+        margin: auto;
+        .entry-content{
+            padding: 100px 0;
+            width: 65%;
+            @include sm{
+                width: 90%;
+                margin: auto;
+            }
+            ul{
+                padding: 0;
+                li{
+                    padding-right: 20px;
+                    &::before{
+                        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ddcd76' width='14' height='14' viewBox='0 0 512 512'%3E%3Cpath d='M172.2 434.6a39.3 39.3 0 0 1-28.1-11.6L22.9 301.9a33.4 33.4 0 1 1 47.2-47.2l102.1 102.2L441.9 87.1a33.4 33.4 0 0 1 47.2 47.2L200.4 423a39.7 39.7 0 0 1-28.2 11.6Z'/%3E%3C/svg%3E");
+                        width: 14px;
+                        height: 14px;
+                        background-color: initial;
+                    }
+                }
+            }
+            img{
+                border-radius: 10px;
+            }
+            p{
+                .alignleft {
+                    width: 49%;
+                }
+                .alignright {
+                    width: 49%;
+                }
+            }
+            .post-thumbnail{
+                img{
+                    max-width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .generalSinglePopulated{
+            width: 35%;
+            padding: 100px 40px 10px 10px;
+            .questionBox{
+                position: relative;
+                padding: 40px;
+                border-radius: 10px;
+                background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/cosmetician-holds-syringe-with-injection-of-botox-e1632845065292.jpg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                overflow: hidden;
+                .questionBoxText{
+                    position: relative;
+                    z-index: 3;
+                    color: white;
+                    p{
+                        color: white;
+                    }
+                    .questionBoxTell , .questionBoxEmail{
+                        margin: 7px 0;
+                        display: flex;
+                        align-items: center;
+                        svg{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .backgroundOverlay{
+                    background-color: #18162b;
+                    opacity: 0.85;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                }
+            }
+            .CategoriesBox{
+                box-shadow: 0px 3px 15px 0px rgba(24.00000126050871, 22.000001393193834, 43.0000000000001, 0.1);
+                margin-top: 40px;
+                margin-bottom: 0px;
+                padding: 40px;
+                border-radius: 10px;
+                h2{
+                    margin:  0 0 10px 0;
+                }
+                a{
+                    display: block;
+                    padding: 5px 0;
+                    margin: 5px 0;
+                    &::before{
+                        content: url("data:image/svg+xml,%3Csvg height='12' width='12' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 330 330' fill='%23ddcd76' xml:space='preserve' transform='rotate(90)'%3E%3Cpath d='M325.607 79.393c-5.857-5.857-15.355-5.858-21.213.001l-139.39 139.393L25.607 79.393c-5.857-5.857-15.355-5.858-21.213.001-5.858 5.858-5.858 15.355 0 21.213l150.004 150a14.999 14.999 0 0 0 21.212-.001l149.996-150c5.859-5.857 5.859-15.355.001-21.213z'/%3E%3C/svg%3E");
+                        padding-left: 5px;
+                    }
+                }
+            }
+        
+        }
+    }
+    
+}
+.commentInner{
+    width: 65% ;
+    @include sm{
+        width: 90%;
+        margin: auto;
+    }
+    textarea{
+        margin-right: 0 !important;
+    }
+    h2{
+        text-align: center;
+    }
+    .comment-list{
+        background-color: white;
+        padding: 0px 40px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 30px 0px rgba(24.00000126050871, 22.000001393193834, 43.0000000000001, 0.14);
+        li{
+            &::before{
+                content: none;
+            }
+        }
+        .comment{
+            padding: 30px 0;
+            
+            .comment-body{
+                border-bottom: 1px solid rgba(0, 0, 0, 0.263);
+                padding-bottom: 20px;
+                .comment-meta{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                    .comment-metadata{
+                        direction: ltr;
+                        a{
+                            color: $textColorLight;
+                        }
+                    }
+                    .comment-author{
+                        display: flex;
+                        justify-content: flex-start ;
+                        align-items: center;
+                        img{
+                            border-radius: 100%;
+                            margin: 0 0 5px 20px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+.archiveParent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 100px;
+    a{
+        img{
+            border-radius: 10px;
+        }
+        h2{
+            margin-bottom: 0;
+        }
+        .archivePostFooter{
+            display: flex;
+            align-items: center;
+            margin: 5px 0 10px 0;
+            svg{
+                margin-left: 5px;
+                stroke: $textColorLight ;
+            }
+        }
+        .readMore{
+            display: flex;
+            align-items: center;
+            span{
+                color: $offColor;
+                margin-left: 5px;
+            }
+            svg{
+                fill: $offColor;
+            }
+        }
+    }
+}
 .mainFooterBack{
     background-color: $mainColorDark;
     padding: 50px 10px;

@@ -181,6 +181,307 @@ a {
   width: 40%;
   font-size: 18px;
 }
+.blogHeader {
+  background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/enlarging-lips-at-cosmetic-clinic-e1632845241540.jpg);
+  background-position: 0px 52%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  position: relative;
+}
+.blogHeader a {
+  color: inherit;
+}
+.blogHeader .innerHeader {
+  max-width: 1290px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  color: white;
+  z-index: 100;
+}
+.blogHeader .innerHeader .archivePostFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blogHeader .innerHeader .archivePostFooter .innerArchive {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.blogHeader .innerHeader .archivePostFooter .innerArchive span {
+  color: #A3A2AF;
+}
+.blogHeader .innerHeader .archivePostFooter .archivePostSvg svg {
+  vertical-align: middle;
+  margin-left: 7px;
+  fill: #ddcd76;
+}
+.blogHeader .backgroundOverlay {
+  background-color: #18162B;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.blogHeader .blogHeaderText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogHeader .blogHeaderText h1 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 36px;
+  margin: 0;
+}
+.blogHeader .blogHeaderText .blogBreadCrumbs a, .blogHeader .blogHeaderText .blogBreadCrumbs span {
+  font-size: 18px;
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+.blogHeader .blogHeaderText .blogBreadCrumbs span {
+  margin: 7px;
+}
+
+.generalSinglePostStyle .entry-header {
+  background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/enlarging-lips-at-cosmetic-clinic-e1632845241540.jpg);
+  background-position: 0px 52%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  position: relative;
+}
+.generalSinglePostStyle .entry-header a {
+  color: inherit;
+}
+.generalSinglePostStyle .entry-header .innerHeader {
+  max-width: 1290px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  color: white;
+  z-index: 100;
+}
+.generalSinglePostStyle .entry-header .innerHeader .archivePostFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.generalSinglePostStyle .entry-header .innerHeader .archivePostFooter .innerArchive {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.generalSinglePostStyle .entry-header .innerHeader .archivePostFooter .innerArchive span {
+  color: #A3A2AF;
+}
+.generalSinglePostStyle .entry-header .innerHeader .archivePostFooter .archivePostSvg svg {
+  vertical-align: middle;
+  margin-left: 7px;
+  fill: #ddcd76;
+}
+.generalSinglePostStyle .entry-header .backgroundOverlay {
+  background-color: #18162B;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.generalSinglePostStyle .entry-content-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1290px;
+  margin: auto;
+}
+.generalSinglePostStyle .entry-content-parent .entry-content {
+  padding: 100px 0;
+  width: 65%;
+}
+@media screen and (max-width: 768px) {
+  .generalSinglePostStyle .entry-content-parent .entry-content {
+    width: 90%;
+    margin: auto;
+  }
+}
+.generalSinglePostStyle .entry-content-parent .entry-content ul {
+  padding: 0;
+}
+.generalSinglePostStyle .entry-content-parent .entry-content ul li {
+  padding-right: 20px;
+}
+.generalSinglePostStyle .entry-content-parent .entry-content ul li::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ddcd76' width='14' height='14' viewBox='0 0 512 512'%3E%3Cpath d='M172.2 434.6a39.3 39.3 0 0 1-28.1-11.6L22.9 301.9a33.4 33.4 0 1 1 47.2-47.2l102.1 102.2L441.9 87.1a33.4 33.4 0 0 1 47.2 47.2L200.4 423a39.7 39.7 0 0 1-28.2 11.6Z'/%3E%3C/svg%3E");
+  width: 14px;
+  height: 14px;
+  background-color: initial;
+}
+.generalSinglePostStyle .entry-content-parent .entry-content img {
+  border-radius: 10px;
+}
+.generalSinglePostStyle .entry-content-parent .entry-content p .alignleft {
+  width: 49%;
+}
+.generalSinglePostStyle .entry-content-parent .entry-content p .alignright {
+  width: 49%;
+}
+.generalSinglePostStyle .entry-content-parent .entry-content .post-thumbnail img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated {
+  width: 35%;
+  padding: 100px 40px 10px 10px;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox {
+  position: relative;
+  padding: 40px;
+  border-radius: 10px;
+  background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/cosmetician-holds-syringe-with-injection-of-botox-e1632845065292.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox .questionBoxText {
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox .questionBoxText p {
+  color: white;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox .questionBoxText .questionBoxTell, .generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox .questionBoxText .questionBoxEmail {
+  margin: 7px 0;
+  display: flex;
+  align-items: center;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox .questionBoxText .questionBoxTell svg, .generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox .questionBoxText .questionBoxEmail svg {
+  margin-left: 10px;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox .backgroundOverlay {
+  background-color: #18162b;
+  opacity: 0.85;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .CategoriesBox {
+  box-shadow: 0px 3px 15px 0px rgba(24, 22, 43, 0.1);
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding: 40px;
+  border-radius: 10px;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .CategoriesBox h2 {
+  margin: 0 0 10px 0;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .CategoriesBox a {
+  display: block;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .CategoriesBox a::before {
+  content: url("data:image/svg+xml,%3Csvg height='12' width='12' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 330 330' fill='%23ddcd76' xml:space='preserve' transform='rotate(90)'%3E%3Cpath d='M325.607 79.393c-5.857-5.857-15.355-5.858-21.213.001l-139.39 139.393L25.607 79.393c-5.857-5.857-15.355-5.858-21.213.001-5.858 5.858-5.858 15.355 0 21.213l150.004 150a14.999 14.999 0 0 0 21.212-.001l149.996-150c5.859-5.857 5.859-15.355.001-21.213z'/%3E%3C/svg%3E");
+  padding-left: 5px;
+}
+
+.commentInner {
+  width: 65%;
+}
+@media screen and (max-width: 768px) {
+  .commentInner {
+    width: 90%;
+    margin: auto;
+  }
+}
+.commentInner textarea {
+  margin-right: 0 !important;
+}
+.commentInner h2 {
+  text-align: center;
+}
+.commentInner .comment-list {
+  background-color: white;
+  padding: 0px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 30px 0px rgba(24, 22, 43, 0.14);
+}
+.commentInner .comment-list li::before {
+  content: none;
+}
+.commentInner .comment-list .comment {
+  padding: 30px 0;
+}
+.commentInner .comment-list .comment .comment-body {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.263);
+  padding-bottom: 20px;
+}
+.commentInner .comment-list .comment .comment-body .comment-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.commentInner .comment-list .comment .comment-body .comment-meta .comment-metadata {
+  direction: ltr;
+}
+.commentInner .comment-list .comment .comment-body .comment-meta .comment-metadata a {
+  color: #676767;
+}
+.commentInner .comment-list .comment .comment-body .comment-meta .comment-author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.commentInner .comment-list .comment .comment-body .comment-meta .comment-author img {
+  border-radius: 100%;
+  margin: 0 0 5px 20px;
+}
+
+.archiveParent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 100px;
+}
+.archiveParent a img {
+  border-radius: 10px;
+}
+.archiveParent a h2 {
+  margin-bottom: 0;
+}
+.archiveParent a .archivePostFooter {
+  display: flex;
+  align-items: center;
+  margin: 5px 0 10px 0;
+}
+.archiveParent a .archivePostFooter svg {
+  margin-left: 5px;
+  stroke: #676767;
+}
+.archiveParent a .readMore {
+  display: flex;
+  align-items: center;
+}
+.archiveParent a .readMore span {
+  color: #ddcd76;
+  margin-left: 5px;
+}
+.archiveParent a .readMore svg {
+  fill: #ddcd76;
+}
+
 .mainFooterBack {
   background-color: #484749;
   padding: 50px 10px;

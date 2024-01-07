@@ -16,7 +16,17 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-
+		<div class="blogHeader">
+			<div class="mainView blogHeaderText">
+			<h1>بلاگ</h1>
+			<?php
+				if ( function_exists('yoast_breadcrumb') ) {
+				yoast_breadcrumb( '<p id="breadcrumbs" class="blogBreadCrumbs">','</p>' );
+				}  
+				?>
+			</div>
+			<div class="backgroundOverlay"></div>
+		</div>
 		<?php
 		if ( have_posts() ) :
 
@@ -27,7 +37,7 @@ get_header();
 				</header>
 				<?php
 			endif;
-
+			echo '<div class="archiveParent mainView">';
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -37,11 +47,11 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+				get_template_part( 'template-parts/content', 'archive' );
 
 			endwhile;
-
-			the_posts_navigation();
+			echo '</div>';
+			// the_posts_navigation();
 
 		else :
 
@@ -53,5 +63,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();
