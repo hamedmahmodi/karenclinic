@@ -61,7 +61,7 @@
 				)
 			);
 		?>
-		<a class="generalButton" href="#">دریافت نوبت</a>
+		<a class="generalButton generalButtonDark" href="#">دریافت نوبت</a>
 	</div>
 </div>
 

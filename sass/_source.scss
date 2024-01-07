@@ -37,7 +37,7 @@ h6{
 	font-size: 14px;
 }
 h1,h2,h3,h4,h5,h6{
-	font-weight: 800;
+	font-weight: 700;
 }
 .lowMargined{
 	margin: 7px 0;
@@ -72,17 +72,7 @@ h1,h2,h3,h4,h5,h6{
 .noMargin{
 	margin: 0;
 }
-.generalHeading{
-	h1,h2,h3,h4,h5,h6{
-		margin: 0;
-	}
-	span{
-		font-size: 17px;
-		font-weight: 300;
-		margin-top: 5px;
-		display: block;
-	}
-}
+
 .bigHeading{
 	h1,h2,h3,h4,h5,h6{
 		font-size: 35px;
@@ -214,11 +204,12 @@ li{
 	}
 }
 .checkListStyle{
-	padding-right: 20px;
+	padding-right: 25px;
+	margin: 15px 0;
 	&::before{
-		content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2340b819' width='14' height='14' viewBox='0 0 512 512'%3E%3Cpath d='M172.2 434.6a39.3 39.3 0 0 1-28.1-11.6L22.9 301.9a33.4 33.4 0 1 1 47.2-47.2l102.1 102.2L441.9 87.1a33.4 33.4 0 0 1 47.2 47.2L200.4 423a39.7 39.7 0 0 1-28.2 11.6Z'/%3E%3C/svg%3E");
-		width: 14px;
-		height: 14px;
+		content: url("data:image/svg+xml,%3Csvg width='17' height='17' fill='%23e3b077' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z'/%3E%3C/svg%3E");
+		width: 17px;
+		height: 17px;
 		background-color: initial;
 	}
 }
@@ -231,15 +222,15 @@ li{
 		background-color: initial;
 	}
 }
-.arrowListStyle{
-	padding-right: 22px;
-	&::before{
-		content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%232c62d6' width='16' height='16' viewBox='0 0 512 512'%3E%3Cpath d='M256 493.4a237.3 237.3 0 1 1 167.9-69.5A236.2 236.2 0 0 1 256 493.4Zm0-424.8C152.7 68.6 68.6 152.7 68.6 256S152.7 443.4 256 443.4 443.4 359.3 443.4 256 359.3 68.6 256 68.6Zm-23.6 283.2a24.9 24.9 0 0 1-17.7-7.3l-70.8-70.8h-.1a.1.1 0 0 0-.1-.1h-.2a23.2 23.2 0 0 1-4.9-7.5h-.1a24.7 24.7 0 0 1-1.9-9.4 24.8 24.8 0 0 1 2-9.5h.1a21.3 21.3 0 0 1 2.3-4.2 19.5 19.5 0 0 1 1.7-2.3h.1a8 8 0 0 1 1.3-1.3l70.6-70.7a25 25 0 0 1 35.4 35.4L222 231h128.4a25 25 0 0 1 0 50H222l28.1 28.1a25.2 25.2 0 0 1 0 35.4 24.9 24.9 0 0 1-17.7 7.3Z'/%3E%3C/svg%3E");
-		width: 16px;
-		height: 19px;
-		background-color: initial;
-	}
-}
+// .arrowListStyle{
+// 	padding-right: 22px;
+// 	&::before{
+// 		content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%232c62d6' width='16' height='16' viewBox='0 0 512 512'%3E%3Cpath d='M256 493.4a237.3 237.3 0 1 1 167.9-69.5A236.2 236.2 0 0 1 256 493.4Zm0-424.8C152.7 68.6 68.6 152.7 68.6 256S152.7 443.4 256 443.4 443.4 359.3 443.4 256 359.3 68.6 256 68.6Zm-23.6 283.2a24.9 24.9 0 0 1-17.7-7.3l-70.8-70.8h-.1a.1.1 0 0 0-.1-.1h-.2a23.2 23.2 0 0 1-4.9-7.5h-.1a24.7 24.7 0 0 1-1.9-9.4 24.8 24.8 0 0 1 2-9.5h.1a21.3 21.3 0 0 1 2.3-4.2 19.5 19.5 0 0 1 1.7-2.3h.1a8 8 0 0 1 1.3-1.3l70.6-70.7a25 25 0 0 1 35.4 35.4L222 231h128.4a25 25 0 0 1 0 50H222l28.1 28.1a25.2 25.2 0 0 1 0 35.4 24.9 24.9 0 0 1-17.7 7.3Z'/%3E%3C/svg%3E");
+// 		width: 16px;
+// 		height: 19px;
+// 		background-color: initial;
+// 	}
+// }
 
 label{
 	display: block;
@@ -322,65 +313,63 @@ select{
 	}
 }
 .generalButton{
-    background-color: $textColorDark;
-    border-radius: 45px;
+    background-color: $offColor;
+	border-radius: 50px;
     position: relative;
-    color: #fff !important;
-    padding: 10px 25px 10px 45px;
-    font-size: 14.5px;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 400;
     display: block;
     width: max-content;
-	transition: all 0.3s;
-	border: none;
-	cursor: pointer;
-    &::before{
-        content: '';
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        background-color: rgba(255,255,255,0.2);
-        left: 15px;
-        top: 0;
-        bottom: 0;
-        margin-top: auto;
-        margin-bottom: auto;
-        border-radius: 100%;
-    }
-    &::after{
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='10px' height='10px' viewBox='0 0 512 512'%3E%3Cpath d='M357.6 500.8a18.3 18.3 0 0 1-12.9-5.4L152 302.7a66.1 66.1 0 0 1 0-93.4L344.7 16.6a18.2 18.2 0 1 1 25.8 25.8L177.8 235.1a29.5 29.5 0 0 0 0 41.8l192.7 192.7a18.3 18.3 0 0 1 0 25.8 17.9 17.9 0 0 1-12.9 5.4Z'%3E%3C/path%3E%3C/svg%3E");
-        height: 17px;
-        position: absolute;
-        left: 19px;
-        top: 0;
-        bottom: 0;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
 	&:hover{
-		background-color: darken($textColorDark , 10%);
+		transform: translateY(-3px);
 	}
 }
-.noArrowButton{
-	padding: 10px 25px;
-	&::before{
-		display: none;
-	}
-	&::after{
-		display: none;
-	}
+.generalButtonDark{
+	background-color: $mainColorDark;
 }
-.outlineButton{
+.arrowButton{
+    margin-left: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
 	background-color: transparent;
-	color: $mainColorDark !important;
-	border: 1px solid $mainColorDark;
-	&::before{
-		background-color: $mainColorDark;
-	}
+	color: #e3b077;
+    &::after{
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e3b077' width='15' height='15' viewBox='5 5 87 87' xml:space='preserve' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' transform='matrix(-1,1.2246467991473532e-16,-1.2246467991473532e-16,-1,0,0)'%3E%3Cpath d='m82.8 48.8-24.9 25c-.8.8-1.8 1.2-2.8 1.2-1 0-2-.4-2.8-1.2-1.6-1.6-1.6-4.1 0-5.7L70.4 50H12c-2.2 0-4-1.8-4-4s1.8-4 4-4h58.4L52.2 23.8c-1.6-1.6-1.6-4.1 0-5.7 1.6-1.6 4.1-1.6 5.7 0l24.9 25c1.6 1.6 1.6 4.2 0 5.7z'%3E%3C/path%3E%3C/svg%3E");
+        height: 15px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+		transition: all 0.3s;
+    }
 	&:hover{
 		background-color: transparent;
+		&::after{
+			transform: translateX(-3px);
+		}
 	}
-
 }
+// .outlineButton{
+// 	background-color: transparent;
+// 	color: $mainColorDark !important;
+// 	border: 1px solid $mainColorDark;
+// 	&::before{
+// 		background-color: $mainColorDark;
+// 	}
+// 	&:hover{
+// 		background-color: transparent;
+// 	}
+
+// }
 .siteMessage{
 	position: relative;
 	background-color: #FFF3CD;
@@ -435,12 +424,14 @@ select{
 	float: left;
 	margin-right: 1.5em;
 	margin-bottom: 1.5em;
+	width: 50%;
 }
 
 .alignright {
 	float: right;
 	margin-left: 1.5em;
 	margin-bottom: 1.5em;
+	width: 50%;
 }
 
 .aligncenter {
