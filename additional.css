@@ -102,7 +102,7 @@ a {
   }
 }
 .contactPageBack .mainContactUs .mainContactUsText h2 {
-  color: #ddcd76;
+  color: #e3b077;
   font-size: 18px;
   font-weight: 300;
 }
@@ -138,7 +138,7 @@ a {
 .contactPageBack .mainContactUs .mainContactUsText .information .informationSvg svg {
   padding: 10px;
   border-radius: 5px;
-  background-color: #ddcd76;
+  background-color: #e3b077;
   fill: white;
   display: block;
 }
@@ -157,7 +157,7 @@ a {
   border-radius: 100%;
   transform: translateY(-50%);
   right: 0;
-  background-color: #ddcd76;
+  background-color: #e3b077;
 }
 .contactPageBack .mainContactUs .mainContactUsForm {
   width: 49%;
@@ -182,7 +182,7 @@ a {
   font-size: 18px;
 }
 .mainFooterBack {
-  background-color: #484749;
+  background-color: #18162b;
   padding: 50px 10px;
   color: white;
 }
@@ -204,7 +204,7 @@ a {
   font-size: 16px;
 }
 .mainFooterBack .mainFooter .calssFooterColumn1 .socialMedia a {
-  background-color: #ddcd76;
+  background-color: #e3b077;
   padding: 7px;
   margin-left: 12px;
   border-radius: 100%;
@@ -212,7 +212,7 @@ a {
 }
 .mainFooterBack .mainFooter .calssFooterColumn1 .socialMedia a svg {
   display: block;
-  fill: #484749;
+  fill: #18162b;
   vertical-align: middle;
 }
 .mainFooterBack .mainFooter .calssFooterColumn1 .socialMedia a:hover {
@@ -220,7 +220,7 @@ a {
   background-color: #676767;
 }
 .mainFooterBack .mainFooter .calssFooterColumn1 .socialMedia a:hover svg {
-  fill: #ddcd76;
+  fill: #e3b077;
 }
 .mainFooterBack .mainFooter .calssFooterColumn4 {
   width: 24%;
@@ -240,7 +240,7 @@ a {
 .mainFooterBack .mainFooter .calssFooterColumn4 .workTime .workTimeSvg svg {
   vertical-align: middle;
   margin-left: 5px;
-  fill: #ddcd76;
+  fill: #e3b077;
 }
 .mainFooterBack .mainFooter .calssFooterColumn4 .callUs {
   display: flex;
@@ -248,7 +248,7 @@ a {
   align-items: center;
   margin-top: 20px;
   padding: 10px;
-  background-color: #ddcd76;
+  background-color: #e3b077;
   border-radius: 5px;
   width: 95%;
 }
@@ -303,7 +303,7 @@ a {
   position: absolute;
   width: 70px;
   height: 1px;
-  background-color: #ddcd76;
+  background-color: #e3b077;
   top: 49px;
   bottom: 0;
   margin-top: auto;
@@ -323,7 +323,7 @@ a {
   transition: 0.3s;
 }
 .mainFooterBack .mainFooter .calssFooterColumn .footerLi li a:hover {
-  color: #ddcd76;
+  color: #e3b077;
 }
 .mainFooterBack .mainFooter .calssFooterColumn .footerLi li::before {
   content: none;
