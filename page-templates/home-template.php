@@ -45,7 +45,7 @@ get_header();
     </div>
 </div>
 <div class="clkarenAboutUsSectionContainer">
-    <div class="clkarenAboutUsSrction mainView">
+    <div class="clkarenAboutUsSection mainView">
         <div class="homeAboutUsContentPart">
             <span class="homeAboutUsSubtitle">لورم ایپسوم</span>
             <h2>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h2>
@@ -78,13 +78,39 @@ get_header();
                 </div>
             </div>
             <div class="homeAboutUsBtnContainer">
-                <a class="generalButton" href="#">با ما بیشتر آشنا شوید</a>
+                <a class="generalButton" href="#">با ما آشنا شوید</a>
+                <div class="homeAboutUsFounderPart">
+                    <div class="founderPartImg"><img src="<?php bloginfo( 'template_directory' ) ?>/img/founder.jpg" alt=""></div>
+                    <div class="founderPartName">
+                        <h3>پروا گورانی</h3>
+                        <span>موسس کلینیک کارن طب</span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="homeAboutUsImagePart">
-            <div class="div1"><img src="https://dummyimage.com/800x400/004eeb/004eeb" alt=""></div>
-            <div class="div2"><img src="https://dummyimage.com/800x400/004eeb/004eeb" alt=""></div>
-            <div class="div3"><img src="https://dummyimage.com/800x400/004eeb/004eeb" alt=""></div>
+            <div class="div1"><img src="<?php bloginfo('template_directory') ?>/img/grid3.jpg" alt=""></div>
+            <div class="div2"><img src="<?php bloginfo('template_directory') ?>/img/grid1.jpg" alt=""></div>
+            <div class="div3"><img src="<?php bloginfo('template_directory') ?>/img/grid2.jpg" alt=""></div>
+        </div>
+    </div>
+</div>
+<div class="clkarenHomeCounterContainer">
+    <div class="clkarenHomeCounter mainView" id="counterNumbers">  
+        <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <span class="counterItemSvg"><svg fill="#fff" width="50" viewBox="0 0 512 512"><path d="M231 437v37.9a15.3 15.3 0 0 0 10.9 14.7 14.7 14.7 0 0 0 4.6.7 15.2 15.2 0 0 0 12.7-6.8l31.6-46.5h158.5a40.7 40.7 0 0 0 40.7-40.7V68.7A40.7 40.7 0 0 0 449.3 28H79.7A40.7 40.7 0 0 0 39 68.7v327.6A40.7 40.7 0 0 0 79.7 437H204a8 8 0 0 0 8-8 8 8 0 0 0-8-8H79.7A24.6 24.6 0 0 1 55 396.3V68.7A24.6 24.6 0 0 1 79.7 44h369.6A24.6 24.6 0 0 1 474 68.7v327.6a24.6 24.6 0 0 1-24.7 24.7H286.6a7.9 7.9 0 0 0-6.6 3.5l-8.5 12.5-24.5 36v-70.7a8.2 8.2 0 0 0-7.5-8.3 8 8 0 0 0-8.5 8v19"/><path d="m262.1 323.2 152.1-152.1a25 25 0 0 0 0-35.4l-21-21a22.1 22.1 0 0 0-31.2 0l-110 110a10.7 10.7 0 0 1-15.2 0l-47.3-47.3a21.4 21.4 0 0 0-30.3 0l-21.4 21.4a25 25 0 0 0 0 35.4l88.9 89a25.2 25.2 0 0 0 35.4 0Zm-114.2-99.1a10.7 10.7 0 0 1 0-15.2l19.2-19.1a10.2 10.2 0 0 1 14.6 0l45 45a25 25 0 0 0 35.4 0l109-108.9a9.3 9.3 0 0 1 13.1 0l19.9 19.9a10.7 10.7 0 0 1 0 15.2L252 313.1a10.7 10.7 0 0 1-15.2 0Z"/></svg></span>
+            <div class="counterNumber"><span id="counter-1">98%</span></div>
+            <div class="counterTitle">رضایت بیمار</div>
+        </div>
+        <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <span class="counterItemSvg"><svg fill="#fff" width="50" viewBox="0 0 512 512"><path d="M231 437v37.9a15.3 15.3 0 0 0 10.9 14.7 14.7 14.7 0 0 0 4.6.7 15.2 15.2 0 0 0 12.7-6.8l31.6-46.5h158.5a40.7 40.7 0 0 0 40.7-40.7V68.7A40.7 40.7 0 0 0 449.3 28H79.7A40.7 40.7 0 0 0 39 68.7v327.6A40.7 40.7 0 0 0 79.7 437H204a8 8 0 0 0 8-8 8 8 0 0 0-8-8H79.7A24.6 24.6 0 0 1 55 396.3V68.7A24.6 24.6 0 0 1 79.7 44h369.6A24.6 24.6 0 0 1 474 68.7v327.6a24.6 24.6 0 0 1-24.7 24.7H286.6a7.9 7.9 0 0 0-6.6 3.5l-8.5 12.5-24.5 36v-70.7a8.2 8.2 0 0 0-7.5-8.3 8 8 0 0 0-8.5 8v19"/><path d="m262.1 323.2 152.1-152.1a25 25 0 0 0 0-35.4l-21-21a22.1 22.1 0 0 0-31.2 0l-110 110a10.7 10.7 0 0 1-15.2 0l-47.3-47.3a21.4 21.4 0 0 0-30.3 0l-21.4 21.4a25 25 0 0 0 0 35.4l88.9 89a25.2 25.2 0 0 0 35.4 0Zm-114.2-99.1a10.7 10.7 0 0 1 0-15.2l19.2-19.1a10.2 10.2 0 0 1 14.6 0l45 45a25 25 0 0 0 35.4 0l109-108.9a9.3 9.3 0 0 1 13.1 0l19.9 19.9a10.7 10.7 0 0 1 0 15.2L252 313.1a10.7 10.7 0 0 1-15.2 0Z"/></svg></span>
+            <div class="counterNumber"><span id="counter-2">7</span><span>+</span></div>
+            <div class="counterTitle">پزشک متخصص</div>
+        </div>
+        <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <span class="counterItemSvg"><svg fill="#fff" width="50" viewBox="0 0 512 512"><path d="M231 437v37.9a15.3 15.3 0 0 0 10.9 14.7 14.7 14.7 0 0 0 4.6.7 15.2 15.2 0 0 0 12.7-6.8l31.6-46.5h158.5a40.7 40.7 0 0 0 40.7-40.7V68.7A40.7 40.7 0 0 0 449.3 28H79.7A40.7 40.7 0 0 0 39 68.7v327.6A40.7 40.7 0 0 0 79.7 437H204a8 8 0 0 0 8-8 8 8 0 0 0-8-8H79.7A24.6 24.6 0 0 1 55 396.3V68.7A24.6 24.6 0 0 1 79.7 44h369.6A24.6 24.6 0 0 1 474 68.7v327.6a24.6 24.6 0 0 1-24.7 24.7H286.6a7.9 7.9 0 0 0-6.6 3.5l-8.5 12.5-24.5 36v-70.7a8.2 8.2 0 0 0-7.5-8.3 8 8 0 0 0-8.5 8v19"/><path d="m262.1 323.2 152.1-152.1a25 25 0 0 0 0-35.4l-21-21a22.1 22.1 0 0 0-31.2 0l-110 110a10.7 10.7 0 0 1-15.2 0l-47.3-47.3a21.4 21.4 0 0 0-30.3 0l-21.4 21.4a25 25 0 0 0 0 35.4l88.9 89a25.2 25.2 0 0 0 35.4 0Zm-114.2-99.1a10.7 10.7 0 0 1 0-15.2l19.2-19.1a10.2 10.2 0 0 1 14.6 0l45 45a25 25 0 0 0 35.4 0l109-108.9a9.3 9.3 0 0 1 13.1 0l19.9 19.9a10.7 10.7 0 0 1 0 15.2L252 313.1a10.7 10.7 0 0 1-15.2 0Z"/></svg></span>
+            <div class="counterNumber"><span id="counter-3">264</span><span>+</span></div>
+            <div class="counterTitle">مشاوره آنلاین</div>
         </div>
     </div>
 </div>
