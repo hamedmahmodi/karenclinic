@@ -77,6 +77,16 @@ a {
   text-decoration: none;
 }
 
+.blogBreadCrumbs a, .blogBreadCrumbs span {
+  font-size: 18px;
+  position: relative;
+  z-index: 3;
+  color: white !important;
+}
+.blogBreadCrumbs span {
+  margin: 7px;
+}
+
 .contactPageBack iframe {
   width: 100%;
   height: 410px;
@@ -216,7 +226,7 @@ a {
 .blogHeader .innerHeader .archivePostFooter .archivePostSvg svg {
   vertical-align: middle;
   margin-left: 7px;
-  fill: #ddcd76;
+  fill: #e3b077;
 }
 .blogHeader .backgroundOverlay {
   background-color: #18162B;
@@ -239,14 +249,167 @@ a {
   font-size: 36px;
   margin: 0;
 }
-.blogHeader .blogHeaderText .blogBreadCrumbs a, .blogHeader .blogHeaderText .blogBreadCrumbs span {
-  font-size: 18px;
+
+.clkarenAboutUsPageBack span {
+  color: #e3b077;
+  font-size: 14.5px;
+  display: block;
+  font-weight: 400;
+}
+.clkarenAboutUsPageBack h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 50px;
+}
+.clkarenAboutUsPageBack p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 30px;
+}
+.clkarenAboutUsPageBack a {
+  background-color: #e3b077;
+  border-radius: 50px;
   position: relative;
-  z-index: 3;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: 400;
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.clkarenAboutUsPageBack a:hover {
+  transform: translateY(-5px);
+}
+.clkarenAboutUsPageBack .clkarenAboutUs {
+  background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/doctors-discussing-cosmetic-surgery-options-over-a-client-e1632844985630.jpg);
+  background-position: 0px 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 120px 0;
+}
+.clkarenAboutUsPageBack .clkarenAboutUs .aboutUsText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clkarenAboutUsPageBack .clkarenAboutUs .aboutUsText h1 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 36px;
+  margin: 0;
+}
+.clkarenAboutUsPageBack .clkarenAboutUs .backgroundOverlay {
+  background-color: #18162B;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.clkarenAboutUsPageBack .clkarenAboutUsSection {
+  padding: 120px 0 100px 0;
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
   color: white;
 }
-.blogHeader .blogHeaderText .blogBreadCrumbs span {
-  margin: 7px;
+.clkarenAboutUsPageBack .clkarenChooseUsSection p {
+  color: rgba(255, 255, 255, 0.703);
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection a {
+  color: #fff;
+  font-size: 20px;
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsImg {
+  width: 50%;
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsImg .ChooseUsBackground {
+  background-image: url(img/choose-us.jpg);
+  background-position: 150px 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsText {
+  width: 50%;
+  background-color: transparent;
+  background: #18162b;
+  padding: 100px;
+  position: relative;
+  z-index: 5;
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsText .clkarenChooseUsCards {
+  display: flex;
+  margin-top: 30px;
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsText .clkarenChooseUsCards .clkarenChooseUsCard {
+  width: 50%;
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsText .clkarenChooseUsCards .clkarenChooseUsCard span {
+  font-size: 30px;
+  display: inline-block;
+  color: white;
+  border: 6px solid white;
+  border-radius: 100%;
+  padding: 40px;
+  font-weight: 500;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection {
+  padding: 100px 0;
+  text-align: center;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection span {
+  font-size: 18px;
+  padding: 20px 0;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection p {
+  width: 50%;
+  margin: 10px auto;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard {
+  width: 32%;
+  position: relative;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard img {
+  border-radius: 10px;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard .OurDoctorCardText {
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  margin: auto;
+  background-color: #18162b;
+  border-radius: 10px;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard .OurDoctorCardText h3 {
+  color: white;
+  margin-bottom: 0;
+  font-size: 22px;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard .OurDoctorCardText span {
+  color: #A3A2AF;
+  padding: 5px 0 20px;
 }
 
 .generalSinglePostStyle .entry-header {
@@ -284,7 +447,7 @@ a {
 .generalSinglePostStyle .entry-header .innerHeader .archivePostFooter .archivePostSvg svg {
   vertical-align: middle;
   margin-left: 7px;
-  fill: #ddcd76;
+  fill: #e3b077;
 }
 .generalSinglePostStyle .entry-header .backgroundOverlay {
   background-color: #18162B;
@@ -475,16 +638,15 @@ a {
   align-items: center;
 }
 .archiveParent a .readMore span {
-  color: #ddcd76;
+  color: #e3b077;
   margin-left: 5px;
 }
 .archiveParent a .readMore svg {
-  fill: #ddcd76;
+  fill: #e3b077;
 }
 
 .mainFooterBack {
   background-color: #18162b;
-  padding: 50px 10px;
   color: white;
 }
 .mainFooterBack .mainView {
