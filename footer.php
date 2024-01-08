@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="mainFooterBack">
-			<div class="mainFooter mainView">
+			<div class="mainFooter sectionPadding mainView">
 				<div class="calssFooterColumn1 calssFooterColumn">
 					<div class="elementorImg">
 						<a href="#" class="desctopLogoPart">
@@ -96,6 +96,12 @@
 							<p>09121111111</p>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="copyRightFooterBack">
+				<div class="copyRightFooter mainView">
+					<p class="copyRightP1 noMargin">کلیه حقوق وبسایت برای کلینیک کارن طب محفوظ است. طراحی و توسعه توسط <a href="https://idechy.ir/" target="_blank">ایده‌چی</a></p>
+					<p class="copyRightP2 noMargin">کلینیک کارن طب ، بهترین در خاورمیانه</p>
 				</div>
 			</div>
 		</div>

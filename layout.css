@@ -693,8 +693,62 @@ select {
 .servicesPageBack .servicesEntryContent img {
   display: block;
 }
-.servicesPageBack .servicesEntryContent .entryContentTitle {
-  font-size: 26px;
+.servicesPageBack .servicesEntryContent .servicesEntryContentHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentTitle {
+  width: 30%;
+}
+@media screen and (max-width: 768px) {
+  .servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentTitle {
+    width: auto;
+  }
+}
+.servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentTitle .topHeading {
+  color: #e3b077;
+  font-size: 14.5px;
+  display: block;
+  font-weight: 400;
+}
+.servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentTitle h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 50px;
+}
+.servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentTitle .servicesEntryContentHeaderCount {
+  display: flex;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentTitle .servicesEntryContentHeaderCount {
+    width: auto;
+    font-size: 12px;
+  }
+}
+.servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentTitle .servicesEntryContentHeaderCount .commentsCount, .servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentTitle .servicesEntryContentHeaderCount .viewPageCount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.7;
+  font-size: 13px;
+}
+.servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentTitle .servicesEntryContentHeaderCount .commentsCount .commentsCountText, .servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentTitle .servicesEntryContentHeaderCount .commentsCount .viewCountText, .servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentTitle .servicesEntryContentHeaderCount .viewPageCount .commentsCountText, .servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentTitle .servicesEntryContentHeaderCount .viewPageCount .viewCountText {
+  margin: 0px 5px;
+}
+.servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentHeaderInnerBtn {
+  width: 20%;
+  margin-right: auto;
+}
+.servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentHeaderInnerBtn a {
+  margin-right: auto;
+}
+@media screen and (max-width: 768px) {
+  .servicesPageBack .servicesEntryContent .servicesEntryContentHeader .servicesEntryContentHeaderInnerBtn {
+    width: auto;
+  }
 }
 .servicesPageBack .servicesFormSection .servicesFormSectionInner {
   display: flex;
@@ -746,5 +800,59 @@ select {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+.servicesPageBack .entryContentTitle {
+  font-size: 26px;
+  margin: 0;
+}
+.servicesPageBack .commentInner {
+  width: 100%;
+}
+.servicesPageBack .commentInner .comment-list {
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.servicesPageBack .commentInner .comment-respond input {
+  margin-right: 0 !important;
+}
+.servicesPageBack .commentInner .comment-respond .comment-form-url {
+  display: none;
+}
+
+.mainFooterBack .calssFooterColumn li a {
+  color: #fff;
+}
+.mainFooterBack .copyRightFooterBack p {
+  color: #A3A2AF;
+  text-align: center;
+}
+.mainFooterBack .copyRightFooterBack p a {
+  color: #e3b077;
+}
+.mainFooterBack .copyRightFooterBack .copyRightFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #403f4d;
+  padding: 15px 0px;
+  margin-top: 15px;
+  font-size: 13px;
+}
+@media screen and (max-width: 768px) {
+  .mainFooterBack .copyRightFooterBack .copyRightFooter {
+    justify-content: space-between;
+    font-size: 12px;
+    gap: 10px;
+  }
+  .mainFooterBack .copyRightFooterBack .copyRightFooter .copyRightP1 {
+    order: 2;
+  }
+  .mainFooterBack .copyRightFooterBack .copyRightFooter p {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainFooterBack .copyRightFooterBack .copyRightFooter {
+    justify-content: center !important;
   }
 }/*# sourceMappingURL=layout.css.map */

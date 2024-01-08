@@ -255,3 +255,65 @@ function get_post_primary_category(){
 
 // add the filter
 add_filter('wpseo_breadcrumb_separator', 'filter_wpseo_breadcrumb_separator', 10, 1);
+
+
+
+// function get_post_views($postID){
+//     $count_key = 'post_views_count';
+//     $count = get_post_meta($postID, $count_key, true);
+//     if($count==''){
+//         delete_post_meta($postID, $count_key);
+//         add_post_meta($postID, $count_key, '0');
+//         return "0 ";
+//     }
+//     return $count.' ';
+// }
+
+// function set_post_views($postID) {
+//     $count_key = 'post_views_count';
+//     $count = get_post_meta($postID, $count_key, true);
+//     if($count==''){
+//         $count = 0;
+//         delete_post_meta($postID, $count_key);
+//         add_post_meta($postID, $count_key, '0');
+//     }else{
+//         $count++;
+//         update_post_meta($postID, $count_key, $count);
+//     }
+// }
+
+function get_page_views($pageID) {
+    $count_key = 'page_views_count';
+    $count = get_post_meta($pageID, $count_key, true);
+    
+    if ($count == '') {
+        delete_post_meta($pageID, $count_key);
+        add_post_meta($pageID, $count_key, '0');
+        return "0";
+    }
+
+    return $count . '';
+}
+
+function set_page_views($pageID) {
+    $count_key = 'page_views_count';
+    $count = get_post_meta($pageID, $count_key, true);
+    
+    if ($count == '') {
+        $count = 0;
+        delete_post_meta($pageID, $count_key);
+        add_post_meta($pageID, $count_key, '0');
+    } else {
+        $count++;
+        update_post_meta($pageID, $count_key, $count);
+    }
+}
+
+function track_page_views() {
+    if (is_page()) {
+        set_page_views(get_the_ID());
+    }
+}
+add_action('template_redirect', 'track_page_views');
+
+

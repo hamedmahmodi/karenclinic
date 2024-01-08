@@ -216,7 +216,7 @@ a {
 .blogHeader .innerHeader .archivePostFooter .archivePostSvg svg {
   vertical-align: middle;
   margin-left: 7px;
-  fill: #ddcd76;
+  fill: #e3b077;
 }
 .blogHeader .backgroundOverlay {
   background-color: #18162B;
@@ -284,7 +284,7 @@ a {
 .generalSinglePostStyle .entry-header .innerHeader .archivePostFooter .archivePostSvg svg {
   vertical-align: middle;
   margin-left: 7px;
-  fill: #ddcd76;
+  fill: #e3b077;
 }
 .generalSinglePostStyle .entry-header .backgroundOverlay {
   background-color: #18162B;
@@ -475,11 +475,11 @@ a {
   align-items: center;
 }
 .archiveParent a .readMore span {
-  color: #ddcd76;
+  color: #e3b077;
   margin-left: 5px;
 }
 .archiveParent a .readMore svg {
-  fill: #ddcd76;
+  fill: #e3b077;
 }
 
 .mainFooterBack {
