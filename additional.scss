@@ -12,6 +12,17 @@ a{
     color: inherit;
     text-decoration: none;
 }
+.blogBreadCrumbs{
+    a , span{
+        font-size: 18px;
+        position: relative;
+        z-index: 3;
+        color: white !important;
+    }
+    span{
+        margin: 7px;
+    }
+}
 .contactPageBack{
     iframe{
         width: 100%;
@@ -175,23 +186,179 @@ a{
             font-size: 36px;
             margin: 0;
         }
-        .blogBreadCrumbs{
-            a , span{
-                font-size: 18px;
-                position: relative;
-                z-index: 3;
-                color: white;
-            }
-            span{
-                margin: 7px;
-            }
-        }
+        
     }
     
 }
-
-    
-
+.clkarenAboutUsPageBack{
+    span{
+        color: #e3b077;
+        font-size: 14.5px;
+        display: block;
+        font-weight: 400;
+    }
+    h2{
+        margin: 0;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    p{
+        margin: 0;
+        font-size: 15px;
+        line-height: 30px;
+        
+    }
+    a{
+        background-color: #e3b077;
+        border-radius: 50px;
+        position: relative;
+        color: #fff;
+        padding: 10px 25px;
+        font-weight: 400;
+        display: block;
+        width: -moz-max-content;
+        width: max-content;
+        transition: all 0.3s;
+        border: none;
+        cursor: pointer;
+        margin-top: 40px;
+        &:hover{
+            transform: translateY(-5px);
+        }
+    }
+    .clkarenAboutUs{
+        background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/doctors-discussing-cosmetic-surgery-options-over-a-client-e1632844985630.jpg);
+        background-position: 0px 60%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 120px 0;
+        .aboutUsText{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1{
+                position: relative;
+                z-index: 2;
+                color: white;
+                font-size: 36px;
+                margin: 0;
+            }
+            
+        }
+        .backgroundOverlay{
+            background-color: #18162B;
+            opacity: 0.8;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+    }
+    .clkarenAboutUsSection{
+        padding: 120px 0 100px 0;
+    }
+    .clkarenChooseUsSection{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: white; 
+            p{
+                color: rgba(255, 255, 255, 0.703) ;
+            }
+            a{
+                color: #fff;
+                font-size: 20px;
+            }
+        .clkarenChooseUsImg{
+            width: 50%;
+            .ChooseUsBackground{
+                background-image: url(img/choose-us.jpg);
+                background-position: 150px 40%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        .clkarenChooseUsText{
+            width: 50%;
+            background-color: transparent;
+            background: $mainColorDark;
+            padding: 100px;
+            position: relative;
+            z-index: 5;
+            
+            .clkarenChooseUsCards{
+                display: flex;
+                margin-top: 30px;
+                .clkarenChooseUsCard{
+                    width: 50%;
+                    span{
+                        font-size: 30px;
+                        display: inline-block;
+                        color: white;
+                        border: 6px solid white;
+                        border-radius: 100%;
+                        padding: 40px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            
+        }
+    }
+    .clkarenOurDoctorsSection{
+        padding: 100px 0;
+        text-align: center;
+        span{
+            font-size: 18px;
+            padding: 20px 0;
+        }
+        p{
+            width: 50%;
+            margin: 10px auto;
+        }
+        .clkarenOurDoctorCards{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            .clkarenOurDoctorCard{
+                width: 32%;
+                position: relative;
+                img{
+                    border-radius: 10px;
+                }
+                .OurDoctorCardText{
+                    position: absolute;
+                    bottom: 7%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80%;
+                    margin: auto;
+                    background-color: $mainColorDark;
+                    border-radius: 10px;
+                    h3{
+                        color: white;
+                        margin-bottom: 0;
+                        font-size: 22px;
+                    }
+                    span{
+                        color: #A3A2AF;
+                        padding: 5px 0 20px;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}
 .generalSinglePostStyle{
     .entry-header{
         background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/enlarging-lips-at-cosmetic-clinic-e1632845241540.jpg);
@@ -435,7 +602,6 @@ a{
 }
 .mainFooterBack{
     background-color: $mainColorDark;
-    padding: 50px 10px;
     color: white;
     .mainView{
         max-width: 1290px;
