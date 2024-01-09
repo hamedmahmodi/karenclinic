@@ -188,7 +188,7 @@ p {
 }
 
 .lighterText {
-  color: #7b798c;
+  color: #A3A2AF;
 }
 
 .smallText {
@@ -294,7 +294,7 @@ li::before {
 }
 
 .darkListStyle::before {
-  background-color: #7b798c;
+  background-color: #A3A2AF;
 }
 
 .noListStyle {
@@ -439,7 +439,7 @@ select option {
   border-radius: 50px;
   position: relative;
   color: #fff;
-  padding: 10px 25px;
+  padding: 10px 35px;
   font-size: 15px;
   font-weight: 400;
   display: block;

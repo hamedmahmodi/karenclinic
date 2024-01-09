@@ -89,11 +89,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             margin-left: 0;
             margin-right: auto;
         }
+        
     }
 }
 .clkarenIntroSectionContainer{
     background-image: url('img/bannerone.jpg');
-    height: 700px;
+    height: 800px;
     @include xs{
         height: 350px;
     }
@@ -101,18 +102,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
-    &::after{
-        position: absolute;
-        content: '';
-        background-color: $mainColorDark;
-        opacity: 0.12;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 0;
-    }
+
     .clkarenIntroSection{
         display: flex;
         flex-wrap: wrap;
@@ -122,17 +114,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         z-index: 999;
         .introSectionContentPart{
             width: 50%;
+            margin-top: 30px;
             @include sm{
                 width: 100%;
                 backdrop-filter: blur(5px);
                 background: rgba(255,255,255,.7);
                 padding: 16px;   
-                border-radius: 10px;         
+                border-radius: 20px;         
             }
             h1{
-                font-size: 25px;
-                line-height: 45px;
-                width: 80%;
+                font-size: 52px;
+                line-height: 80px;
+                width: 90%;
+                margin-bottom: 25px;
                 @include xs{
                     font-size: 18px;
                     line-height: 30px;
@@ -141,8 +135,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 }
             }
             p{
-                font-size: 16px;
-                line-height: 35px;
+                font-size: 14px;
+                width: 85%;
+                margin-bottom: 25px;
                 @include xs{
                     display: none;
                 }
@@ -152,7 +147,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 flex-wrap: wrap;
                 justify-content: flex-start;
                 a{
-                    margin-left: 20px;
+                    margin-left: 30px;
                     @include xs{
                         margin: 0;
                     }
@@ -160,6 +155,21 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 @include xs{
                     justify-content: space-around;
                     margin-top: 20px;
+                }
+                .generalButtonPlay{
+                    display: flex;
+                    align-items: center;
+                    span{
+                        color: black;
+                        font-weight: 500;
+                        display: block;
+                    }
+                    svg{
+                        background-color: $offColor;
+                        margin-left: 10px;
+                        padding: 5px;
+                        border-radius: 100%;
+                    }
                 }
             }
         }
@@ -183,7 +193,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         flex-wrap: wrap;
         justify-content: space-between;
         .homeContactUsHowToHelpPart{
-            width: 60%;
+            width: 65%;
             @include sm{
                 width: 100%;
                 padding: 10px;
@@ -195,29 +205,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             background-color: #fff;
             box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
             position: relative;
-            border-radius: 10px;
-            padding: 40px 50px;
-            div{
-                position: relative;
-                z-index: 9999;
-            }
-            &::after{
-                position: absolute;
-                content: '';
-                background-image: url('img/pattern.jpeg');
-                left: 0;
-                right: 0;
-                bottom: 0;
-                top: 0;
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                opacity: 0.1;
-                z-index: 999;
-            }
+            border-radius: 20px;
+            padding: 30px 40px;
 
             .howToHelpPartRight{
-                width: 65%;
+                width: 60%;
                 h2{
                     margin: 0;
                     line-height: 40px;
@@ -227,6 +219,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                     margin: 10px 0;
                     font-weight: 400;
                     color: $textColorLighter;
+                    font-size: 16px;
+                }
+                a{
+                    color: $offColor;
                 }
                 .generalButton {
                     padding-right: 0;
@@ -236,7 +232,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 }
             }
             .howToHelpPartLeft{
-                width: 30%;
+                width: 25%;
+                li{
+                    font-size: 18px;
+                    margin: 10px 0;
+                }
                 @include sm{
                     width: 100%;
                     margin-top: 30px;
@@ -251,7 +251,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             }
         }
         .homeContactUsConsultationPart{
-            width: 38%;
+            width: 32%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -261,7 +261,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             }
             padding: 40px 50px;
             background-color: $mainColorDark;
-            border-radius: 10px;
+            border-radius: 20px;
             h2{
                 margin: 0;
                 line-height: 40px;
@@ -269,6 +269,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             p{
                 margin: 10px 0;
                 font-weight: 400;
+                color: $textColorLighter;
+                font-size: 16px;
             }
             *{
                 color: #fff;
@@ -276,24 +278,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             .consultationPhonPart{
                 display: flex;
                 align-items: center;
-                justify-content: flex-end;
+                // justify-content: flex-end;
                 span{
-                    &:last-child{
-                        width: 50px;
-                        height: 50px;
+                    &:first-child{
+                        width: 45px;
+                        height: 45px;
                         background-color: #e3b077;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         border-radius: 100%;
                         padding: 5px;
-                        margin-right: 10px;
+                        margin-left: 10px;
                     }
-                    &:first-child{
-                        font-size: 25px;
+                    &:last-child{
+                        font-size: 18px;
                         letter-spacing: 2px;
                         line-height: 50px;
-                        height: 50px;
+                        // height: 50px;
                         display: flex;
                     }
                 }
@@ -342,7 +344,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     div{
         display: block;
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 20px;
         overflow: hidden;
         @include sm{
             width: 100% !important;
@@ -363,24 +365,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         justify-content: space-between;
         align-items: center;
         .homeAboutUsContentPart{
-            width: 38%;
+            width: 33%;
             @include sm{
                 width:100%;
             }
             span{
                 color: $offColor;
-                font-size: 14.5px;
+                font-size: 18px;
                 display: block;
-                font-weight: 400;
+                font-weight: 500;
             }
             h2{
-                margin: 0;
-                font-size: 20px;
+                margin: 20px 0;
+                font-size: 40px;
                 line-height: 50px;
             }
             p{
                 margin: 0;
-                font-size: 15px;
+                font-size: 16px;
                 line-height: 30px;
             }
             .homeAboutUsCard{
@@ -389,6 +391,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 justify-content: flex-start;
                 align-items: center;
                 margin: 20px 0;
+                svg{
+                    fill: $offColor;
+                }
                 &:hover{
                     .abourUsCardIconPart{
                         background-color: $offColor;
@@ -412,7 +417,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                     align-items: center;
                     justify-content: center;
                     box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
-                    border-radius: 10px;
+                    border-radius: 20px;
                     transition: all 0.3s;
                     &:hover{
                         transform: translateY(-10px);
@@ -426,26 +431,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                     padding-right: 20px;
                     h3{
                         margin: 0;
-                        font-size: 15px;
+                        font-size: 20px;
                     }
                     p{
-                        font-size: 13.5px;
+                        font-size: 16px;
                         margin: 0;
                         line-height: 25px;
                         color: $textColorLight;
                     }
                 }
-                .middleCardIcon{
-                    background-color: $offColor;
-                    svg{
-                        fill: #fff;
-                        stroke: #fff;
-                    }
-                }
             }
         }
         .homeAboutUsImagePart{
-            width: 50%;
+            width: 55%;
             @include sm{
                 width: 100%;
                 margin-top: 20px;
@@ -500,15 +498,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .clkarenHomeCounterContainer{
     .clkarenHomeCounter{
-        background-color: $mainColorDark;
+        background-color: $backColorLight2;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        border-radius: 10px;
-        padding: 25px;
+        border-radius: 20px;
+        padding: 35px;
         .counterItem{
-            width: 33%;
+            width: 20%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -517,25 +515,33 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: $offColor;
                 padding: 5px;
                 border-radius: 100%;
                 width: 70px;
                 height: 70px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
+                svg{
+                    fill: $offColor;
+                }
             }
-            *{
-                color: #fff;
-            }
+            // *{
+            //     color: #fff;
+            // }
             .counterNumber{
                 line-height: 30px;
                 span{
                     font-size: 30px;
                     font-weight: 700;
                 }
+                .plus{
+                    color: $offColor;
+                    font-size: 20px;
+                    margin: 5px;
+                }
             }
             .counterTitle{
                 font-weight: 300;
+                padding: 5px;
             }
         }
     }
@@ -546,29 +552,29 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         .clkarenHomeOurServicesHeader{
             display: flex;
             flex-wrap: wrap;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: center;
             .homeOurServicesHeaderTitle{
-                width: 30%;
+                width: 33%;
                 span{
                     color: $offColor;
-                    font-size: 14.5px;
+                    font-size: 18px;
                     display: block;
-                    font-weight: 400;
+                    font-weight: 500;
                 }
                 h2{
-                    margin: 0;
-                    font-size: 20px;
+                    margin: 20px 0;
+                    font-size: 40px;
                     line-height: 50px;
                 }
             }
             .homeOurServicesHeaderParagraph{
-                width: 50%;
+                width: 45%;
                 font-size: 14.5px;
                 font-weight: 300;
             }
             .ourServiceHeaderInnerBtn{
-                width: 20%;
+                width: 15%;
                 a{
                     margin-right: auto;
                     margin-left: 0;
@@ -576,50 +582,291 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             }
         }
         .clkarenHomeOurServicesCardsParent{
-            display: grid;
-            grid-template-columns: repeat(3,minmax(0,1fr));
-            grid-gap: 20px;
-            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 30px 0;
             .ourServicesCard{
+                width: 30%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                margin-bottom: 150px;
                 .ourServicesCardHeader{
-                    overflow: hidden;
-                    border-radius: 10px;
+                    // overflow: hidden;
+                    border-radius: 20px;
+                    position: relative;
                     img{
                         object-fit: cover;
                         width: 100%;
                         height: 100%;
+                        display: block;
+                        border-radius: 20px;
+                    }
+                    .ourServicesCardFooter{
+                        position: absolute;
+                        top: 85%;
+                        right: 50%;
+                        transform: translateX(50%);
+                        width: 90%;
+                        margin: auto;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        box-shadow: 0px 3px 30px 0px rgba(23.999999999999996, 22.000000000000004, 43, 0.14);
+                        border-radius: 20px;
+                        align-items: flex-start;
+                        padding:20px;
+                        z-index: 5;
+                        background-color: #fff;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                        }
+                        .ourServicesCardFooterInner{
+                            width: calc(100% - 70px);
+                            h3{
+                                margin: 0;
+                                line-height: 35px;
+                                font-size: 20px;
+                            }
+                            span{
+                                font-size: 14px;
+                                line-height: 25px;
+                                margin: 5px 0;
+                                display: block;
+                            }
+                        }
                     }
                 }
-                .ourServicesCardFooter{
+                
+            }
+        }
+    }
+}
+.clkarenHomeOurApproachContainer{
+    .clkarenOurApproachSection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .homeOurApproachContentPart{
+            width: 46%;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 3px;
+                height: 50%;
+                top: 40%;
+                right: 5.5%;
+                background-color: $offColor;
+                opacity: 0.5;
+
+            }
+            @include sm{
+                width:100%;
+            }
+            span{
+                color: $offColor;
+                font-size: 18px;
+                display: block;
+                font-weight: 500;
+            }
+            h2{
+                margin: 20px 0;
+                font-size: 40px;
+                line-height: 50px;
+            }
+            p{
+                margin: 0;
+                font-size: 16px;
+                line-height: 30px;
+            }
+            .homeOurApproachCard{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 20px 0;
+                .abourUsCardIconPart{
+                    background-color: $offColor;
+                    z-index: 5;
+                }
+                svg{
+                    fill: white;
+                }
+                &:hover{
+                    .abourUsCardIconPart{
+                        background-color: white;
+                        svg{
+                            fill: $offColor;
+                            stroke: $offColor;
+                        }
+                    }
+                    .middleCardIcon{
+                        background-color: #fff;
+                        svg{
+                            fill: $offColor;
+                            stroke: $offColor;
+                        }
+                    }
+                }
+                .abourUsCardIconPart{
+                    width: 70px;
+                    height: 70px;
                     display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    box-shadow: 0px 3px 30px 0px rgba(23.999999999999996, 22.000000000000004, 43, 0.14);
-                    border-radius: 10px;
                     align-items: center;
-                    padding: 40px 30px;
-                    img{
-                        width: 50px;
-                        height: 50px;
+                    justify-content: center;
+                    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+                    border-radius: 20px;
+                    transition: all 0.3s;
+                    
+                    &:hover{
+                        transform: translateY(-10px);
                     }
-                    .ourServicesCardFooterInner{
-                        width: calc(100% - 100px);
-                        h3{
-                            margin: 0;
-                            line-height: 35px;
-                            font-size: 18px;
-                        }
-                        span{
-                            font-size: 14px;
-                            color: #838383;
-                            line-height: 25px;
-                            margin: 5px 0;
-                            display: block;
-                        }
+                    svg{
+                        transition: all 0.3s;
                     }
+                }
+                .OurApproachCardContentPart{
+                    width: calc(100% - 80px);
+                    padding-right: 20px;
+                    h3{
+                        margin: 0;
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 16px;
+                        margin: 0;
+                        line-height: 25px;
+                        color: $textColorLight;
+                    }
+                }
+            }
+        }
+        .homeOurApproachImagePart{
+            width: 38%;
+            img{
+                display: block;
+                border-radius: 20px;
+            }
+            .div1{
+                position: relative;
+                div{
+                    position: absolute;
+                    width: 65%;
+                    background-color: white;
+                    border-radius: 20px;
+                    right: 42%;
+                    bottom: 6%;
+                    transform: translateX(50%);
+
+                    padding: 15px 25px;
+                    h3{
+                        margin: 10px 0 0;
+                        font-size: 18px;
+                    }
+                    span{
+                        padding-right: 0;
+                    }
+                }
+            }
+            @include sm{
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+.clkarenOurBlogSection{
+    text-align: center;
+    padding: 100px 0;
+    span{
+        padding: 10px;
+        display: block;
+        font-size: 18px;
+        color: $offColor;
+    }
+    p{
+        width: 50%;
+        margin: 10px auto 50px auto;
+        @include sm{
+            width: 80%;
+        }
+    }
+    h2{
+        font-size: 40px;
+        margin: 0;
+    }
+    .clkarenOurBlog{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        a{
+            width: 48%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px auto;
+            @include sm{
+                width: 90%;
+            }
+            @include xs{
+                flex-direction: column;
+            }
+            .archiveCardImg{
+                width: 50%;
+                @include xs{
+                    width: 100%;
+                }
+                img{
+                    height: 240px;
+                    object-fit: cover;
+                    display: block;
+                    border-radius: 20px;
+                }
+            }
+            .cardText{
+                text-align: right;
+                width: 50%;
+                padding-right: 25px;
+                @include xs{
+                    width: 100%;
+                    padding: 0;
+                }
+                h3{
+                    margin: 0.5rem;
+                }
+                .archivePostFooter{
+                    display: flex;
+                    align-items: center;
+                    svg{
+                        fill: $textColorLight;
+                    }
+                    span{
+                        padding: 0 10px;
+                        color: $textColorLight;
+                    }
+                }
+                .readMore{
+                    display: flex;
+                    align-items: center;
+                    span{
+                        color: $offColor;
+                        margin-left: 5px;
+                        padding-right: 0;
+                    }
+                    svg{
+                        fill: $offColor;
+                    }
+                }
+                p{
+                    width: 100%;
+                    color: $textColorLight;
+                    margin-bottom: 0;
                 }
             }
         }

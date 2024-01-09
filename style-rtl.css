@@ -211,7 +211,7 @@ p {
 }
 
 .lighterText {
-  color: #7b798c;
+  color: #A3A2AF;
 }
 
 .smallText {
@@ -317,7 +317,7 @@ li::before {
 }
 
 .darkListStyle::before {
-  background-color: #7b798c;
+  background-color: #A3A2AF;
 }
 
 .noListStyle {
@@ -462,7 +462,7 @@ select option {
   border-radius: 50px;
   position: relative;
   color: #fff;
-  padding: 10px 25px;
+  padding: 10px 35px;
   font-size: 15px;
   font-weight: 400;
   display: block;
@@ -692,28 +692,18 @@ select {
 
 .clkarenIntroSectionContainer {
   background-image: url("img/bannerone.jpg");
-  height: 700px;
+  height: 800px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
 }
 @media screen and (max-width: 480px) {
   .clkarenIntroSectionContainer {
     height: 350px;
   }
-}
-.clkarenIntroSectionContainer::after {
-  position: absolute;
-  content: "";
-  background-color: #18162b;
-  opacity: 0.12;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
 }
 .clkarenIntroSectionContainer .clkarenIntroSection {
   display: flex;
@@ -725,6 +715,7 @@ select {
 }
 .clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart {
   width: 50%;
+  margin-top: 30px;
 }
 @media screen and (max-width: 768px) {
   .clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart {
@@ -733,13 +724,14 @@ select {
             backdrop-filter: blur(5px);
     background: rgba(255, 255, 255, 0.7);
     padding: 16px;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 }
 .clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart h1 {
-  font-size: 25px;
-  line-height: 45px;
-  width: 80%;
+  font-size: 52px;
+  line-height: 80px;
+  width: 90%;
+  margin-bottom: 25px;
 }
 @media screen and (max-width: 480px) {
   .clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart h1 {
@@ -750,8 +742,9 @@ select {
   }
 }
 .clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart p {
-  font-size: 16px;
-  line-height: 35px;
+  font-size: 14px;
+  width: 85%;
+  margin-bottom: 25px;
 }
 @media screen and (max-width: 480px) {
   .clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart p {
@@ -764,7 +757,7 @@ select {
   justify-content: flex-start;
 }
 .clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart .introSectionBtnPart a {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 @media screen and (max-width: 480px) {
   .clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart .introSectionBtnPart a {
@@ -776,6 +769,21 @@ select {
     justify-content: space-around;
     margin-top: 20px;
   }
+}
+.clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart .introSectionBtnPart .generalButtonPlay {
+  display: flex;
+  align-items: center;
+}
+.clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart .introSectionBtnPart .generalButtonPlay span {
+  color: black;
+  font-weight: 500;
+  display: block;
+}
+.clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart .introSectionBtnPart .generalButtonPlay svg {
+  background-color: #e3b077;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 100%;
 }
 .clkarenIntroSectionContainer .clkarenIntroSection .introSectionEmptyPart {
   width: 50%;
@@ -801,7 +809,7 @@ select {
   justify-content: space-between;
 }
 .clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsHowToHelpPart {
-  width: 60%;
+  width: 65%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -809,8 +817,8 @@ select {
   background-color: #fff;
   box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
   position: relative;
-  border-radius: 10px;
-  padding: 40px 50px;
+  border-radius: 20px;
+  padding: 30px 40px;
 }
 @media screen and (max-width: 768px) {
   .clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsHowToHelpPart {
@@ -818,26 +826,8 @@ select {
     padding: 10px;
   }
 }
-.clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsHowToHelpPart div {
-  position: relative;
-  z-index: 9999;
-}
-.clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsHowToHelpPart::after {
-  position: absolute;
-  content: "";
-  background-image: url("img/pattern.jpeg");
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.1;
-  z-index: 999;
-}
 .clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsHowToHelpPart .howToHelpPartRight {
-  width: 65%;
+  width: 60%;
 }
 .clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsHowToHelpPart .howToHelpPartRight h2 {
   margin: 0;
@@ -847,7 +837,11 @@ select {
 .clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsHowToHelpPart .howToHelpPartRight p {
   margin: 10px 0;
   font-weight: 400;
-  color: #7b798c;
+  color: #A3A2AF;
+  font-size: 16px;
+}
+.clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsHowToHelpPart .howToHelpPartRight a {
+  color: #e3b077;
 }
 .clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsHowToHelpPart .howToHelpPartRight .generalButton {
   padding-right: 0;
@@ -858,7 +852,11 @@ select {
   }
 }
 .clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsHowToHelpPart .howToHelpPartLeft {
-  width: 30%;
+  width: 25%;
+}
+.clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsHowToHelpPart .howToHelpPartLeft li {
+  font-size: 18px;
+  margin: 10px 0;
 }
 @media screen and (max-width: 768px) {
   .clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsHowToHelpPart .howToHelpPartLeft {
@@ -874,13 +872,13 @@ select {
   }
 }
 .clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsConsultationPart {
-  width: 38%;
+  width: 32%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 40px 50px;
   background-color: #18162b;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 @media screen and (max-width: 480px) {
   .clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsConsultationPart {
@@ -895,6 +893,8 @@ select {
 .clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsConsultationPart p {
   margin: 10px 0;
   font-weight: 400;
+  color: #A3A2AF;
+  font-size: 16px;
 }
 .clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsConsultationPart * {
   color: #fff;
@@ -902,24 +902,22 @@ select {
 .clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsConsultationPart .consultationPhonPart {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
-.clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsConsultationPart .consultationPhonPart span:last-child {
-  width: 50px;
-  height: 50px;
+.clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsConsultationPart .consultationPhonPart span:first-child {
+  width: 45px;
+  height: 45px;
   background-color: #e3b077;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
   padding: 5px;
-  margin-right: 10px;
+  margin-left: 10px;
 }
-.clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsConsultationPart .consultationPhonPart span:first-child {
-  font-size: 25px;
+.clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsConsultationPart .consultationPhonPart span:last-child {
+  font-size: 18px;
   letter-spacing: 2px;
   line-height: 50px;
-  height: 50px;
   display: flex;
 }
 
@@ -967,7 +965,7 @@ select {
 .homeAboutUsImagePart div {
   display: block;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
@@ -990,7 +988,7 @@ select {
   align-items: center;
 }
 .clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsContentPart {
-  width: 38%;
+  width: 33%;
 }
 @media screen and (max-width: 768px) {
   .clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsContentPart {
@@ -999,18 +997,18 @@ select {
 }
 .clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsContentPart span {
   color: #e3b077;
-  font-size: 14.5px;
+  font-size: 18px;
   display: block;
-  font-weight: 400;
+  font-weight: 500;
 }
 .clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsContentPart h2 {
-  margin: 0;
-  font-size: 20px;
+  margin: 20px 0;
+  font-size: 40px;
   line-height: 50px;
 }
 .clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsContentPart p {
   margin: 0;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 30px;
 }
 .clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsContentPart .homeAboutUsCard {
@@ -1019,6 +1017,9 @@ select {
   justify-content: flex-start;
   align-items: center;
   margin: 20px 0;
+}
+.clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsContentPart .homeAboutUsCard svg {
+  fill: #e3b077;
 }
 .clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsContentPart .homeAboutUsCard:hover .abourUsCardIconPart {
   background-color: #e3b077;
@@ -1041,7 +1042,7 @@ select {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 20px;
   transition: all 0.3s;
 }
 .clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsContentPart .homeAboutUsCard .abourUsCardIconPart:hover {
@@ -1056,23 +1057,16 @@ select {
 }
 .clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsContentPart .homeAboutUsCard .aboutUsCardContentPart h3 {
   margin: 0;
-  font-size: 15px;
+  font-size: 20px;
 }
 .clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsContentPart .homeAboutUsCard .aboutUsCardContentPart p {
-  font-size: 13.5px;
+  font-size: 16px;
   margin: 0;
   line-height: 25px;
   color: #676767;
 }
-.clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsContentPart .homeAboutUsCard .middleCardIcon {
-  background-color: #e3b077;
-}
-.clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsContentPart .homeAboutUsCard .middleCardIcon svg {
-  fill: #fff;
-  stroke: #fff;
-}
 .clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsImagePart {
-  width: 50%;
+  width: 55%;
 }
 @media screen and (max-width: 768px) {
   .clkarenAboutUsSectionContainer .clkarenAboutUsSection .homeAboutUsImagePart {
@@ -1135,16 +1129,16 @@ select {
 }
 
 .clkarenHomeCounterContainer .clkarenHomeCounter {
-  background-color: #18162b;
+  background-color: #ffe9d1;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  padding: 25px;
+  border-radius: 20px;
+  padding: 35px;
 }
 .clkarenHomeCounterContainer .clkarenHomeCounter .counterItem {
-  width: 33%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1154,15 +1148,14 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e3b077;
   padding: 5px;
   border-radius: 100%;
   width: 70px;
   height: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.clkarenHomeCounterContainer .clkarenHomeCounter .counterItem * {
-  color: #fff;
+.clkarenHomeCounterContainer .clkarenHomeCounter .counterItem .counterItemSvg svg {
+  fill: #e3b077;
 }
 .clkarenHomeCounterContainer .clkarenHomeCounter .counterItem .counterNumber {
   line-height: 30px;
@@ -1171,88 +1164,343 @@ select {
   font-size: 30px;
   font-weight: 700;
 }
+.clkarenHomeCounterContainer .clkarenHomeCounter .counterItem .counterNumber .plus {
+  color: #e3b077;
+  font-size: 20px;
+  margin: 5px;
+}
 .clkarenHomeCounterContainer .clkarenHomeCounter .counterItem .counterTitle {
   font-weight: 300;
+  padding: 5px;
 }
 
 .clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesHeader {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 .clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesHeader .homeOurServicesHeaderTitle {
-  width: 30%;
+  width: 33%;
 }
 .clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesHeader .homeOurServicesHeaderTitle span {
   color: #e3b077;
-  font-size: 14.5px;
+  font-size: 18px;
   display: block;
-  font-weight: 400;
+  font-weight: 500;
 }
 .clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesHeader .homeOurServicesHeaderTitle h2 {
-  margin: 0;
-  font-size: 20px;
+  margin: 20px 0;
+  font-size: 40px;
   line-height: 50px;
 }
 .clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesHeader .homeOurServicesHeaderParagraph {
-  width: 50%;
+  width: 45%;
   font-size: 14.5px;
   font-weight: 300;
 }
 .clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesHeader .ourServiceHeaderInnerBtn {
-  width: 20%;
+  width: 15%;
 }
 .clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesHeader .ourServiceHeaderInnerBtn a {
   margin-right: auto;
   margin-left: 0;
 }
 .clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesCardsParent {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-gap: 20px;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 30px 0;
 }
 .clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesCardsParent .ourServicesCard {
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 150px;
 }
 .clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesCardsParent .ourServicesCard .ourServicesCardHeader {
-  overflow: hidden;
-  border-radius: 10px;
+  border-radius: 20px;
+  position: relative;
 }
 .clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesCardsParent .ourServicesCard .ourServicesCardHeader img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
+  display: block;
+  border-radius: 20px;
 }
-.clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesCardsParent .ourServicesCard .ourServicesCardFooter {
+.clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesCardsParent .ourServicesCard .ourServicesCardHeader .ourServicesCardFooter {
+  position: absolute;
+  top: 85%;
+  right: 50%;
+  transform: translateX(50%);
+  width: 90%;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   box-shadow: 0px 3px 30px 0px rgba(24, 22, 43, 0.14);
-  border-radius: 10px;
-  align-items: center;
-  padding: 40px 30px;
+  border-radius: 20px;
+  align-items: flex-start;
+  padding: 20px;
+  z-index: 5;
+  background-color: #fff;
 }
-.clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesCardsParent .ourServicesCard .ourServicesCardFooter img {
+.clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesCardsParent .ourServicesCard .ourServicesCardHeader .ourServicesCardFooter img {
   width: 50px;
   height: 50px;
 }
-.clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesCardsParent .ourServicesCard .ourServicesCardFooter .ourServicesCardFooterInner {
-  width: calc(100% - 100px);
+.clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesCardsParent .ourServicesCard .ourServicesCardHeader .ourServicesCardFooter .ourServicesCardFooterInner {
+  width: calc(100% - 70px);
 }
-.clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesCardsParent .ourServicesCard .ourServicesCardFooter .ourServicesCardFooterInner h3 {
+.clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesCardsParent .ourServicesCard .ourServicesCardHeader .ourServicesCardFooter .ourServicesCardFooterInner h3 {
   margin: 0;
   line-height: 35px;
-  font-size: 18px;
+  font-size: 20px;
 }
-.clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesCardsParent .ourServicesCard .ourServicesCardFooter .ourServicesCardFooterInner span {
+.clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesCardsParent .ourServicesCard .ourServicesCardHeader .ourServicesCardFooter .ourServicesCardFooterInner span {
   font-size: 14px;
-  color: #838383;
   line-height: 25px;
   margin: 5px 0;
   display: block;
+}
+
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart {
+  width: 46%;
+  position: relative;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 50%;
+  top: 40%;
+  right: 5.5%;
+  background-color: #e3b077;
+  opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+  .clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart {
+    width: 100%;
+  }
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart span {
+  color: #e3b077;
+  font-size: 18px;
+  display: block;
+  font-weight: 500;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart h2 {
+  margin: 20px 0;
+  font-size: 40px;
+  line-height: 50px;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 30px;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart .homeOurApproachCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart .homeOurApproachCard .abourUsCardIconPart {
+  background-color: #e3b077;
+  z-index: 5;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart .homeOurApproachCard svg {
+  fill: white;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart .homeOurApproachCard:hover .abourUsCardIconPart {
+  background-color: white;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart .homeOurApproachCard:hover .abourUsCardIconPart svg {
+  fill: #e3b077;
+  stroke: #e3b077;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart .homeOurApproachCard:hover .middleCardIcon {
+  background-color: #fff;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart .homeOurApproachCard:hover .middleCardIcon svg {
+  fill: #e3b077;
+  stroke: #e3b077;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart .homeOurApproachCard .abourUsCardIconPart {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart .homeOurApproachCard .abourUsCardIconPart:hover {
+  transform: translateY(-10px);
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart .homeOurApproachCard .abourUsCardIconPart svg {
+  transition: all 0.3s;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart .homeOurApproachCard .OurApproachCardContentPart {
+  width: calc(100% - 80px);
+  padding-right: 20px;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart .homeOurApproachCard .OurApproachCardContentPart h3 {
+  margin: 0;
+  font-size: 20px;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachContentPart .homeOurApproachCard .OurApproachCardContentPart p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 25px;
+  color: #676767;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachImagePart {
+  width: 38%;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachImagePart img {
+  display: block;
+  border-radius: 20px;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachImagePart .div1 {
+  position: relative;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachImagePart .div1 div {
+  position: absolute;
+  width: 65%;
+  background-color: white;
+  border-radius: 20px;
+  right: 42%;
+  bottom: 6%;
+  transform: translateX(50%);
+  padding: 15px 25px;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachImagePart .div1 div h3 {
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+.clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachImagePart .div1 div span {
+  padding-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .clkarenHomeOurApproachContainer .clkarenOurApproachSection .homeOurApproachImagePart {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.clkarenOurBlogSection {
+  text-align: center;
+  padding: 100px 0;
+}
+.clkarenOurBlogSection span {
+  padding: 10px;
+  display: block;
+  font-size: 18px;
+  color: #e3b077;
+}
+.clkarenOurBlogSection p {
+  width: 50%;
+  margin: 10px auto 50px auto;
+}
+@media screen and (max-width: 768px) {
+  .clkarenOurBlogSection p {
+    width: 80%;
+  }
+}
+.clkarenOurBlogSection h2 {
+  font-size: 40px;
+  margin: 0;
+}
+.clkarenOurBlogSection .clkarenOurBlog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.clkarenOurBlogSection .clkarenOurBlog a {
+  width: 48%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+@media screen and (max-width: 768px) {
+  .clkarenOurBlogSection .clkarenOurBlog a {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .clkarenOurBlogSection .clkarenOurBlog a {
+    flex-direction: column;
+  }
+}
+.clkarenOurBlogSection .clkarenOurBlog a .archiveCardImg {
+  width: 50%;
+}
+@media screen and (max-width: 480px) {
+  .clkarenOurBlogSection .clkarenOurBlog a .archiveCardImg {
+    width: 100%;
+  }
+}
+.clkarenOurBlogSection .clkarenOurBlog a .archiveCardImg img {
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+.clkarenOurBlogSection .clkarenOurBlog a .cardText {
+  text-align: right;
+  width: 50%;
+  padding-right: 25px;
+}
+@media screen and (max-width: 480px) {
+  .clkarenOurBlogSection .clkarenOurBlog a .cardText {
+    width: 100%;
+    padding: 0;
+  }
+}
+.clkarenOurBlogSection .clkarenOurBlog a .cardText h3 {
+  margin: 0.5rem;
+}
+.clkarenOurBlogSection .clkarenOurBlog a .cardText .archivePostFooter {
+  display: flex;
+  align-items: center;
+}
+.clkarenOurBlogSection .clkarenOurBlog a .cardText .archivePostFooter svg {
+  fill: #676767;
+}
+.clkarenOurBlogSection .clkarenOurBlog a .cardText .archivePostFooter span {
+  padding: 0 10px;
+  color: #676767;
+}
+.clkarenOurBlogSection .clkarenOurBlog a .cardText .readMore {
+  display: flex;
+  align-items: center;
+}
+.clkarenOurBlogSection .clkarenOurBlog a .cardText .readMore span {
+  color: #e3b077;
+  margin-left: 5px;
+  padding-right: 0;
+}
+.clkarenOurBlogSection .clkarenOurBlog a .cardText .readMore svg {
+  fill: #e3b077;
+}
+.clkarenOurBlogSection .clkarenOurBlog a .cardText p {
+  width: 100%;
+  color: #676767;
+  margin-bottom: 0;
 }/*# sourceMappingURL=style-rtl.css.map */

@@ -9,10 +9,11 @@ get_header();
 <div class="clkarenIntroSectionContainer">
     <div class="clkarenIntroSection mainView">
         <div class="introSectionContentPart">
-            <h1>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه</h1>
+            <h1>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </h1>
             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
             <div class="introSectionBtnPart">
-                <a class="generalButton generalButtonDark" href="#">دریافت نوبت</a>
+                <a class="generalButton" href="#">دریافت نوبت</a>
+                <a class="generalButtonPlay" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#ffffff" viewBox="0 0 256 256"><path d="M240,128a15.74,15.74,0,0,1-7.6,13.51L88.32,229.65a16,16,0,0,1-16.2.3A15.86,15.86,0,0,1,64,216.13V39.87a15.86,15.86,0,0,1,8.12-13.82,16,16,0,0,1,16.2.3L232.4,114.49A15.74,15.74,0,0,1,240,128Z"></path></svg><span>تماشای ویدیو </span> </a>
             </div>
         </div>
         <div class="introSectionEmptyPart"></div>
@@ -27,19 +28,19 @@ get_header();
                 <a class="generalButton arrowButton" href="#">مشاهده</a>
             </div>
             <div class="howToHelpPartLeft">
-                <li class="checkListStyle">لورم ایپسوم متن ساختگی</li>
-                <li class="checkListStyle">لورم ایپسوم متن ساختگی</li>
-                <li class="checkListStyle">لورم ایپسوم متن ساختگی</li>
-                <li class="checkListStyle">لورم ایپسوم متن ساختگی</li>
-                <li class="checkListStyle">لورم ایپسوم متن ساختگی</li>
+                <li class="checkListStyle">لورم ایپسوم</li>
+                <li class="checkListStyle">لورم ایپسوم</li>
+                <li class="checkListStyle">لورم ایپسوم</li>
+                <li class="checkListStyle">لورم ایپسوم</li>
+                <li class="checkListStyle">لورم ایپسوم</li>
             </div>
         </div>
         <div class="homeContactUsConsultationPart">
-            <h2>مشاروه با پزشک کلینیک</h2>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-            <div class="consultationPhonPart">
+            <h2>مشاوره با پزشک کلینیک</h2>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+            <div class="consultationPhonPart"> 
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" viewBox="0 0 256 256"><path d="m222.37 158.46-47.11-21.11-.13-.06a16 16 0 0 0-15.17 1.4 8.12 8.12 0 0 0-.75.56L134.87 160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16 16 0 0 0 1.32-15.06v-.12L97.54 33.64a16 16 0 0 0-16.62-9.52A56.26 56.26 0 0 0 32 80c0 79.4 64.6 144 144 144a56.26 56.26 0 0 0 55.88-48.92 16 16 0 0 0-9.51-16.62ZM176 208A128.14 128.14 0 0 1 48 80a40.2 40.2 0 0 1 34.87-40 .61.61 0 0 0 0 .12l21 47-20.67 24.74a6.13 6.13 0 0 0-.57.77 16 16 0 0 0-1 15.7c9.06 18.53 27.73 37.06 46.46 46.11a16 16 0 0 0 15.75-1.14 8.44 8.44 0 0 0 .74-.56L168.89 152l47 21.05h.11A40.21 40.21 0 0 1 176 208Z"/></svg></span>
                 <span>09123434345</span>
-                <span><svg height="25" width="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve" transform="rotate(-90)"><path d="M403.854 409.684c-17.68-14.106-72.76-41.247-86.349-44.375-13.562-3.154-29.98 9.962-34.501 26.248-4.547 16.295-13.027 14.753-13.027 14.753s-32.67-12.003-92.429-71.534c-59.769-59.549-71.85-92.175-71.85-92.175s-1.595-8.48 14.692-13.089c16.252-4.564 29.314-21.035 26.125-34.598-3.171-13.562-30.532-68.563-44.69-86.165-14.192-17.601-41.606-8.524-47.633-4.135-6.062 4.373-69.773 44.876-50.612 119.458 19.186 74.592 60.346 134.264 105.579 179.348 45.242 45.066 105.062 85.998 179.715 104.904 74.644 18.915 114.919-44.944 119.274-51.006 4.362-6.045 13.333-33.502-4.294-47.634zM247.023 189.177c9.9 4.854 25.644 13.86 43.893 32.1 18.25 18.25 27.247 33.993 32.1 43.884 5.099 10.4 8.866 12.494 11.915 11.784 5.029-1.166 6.702-2.515 7.167-13.001.385-8.936-3.89-35.588-31.076-62.773-27.186-27.186-53.846-31.452-62.764-31.067-10.496.447-11.828 2.129-12.992 7.175-.711 3.032 1.357 6.808 11.757 11.898zm15.927-104.93c-12.808-.009-16.042 7.92-16.428 10.995-.788 6.212 3.794 11.249 13.308 13.974 10.881 3.11 53.986 16.935 90.099 53.048 36.122 36.113 49.956 79.226 53.057 90.107 2.716 9.506 7.744 14.08 13.964 13.3 3.092-.369 11.012-3.61 10.995-16.418.009-10.137-6.186-63.22-53.986-111.038C326.17 90.423 273.06 84.237 262.95 84.247zm174.354-9.358C368.836 6.422 296.602.526 284.187.201c-15.157-.385-21.167 6.414-21.158 13.387-.009 5.94 6.08 12.046 15.139 14.377 13.597 3.486 67.495 11.976 130.784 75.266 63.307 63.29 71.78 117.197 75.284 130.803 2.322 9.041 8.437 15.139 14.368 15.139 6.982 0 13.781-6.002 13.378-21.149-.315-12.423-6.211-84.658-74.678-153.135z" style="fill:#fff"></path></svg></span>
             </div>
         </div>
     </div>
@@ -52,28 +53,28 @@ get_header();
             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
             <div class="homeAboutUsCard">
                 <div class="abourUsCardIconPart">
-                <svg fill="#e3b077" width="50" height="50" stroke="#e3b077" stroke-width="5px" viewBox="0 0 512 512"><path d="M393.2 42h-40.3a41.6 41.6 0 0 0-40.4-32h-113a41.6 41.6 0 0 0-40.4 32h-40.3a56.4 56.4 0 0 0-56.3 56.3v339.4a56.4 56.4 0 0 0 56.3 56.3h274.4a56.4 56.4 0 0 0 56.3-56.3V98.3A56.4 56.4 0 0 0 393.2 42Zm-217.4 0a25.6 25.6 0 0 1 23.7-16h113a25.6 25.6 0 0 1 23.7 16 26.8 26.8 0 0 1 1.8 9.5 27.5 27.5 0 0 1-.8 6.5 25.6 25.6 0 0 1-24.7 19h-113a25.6 25.6 0 0 1-24.7-19 27.5 27.5 0 0 1-.8-6.5 26.8 26.8 0 0 1 1.8-9.5Zm257.7 395.7a40.4 40.4 0 0 1-40.3 40.3H118.8a40.4 40.4 0 0 1-40.3-40.3V98.3A40.4 40.4 0 0 1 118.8 58h39.7a41.5 41.5 0 0 0 41 35h113a41.5 41.5 0 0 0 41-35h39.7a40.4 40.4 0 0 1 40.3 40.3Z"/><path d="M211.7 193h17.8v17.8a13.2 13.2 0 0 0 13.2 13.2h26.6a13.2 13.2 0 0 0 13.2-13.2V193h17.8a13.2 13.2 0 0 0 13.2-13.2v-26.6a13.2 13.2 0 0 0-13.2-13.2h-17.8v-17.8a13.2 13.2 0 0 0-13.2-13.2h-26.6a13.2 13.2 0 0 0-13.2 13.2V140h-17.8a13.2 13.2 0 0 0-13.2 13.2v26.6a13.2 13.2 0 0 0 13.2 13.2Zm2.8-37h31v-31h21v31h31v21h-31v31h-21v-31h-31ZM368 250H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Zm0 71H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Zm0 71H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 256 256"><path d="M212 152a12 12 0 1 1-12-12 12 12 0 0 1 12 12Zm-4.55 39.29A48.08 48.08 0 0 1 160 232h-24a48.05 48.05 0 0 1-48-48v-40.51A64 64 0 0 1 32 80V40a16 16 0 0 1 16-16h16a8 8 0 0 1 0 16H48v40a48 48 0 0 0 48.64 48c26.11-.34 47.36-22.25 47.36-48.83V40h-16a8 8 0 0 1 0-16h16a16 16 0 0 1 16 16v39.17c0 32.84-24.53 60.29-56 64.31V184a32 32 0 0 0 32 32h24a32.06 32.06 0 0 0 31.22-25 40 40 0 1 1 16.23.27ZM224 152a24 24 0 1 0-24 24 24 24 0 0 0 24-24Z"/></svg>
                 </div>
                 <div class="aboutUsCardContentPart">
-                    <h3>لورم ایپسوم متن ساختگی</h3>
+                    <h3>لورم ایپسوم</h3>
                     <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                 </div>
             </div>
             <div class="homeAboutUsCard">
-                <div class="abourUsCardIconPart middleCardIcon">
-                <svg fill="#e3b077" width="50" height="50" stroke="#e3b077" stroke-width="5px" viewBox="0 0 512 512"><path d="M393.2 42h-40.3a41.6 41.6 0 0 0-40.4-32h-113a41.6 41.6 0 0 0-40.4 32h-40.3a56.4 56.4 0 0 0-56.3 56.3v339.4a56.4 56.4 0 0 0 56.3 56.3h274.4a56.4 56.4 0 0 0 56.3-56.3V98.3A56.4 56.4 0 0 0 393.2 42Zm-217.4 0a25.6 25.6 0 0 1 23.7-16h113a25.6 25.6 0 0 1 23.7 16 26.8 26.8 0 0 1 1.8 9.5 27.5 27.5 0 0 1-.8 6.5 25.6 25.6 0 0 1-24.7 19h-113a25.6 25.6 0 0 1-24.7-19 27.5 27.5 0 0 1-.8-6.5 26.8 26.8 0 0 1 1.8-9.5Zm257.7 395.7a40.4 40.4 0 0 1-40.3 40.3H118.8a40.4 40.4 0 0 1-40.3-40.3V98.3A40.4 40.4 0 0 1 118.8 58h39.7a41.5 41.5 0 0 0 41 35h113a41.5 41.5 0 0 0 41-35h39.7a40.4 40.4 0 0 1 40.3 40.3Z"/><path d="M211.7 193h17.8v17.8a13.2 13.2 0 0 0 13.2 13.2h26.6a13.2 13.2 0 0 0 13.2-13.2V193h17.8a13.2 13.2 0 0 0 13.2-13.2v-26.6a13.2 13.2 0 0 0-13.2-13.2h-17.8v-17.8a13.2 13.2 0 0 0-13.2-13.2h-26.6a13.2 13.2 0 0 0-13.2 13.2V140h-17.8a13.2 13.2 0 0 0-13.2 13.2v26.6a13.2 13.2 0 0 0 13.2 13.2Zm2.8-37h31v-31h21v31h31v21h-31v31h-21v-31h-31ZM368 250H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Zm0 71H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Zm0 71H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Z"/></svg>
+            <div class="abourUsCardIconPart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" viewBox="0 0 246.154 246.154"><path d="M69.231 130.769H30.769a7.692 7.692 0 0 1 0 -15.385h34.346l13.096 -19.654a7.692 7.692 0 0 1 12.808 0l24.365 36.538 8.981 -13.462A7.692 7.692 0 0 1 130.769 115.385h23.077a7.692 7.692 0 0 1 0 15.385h-18.962l-13.096 19.654a7.692 7.692 0 0 1 -12.808 0L84.615 113.865l-8.981 13.462A7.692 7.692 0 0 1 69.231 130.769ZM171.154 30.769c-19.856 0 -37.24 8.538 -48.077 22.971C112.24 39.308 94.856 30.769 75 30.769a59.683 59.683 0 0 0 -59.615 59.615v2.163a7.692 7.692 0 1 0 15.385 -0.481V90.385a44.288 44.288 0 0 1 44.231 -44.231c18.702 0 34.404 9.962 40.962 25.962a7.692 7.692 0 0 0 14.231 0c6.558 -16.029 22.26 -25.962 40.962 -25.962a44.288 44.288 0 0 1 44.231 44.231c0 51.548 -74.769 98.221 -92.308 108.462 -10.413 -6.067 -40.99 -25 -64.115 -50.202a7.692 7.692 0 1 0 -11.346 10.404c29.971 32.692 70.125 54.5 71.817 55.413a7.692 7.692 0 0 0 7.288 0C130.971 212.173 230.769 157.692 230.769 90.385a59.683 59.683 0 0 0 -59.615 -59.615Z"/></svg>
                 </div>
                 <div class="aboutUsCardContentPart">
-                    <h3>لورم ایپسوم متن ساختگی</h3>
+                    <h3>لورم ایپسوم</h3>
                     <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                 </div>
             </div>
             <div class="homeAboutUsCard">
                 <div class="abourUsCardIconPart">
-                <svg fill="#e3b077" width="50" height="50" stroke="#e3b077" stroke-width="5px" viewBox="0 0 512 512"><path d="M393.2 42h-40.3a41.6 41.6 0 0 0-40.4-32h-113a41.6 41.6 0 0 0-40.4 32h-40.3a56.4 56.4 0 0 0-56.3 56.3v339.4a56.4 56.4 0 0 0 56.3 56.3h274.4a56.4 56.4 0 0 0 56.3-56.3V98.3A56.4 56.4 0 0 0 393.2 42Zm-217.4 0a25.6 25.6 0 0 1 23.7-16h113a25.6 25.6 0 0 1 23.7 16 26.8 26.8 0 0 1 1.8 9.5 27.5 27.5 0 0 1-.8 6.5 25.6 25.6 0 0 1-24.7 19h-113a25.6 25.6 0 0 1-24.7-19 27.5 27.5 0 0 1-.8-6.5 26.8 26.8 0 0 1 1.8-9.5Zm257.7 395.7a40.4 40.4 0 0 1-40.3 40.3H118.8a40.4 40.4 0 0 1-40.3-40.3V98.3A40.4 40.4 0 0 1 118.8 58h39.7a41.5 41.5 0 0 0 41 35h113a41.5 41.5 0 0 0 41-35h39.7a40.4 40.4 0 0 1 40.3 40.3Z"/><path d="M211.7 193h17.8v17.8a13.2 13.2 0 0 0 13.2 13.2h26.6a13.2 13.2 0 0 0 13.2-13.2V193h17.8a13.2 13.2 0 0 0 13.2-13.2v-26.6a13.2 13.2 0 0 0-13.2-13.2h-17.8v-17.8a13.2 13.2 0 0 0-13.2-13.2h-26.6a13.2 13.2 0 0 0-13.2 13.2V140h-17.8a13.2 13.2 0 0 0-13.2 13.2v26.6a13.2 13.2 0 0 0 13.2 13.2Zm2.8-37h31v-31h21v31h31v21h-31v31h-21v-31h-31ZM368 250H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Zm0 71H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Zm0 71H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" viewBox="0 0 246.154 246.154"><path d="M221.471 135.635a23.404 23.404 0 0 0-17.894-4.587c18.058-18.231 27.192-36.356 27.192-54.125 0-25.452-20.471-46.154-45.635-46.154A45.75 45.75 0 0 0 150 46.875a45.75 45.75 0 0 0-35.135-16.106c-25.163 0-45.634 20.702-45.634 46.154 0 10.577 3.115 20.856 9.673 31.731a30.644 30.644 0 0 0-14.183 8.077l-21.75 21.731H15.385A15.385 15.385 0 0 0 0 153.847v38.462a15.385 15.385 0 0 0 15.385 15.385h100a7.625 7.625 0 0 0 1.865-.231l61.538-15.385a6.673 6.673 0 0 0 1.144-.385l37.376-15.905.423-.192a23.654 23.654 0 0 0 3.779-39.962ZM114.865 46.154a29.952 29.952 0 0 1 28.019 18.269 7.692 7.692 0 0 0 14.231 0 29.952 29.952 0 0 1 28.019-18.269c16.395 0 30.251 14.086 30.251 30.769 0 18.76-15.183 39.981-43.904 61.442l-10.663 2.452a26.923 26.923 0 0 0-26.203-33.125H96.807C88.51 96.5 84.615 86.654 84.615 76.923c0-16.683 13.856-30.769 30.25-30.769Zm-99.48 107.692h23.077v38.462H15.385Zm195.606 7.894-36.538 15.558-60.03 15.01H53.846v-42.971l21.76-21.75a15.25 15.25 0 0 1 10.875-4.51h48.134a11.538 11.538 0 0 1 0 23.077h-26.923a7.692 7.692 0 0 0 0 15.385h30.769a8 8 0 0 0 1.721-.192l64.423-14.817.298-.077a8.269 8.269 0 0 1 6.058 15.288Z"/></svg>
                 </div>
                 <div class="aboutUsCardContentPart">
-                    <h3>لورم ایپسوم متن ساختگی</h3>
+                    <h3>لورم ایپسوم</h3>
                     <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                 </div>
             </div>
@@ -98,18 +99,23 @@ get_header();
 <div class="clkarenHomeCounterContainer extraHighMargined">
     <div class="clkarenHomeCounter mainView" id="counterNumbers">  
         <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
-            <span class="counterItemSvg"><svg fill="#fff" width="50" viewBox="0 0 512 512"><path d="M231 437v37.9a15.3 15.3 0 0 0 10.9 14.7 14.7 14.7 0 0 0 4.6.7 15.2 15.2 0 0 0 12.7-6.8l31.6-46.5h158.5a40.7 40.7 0 0 0 40.7-40.7V68.7A40.7 40.7 0 0 0 449.3 28H79.7A40.7 40.7 0 0 0 39 68.7v327.6A40.7 40.7 0 0 0 79.7 437H204a8 8 0 0 0 8-8 8 8 0 0 0-8-8H79.7A24.6 24.6 0 0 1 55 396.3V68.7A24.6 24.6 0 0 1 79.7 44h369.6A24.6 24.6 0 0 1 474 68.7v327.6a24.6 24.6 0 0 1-24.7 24.7H286.6a7.9 7.9 0 0 0-6.6 3.5l-8.5 12.5-24.5 36v-70.7a8.2 8.2 0 0 0-7.5-8.3 8 8 0 0 0-8.5 8v19"/><path d="m262.1 323.2 152.1-152.1a25 25 0 0 0 0-35.4l-21-21a22.1 22.1 0 0 0-31.2 0l-110 110a10.7 10.7 0 0 1-15.2 0l-47.3-47.3a21.4 21.4 0 0 0-30.3 0l-21.4 21.4a25 25 0 0 0 0 35.4l88.9 89a25.2 25.2 0 0 0 35.4 0Zm-114.2-99.1a10.7 10.7 0 0 1 0-15.2l19.2-19.1a10.2 10.2 0 0 1 14.6 0l45 45a25 25 0 0 0 35.4 0l109-108.9a9.3 9.3 0 0 1 13.1 0l19.9 19.9a10.7 10.7 0 0 1 0 15.2L252 313.1a10.7 10.7 0 0 1-15.2 0Z"/></svg></span>
+            <span class="counterItemSvg"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#fff" viewBox="0 0 246.154 246.154"><path d="M207.692 61.538H169.23v-7.692a23.077 23.077 0 0 0-23.077-23.077H99.999a23.077 23.077 0 0 0-23.077 23.077v7.692h-38.46a15.385 15.385 0 0 0-15.385 15.385V200a15.385 15.385 0 0 0 15.385 15.385h169.231A15.385 15.385 0 0 0 223.078 200V76.923a15.385 15.385 0 0 0-15.385-15.385ZM92.308 53.846A7.692 7.692 0 0 1 100 46.154h46.154a7.692 7.692 0 0 1 7.692 7.692v7.692H92.308ZM207.693 200H38.462V76.923h169.231V200Zm-53.846-61.538a7.692 7.692 0 0 1-7.692 7.692H130.77v15.385a7.692 7.692 0 0 1-15.385 0v-15.385H100a7.692 7.692 0 0 1 0-15.385h15.385v-15.385a7.692 7.692 0 0 1 15.385 0v15.385h15.385a7.692 7.692 0 0 1 7.692 7.692Z"/></svg></span>
             <div class="counterNumber"><span id="counter-1">98%</span></div>
             <div class="counterTitle">رضایت بیمار</div>
         </div>
         <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
-            <span class="counterItemSvg"><svg fill="#fff" width="50" viewBox="0 0 512 512"><path d="M231 437v37.9a15.3 15.3 0 0 0 10.9 14.7 14.7 14.7 0 0 0 4.6.7 15.2 15.2 0 0 0 12.7-6.8l31.6-46.5h158.5a40.7 40.7 0 0 0 40.7-40.7V68.7A40.7 40.7 0 0 0 449.3 28H79.7A40.7 40.7 0 0 0 39 68.7v327.6A40.7 40.7 0 0 0 79.7 437H204a8 8 0 0 0 8-8 8 8 0 0 0-8-8H79.7A24.6 24.6 0 0 1 55 396.3V68.7A24.6 24.6 0 0 1 79.7 44h369.6A24.6 24.6 0 0 1 474 68.7v327.6a24.6 24.6 0 0 1-24.7 24.7H286.6a7.9 7.9 0 0 0-6.6 3.5l-8.5 12.5-24.5 36v-70.7a8.2 8.2 0 0 0-7.5-8.3 8 8 0 0 0-8.5 8v19"/><path d="m262.1 323.2 152.1-152.1a25 25 0 0 0 0-35.4l-21-21a22.1 22.1 0 0 0-31.2 0l-110 110a10.7 10.7 0 0 1-15.2 0l-47.3-47.3a21.4 21.4 0 0 0-30.3 0l-21.4 21.4a25 25 0 0 0 0 35.4l88.9 89a25.2 25.2 0 0 0 35.4 0Zm-114.2-99.1a10.7 10.7 0 0 1 0-15.2l19.2-19.1a10.2 10.2 0 0 1 14.6 0l45 45a25 25 0 0 0 35.4 0l109-108.9a9.3 9.3 0 0 1 13.1 0l19.9 19.9a10.7 10.7 0 0 1 0 15.2L252 313.1a10.7 10.7 0 0 1-15.2 0Z"/></svg></span>
-            <div class="counterNumber"><span id="counter-2">7</span><span>+</span></div>
+            <span class="counterItemSvg"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#fff" viewBox="0 0 256 256"><path d="M216 96a88 88 0 1 0-144 67.83V240a8 8 0 0 0 11.58 7.16L128 225l44.43 22.21a8.07 8.07 0 0 0 3.57.79 8 8 0 0 0 8-8v-76.17A87.85 87.85 0 0 0 216 96ZM56 96a72 72 0 1 1 72 72 72.08 72.08 0 0 1-72-72Zm112 131.06-36.43-18.21a8 8 0 0 0-7.16 0L88 227.06v-52.69a87.89 87.89 0 0 0 80 0ZM128 152a56 56 0 1 0-56-56 56.06 56.06 0 0 0 56 56Zm0-96a40 40 0 1 1-40 40 40 40 0 0 1 40-40Z"/></svg></span>
+            <div class="counterNumber"><span class="plus">+</span><span id="counter-2">7</span></div>
             <div class="counterTitle">پزشک متخصص</div>
         </div>
         <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
-            <span class="counterItemSvg"><svg fill="#fff" width="50" viewBox="0 0 512 512"><path d="M231 437v37.9a15.3 15.3 0 0 0 10.9 14.7 14.7 14.7 0 0 0 4.6.7 15.2 15.2 0 0 0 12.7-6.8l31.6-46.5h158.5a40.7 40.7 0 0 0 40.7-40.7V68.7A40.7 40.7 0 0 0 449.3 28H79.7A40.7 40.7 0 0 0 39 68.7v327.6A40.7 40.7 0 0 0 79.7 437H204a8 8 0 0 0 8-8 8 8 0 0 0-8-8H79.7A24.6 24.6 0 0 1 55 396.3V68.7A24.6 24.6 0 0 1 79.7 44h369.6A24.6 24.6 0 0 1 474 68.7v327.6a24.6 24.6 0 0 1-24.7 24.7H286.6a7.9 7.9 0 0 0-6.6 3.5l-8.5 12.5-24.5 36v-70.7a8.2 8.2 0 0 0-7.5-8.3 8 8 0 0 0-8.5 8v19"/><path d="m262.1 323.2 152.1-152.1a25 25 0 0 0 0-35.4l-21-21a22.1 22.1 0 0 0-31.2 0l-110 110a10.7 10.7 0 0 1-15.2 0l-47.3-47.3a21.4 21.4 0 0 0-30.3 0l-21.4 21.4a25 25 0 0 0 0 35.4l88.9 89a25.2 25.2 0 0 0 35.4 0Zm-114.2-99.1a10.7 10.7 0 0 1 0-15.2l19.2-19.1a10.2 10.2 0 0 1 14.6 0l45 45a25 25 0 0 0 35.4 0l109-108.9a9.3 9.3 0 0 1 13.1 0l19.9 19.9a10.7 10.7 0 0 1 0 15.2L252 313.1a10.7 10.7 0 0 1-15.2 0Z"/></svg></span>
-            <div class="counterNumber"><span id="counter-3">264</span><span>+</span></div>
+            <span class="counterItemSvg"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#fff" viewBox="0 0 256 256"><path d="M176 16H80a24 24 0 0 0-24 24v176a24 24 0 0 0 24 24h96a24 24 0 0 0 24-24V40a24 24 0 0 0-24-24Zm8 200a8 8 0 0 1-8 8H80a8 8 0 0 1-8-8V40a8 8 0 0 1 8-8h96a8 8 0 0 1 8 8ZM140 60a12 12 0 1 1-12-12 12 12 0 0 1 12 12Z"/></svg></span>
+            <div class="counterNumber"><span class="plus">+</span><span id="counter-3">264</span></div>
+            <div class="counterTitle">مشاوره آنلاین</div>
+        </div>
+        <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <span class="counterItemSvg"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#fff" viewBox="0 0 256 256"><path d="M27.2 126.4a8 8 0 0 0 11.2-1.6 52 52 0 0 1 83.2 0 8 8 0 0 0 11.2 1.59 7.73 7.73 0 0 0 1.59-1.59 52 52 0 0 1 83.2 0 8 8 0 0 0 12.8-9.61A67.85 67.85 0 0 0 203 93.51a40 40 0 1 0-53.94 0 67.27 67.27 0 0 0-21 14.31 67.27 67.27 0 0 0-21-14.31 40 40 0 1 0-53.94 0A67.88 67.88 0 0 0 25.6 115.2a8 8 0 0 0 1.6 11.2ZM176 40a24 24 0 1 1-24 24 24 24 0 0 1 24-24Zm-96 0a24 24 0 1 1-24 24 24 24 0 0 1 24-24Zm123 157.51a40 40 0 1 0-53.94 0 67.27 67.27 0 0 0-21 14.31 67.27 67.27 0 0 0-21-14.31 40 40 0 1 0-53.94 0A67.88 67.88 0 0 0 25.6 219.2a8 8 0 1 0 12.8 9.6 52 52 0 0 1 83.2 0 8 8 0 0 0 11.2 1.59 7.73 7.73 0 0 0 1.59-1.59 52 52 0 0 1 83.2 0 8 8 0 0 0 12.8-9.61A67.85 67.85 0 0 0 203 197.51ZM80 144a24 24 0 1 1-24 24 24 24 0 0 1 24-24Zm96 0a24 24 0 1 1-24 24 24 24 0 0 1 24-24Z"/></svg></span>
+            <div class="counterNumber"><span class="plus">+</span><span id="counter-3">264</span></div>
             <div class="counterTitle">مشاوره آنلاین</div>
         </div>
     </div>
@@ -119,46 +125,198 @@ get_header();
         <div class="clkarenHomeOurServicesHeader">
             <div class="homeOurServicesHeaderTitle">
                 <span>لورم ایپسوم</span>
-                <h2>متن ساختگی با تولید سادگی</h2>
+                <h2>لورم ایپسوم متن ساختگی</h2>
             </div>
             <span class="homeOurServicesHeaderParagraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</span>
-            <span class="ourServiceHeaderInnerBtn"><a class="generalButton arrowButton" href="#">مشاهده تمام خدمات</a></span>
+            <a class="generalButton" href="#">با ما آشنا شوید</a>
         </div>
         <div class="clkarenHomeOurServicesCardsParent">
             <a href="#" class="ourServicesCard">
-                <div class="ourServicesCardHeader"><img src="<?php bloginfo('template_directory')?>/img/grid1.jpg"" alt=""></div>
-                <div class="ourServicesCardFooter">
-                    <img src="<?php bloginfo( 'template_directory' ) ?>/img/botox.png" alt="">
-                    <div class="ourServicesCardFooterInner">
-                        <h3>کربوکسی تراپی تیرگی</h3>
-                        <span>درمان سیاهی زیر چشم با استفاده از متد کربوکسی تراپی</span>
-                        <span class="generalButton" href="#">مشاهده</span>
-                    </div>
+                <div class="ourServicesCardHeader">
+                    <img src="<?php bloginfo('template_directory')?>/img/grid1.jpg"" alt="">
+                    <div class="ourServicesCardFooter">
+                        <img src="<?php bloginfo( 'template_directory' ) ?>/img/botox.png" alt="">
+                        <div class="ourServicesCardFooterInner">
+                            <h3>کربوکسی تراپی تیرگی</h3>
+                            <span>درمان سیاهی زیر چشم با استفاده از متد کربوکسی تراپی</span>
+                            <span class="generalButton arrowButton" href="#">مشاهده</span>
+                        </div>
                 </div>
+                </div>
+                
             </a>
             <a href="#" class="ourServicesCard">
-                <div class="ourServicesCardHeader"><img src="<?php bloginfo('template_directory')?>/img/grid1.jpg"" alt=""></div>
-                <div class="ourServicesCardFooter">
-                    <img src="<?php bloginfo( 'template_directory' ) ?>/img/botox.png" alt="">
-                    <div class="ourServicesCardFooterInner">
-                        <h3>کربوکسی تراپی تیرگی</h3>
-                        <span>درمان سیاهی زیر چشم با استفاده از متد کربوکسی تراپی</span>
-                        <span class="generalButton" href="#">مشاهده</span>
-                    </div>
+                <div class="ourServicesCardHeader">
+                    <img src="<?php bloginfo('template_directory')?>/img/grid1.jpg"" alt="">
+                    <div class="ourServicesCardFooter">
+                        <img src="<?php bloginfo( 'template_directory' ) ?>/img/botox.png" alt="">
+                        <div class="ourServicesCardFooterInner">
+                            <h3>کربوکسی تراپی تیرگی</h3>
+                            <span>درمان سیاهی زیر چشم با استفاده از متد کربوکسی تراپی</span>
+                            <span class="generalButton arrowButton" href="#">مشاهده</span>
+                        </div>
                 </div>
+                </div>
+                
             </a>
             <a href="#" class="ourServicesCard">
-                <div class="ourServicesCardHeader"><img src="<?php bloginfo('template_directory')?>/img/grid1.jpg"" alt=""></div>
-                <div class="ourServicesCardFooter">
-                    <img src="<?php bloginfo( 'template_directory' ) ?>/img/botox.png" alt="">
-                    <div class="ourServicesCardFooterInner">
-                        <h3>کربوکسی تراپی تیرگی</h3>
-                        <span>درمان سیاهی زیر چشم با استفاده از متد کربوکسی تراپی</span>
-                        <span class="generalButton" href="#">مشاهده</span>
-                    </div>
+                <div class="ourServicesCardHeader">
+                    <img src="<?php bloginfo('template_directory')?>/img/grid1.jpg"" alt="">
+                    <div class="ourServicesCardFooter">
+                        <img src="<?php bloginfo( 'template_directory' ) ?>/img/botox.png" alt="">
+                        <div class="ourServicesCardFooterInner">
+                            <h3>کربوکسی تراپی تیرگی</h3>
+                            <span>درمان سیاهی زیر چشم با استفاده از متد کربوکسی تراپی</span>
+                            <span class="generalButton arrowButton" href="#">مشاهده</span>
+                        </div>
                 </div>
+                </div>
+                
             </a>
+            <a href="#" class="ourServicesCard">
+                <div class="ourServicesCardHeader">
+                    <img src="<?php bloginfo('template_directory')?>/img/grid1.jpg"" alt="">
+                    <div class="ourServicesCardFooter">
+                        <img src="<?php bloginfo( 'template_directory' ) ?>/img/botox.png" alt="">
+                        <div class="ourServicesCardFooterInner">
+                            <h3>کربوکسی تراپی تیرگی</h3>
+                            <span>درمان سیاهی زیر چشم با استفاده از متد کربوکسی تراپی</span>
+                            <span class="generalButton arrowButton" href="#">مشاهده</span>
+                        </div>
+                </div>
+                </div>
+                
+            </a>
+            <a href="#" class="ourServicesCard">
+                <div class="ourServicesCardHeader">
+                    <img src="<?php bloginfo('template_directory')?>/img/grid1.jpg"" alt="">
+                    <div class="ourServicesCardFooter">
+                        <img src="<?php bloginfo( 'template_directory' ) ?>/img/botox.png" alt="">
+                        <div class="ourServicesCardFooterInner">
+                            <h3>کربوکسی تراپی تیرگی</h3>
+                            <span>درمان سیاهی زیر چشم با استفاده از متد کربوکسی تراپی</span>
+                            <span class="generalButton arrowButton" href="#">مشاهده</span>
+                        </div>
+                </div>
+                </div>
+                
+            </a>
+            <a href="#" class="ourServicesCard">
+                <div class="ourServicesCardHeader">
+                    <img src="<?php bloginfo('template_directory')?>/img/grid1.jpg"" alt="">
+                    <div class="ourServicesCardFooter">
+                        <img src="<?php bloginfo( 'template_directory' ) ?>/img/botox.png" alt="">
+                        <div class="ourServicesCardFooterInner">
+                            <h3>کربوکسی تراپی تیرگی</h3>
+                            <span>درمان سیاهی زیر چشم با استفاده از متد کربوکسی تراپی</span>
+                            <span class="generalButton arrowButton" href="#">مشاهده</span>
+                        </div>
+                </div>
+                </div>
+                
+            </a>
+
         </div>
+    </div>
+</div>
+<div class="clkarenHomeOurApproachContainer">
+<div class="clkarenOurApproachSection mainView">
+        <div class="homeOurApproachContentPart">
+            <span class="homeOurApproachSubtitle">لورم ایپسوم</span>
+            <h2>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h2>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+            <div class="homeOurApproachCard">
+                <div class="abourUsCardIconPart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 256 256"><path d="M212 152a12 12 0 1 1-12-12 12 12 0 0 1 12 12Zm-4.55 39.29A48.08 48.08 0 0 1 160 232h-24a48.05 48.05 0 0 1-48-48v-40.51A64 64 0 0 1 32 80V40a16 16 0 0 1 16-16h16a8 8 0 0 1 0 16H48v40a48 48 0 0 0 48.64 48c26.11-.34 47.36-22.25 47.36-48.83V40h-16a8 8 0 0 1 0-16h16a16 16 0 0 1 16 16v39.17c0 32.84-24.53 60.29-56 64.31V184a32 32 0 0 0 32 32h24a32.06 32.06 0 0 0 31.22-25 40 40 0 1 1 16.23.27ZM224 152a24 24 0 1 0-24 24 24 24 0 0 0 24-24Z"/></svg>
+                </div>
+                <div class="OurApproachCardContentPart">
+                    <h3>لورم ایپسوم</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                </div>
+            </div>
+            <div class="homeOurApproachCard">
+                <div class="abourUsCardIconPart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" viewBox="0 0 256 256"><path d="M176 104a8 8 0 0 1-8 8H88a8 8 0 0 1 0-16h80a8 8 0 0 1 8 8Zm-8 24H88a8 8 0 0 0 0 16h80a8 8 0 0 0 0-16Zm88-24v24a32 32 0 0 1-32 32h-5.13c-6.54 14.44-19.26 27.12-37.7 37.36-21 11.68-43.52 17-49.92 18.3a15.7 15.7 0 0 1-6.5 0c-6.4-1.34-28.9-6.62-49.92-18.3-18.44-10.24-31.16-22.92-37.7-37.36H32a32 32 0 0 1-32-32v-24a32 32 0 0 1 32-32h.85a16 16 0 0 1 9.68-10l80-29.09a16.06 16.06 0 0 1 10.94 0l80 29.09a16 16 0 0 1 9.68 10h.85a32 32 0 0 1 32 32ZM32.53 144a59.94 59.94 0 0 1-.53-7.85V88a16 16 0 0 0-16 16v24a16 16 0 0 0 16 16ZM208 136.15V77.09L128 48 48 77.09v59.06c0 45.76 71.84 62.13 80 63.85 8.16-1.72 80-18.09 80-63.85ZM240 104a16 16 0 0 0-16-16v48.15a59.94 59.94 0 0 1-.53 7.85h.53a16 16 0 0 0 16-16Z"/></svg>
+                    </div>
+                    <div class="OurApproachCardContentPart">
+                        <h3>لورم ایپسوم</h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                    </div>
+                </div>
+            <div class="homeOurApproachCard">
+                <div class="abourUsCardIconPart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 256 256"><path d="M212 152a12 12 0 1 1-12-12 12 12 0 0 1 12 12Zm-4.55 39.29A48.08 48.08 0 0 1 160 232h-24a48.05 48.05 0 0 1-48-48v-40.51A64 64 0 0 1 32 80V40a16 16 0 0 1 16-16h16a8 8 0 0 1 0 16H48v40a48 48 0 0 0 48.64 48c26.11-.34 47.36-22.25 47.36-48.83V40h-16a8 8 0 0 1 0-16h16a16 16 0 0 1 16 16v39.17c0 32.84-24.53 60.29-56 64.31V184a32 32 0 0 0 32 32h24a32.06 32.06 0 0 0 31.22-25 40 40 0 1 1 16.23.27ZM224 152a24 24 0 1 0-24 24 24 24 0 0 0 24-24Z"/></svg>
+                </div>
+                <div class="OurApproachCardContentPart">
+                    <h3>لورم ایپسوم</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                </div>
+            </div>
+            <div class="homeOurApproachCard">
+                <div class="abourUsCardIconPart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" viewBox="0 0 213.333 213.333"><path d="m198.05 55.283 -40 -40a6.667 6.667 0 0 0 -9.433 9.433L163.908 40 140 63.908l-28.617 -28.625a6.667 6.667 0 0 0 -9.433 9.433l5.292 5.283 -70 70A13.217 13.217 0 0 0 33.333 129.425v41.15l-18.05 18.042a6.667 6.667 0 0 0 9.433 9.433L42.758 180h41.15a13.217 13.217 0 0 0 9.425 -3.908l70 -70 5.283 5.292a6.667 6.667 0 0 0 9.433 -9.433L149.425 73.333 173.333 49.425l15.283 15.292a6.667 6.667 0 0 0 9.433 -9.433ZM83.908 166.667H46.667v-37.242l15 -15 16.95 16.958a6.667 6.667 0 0 0 9.433 -9.433L71.092 105 81.667 94.425l16.95 16.958a6.667 6.667 0 0 0 9.433 -9.433L91.092 85 116.667 59.425 153.908 96.667Z"/></svg>
+                </div>
+                <div class="OurApproachCardContentPart">
+                    <h3>لورم ایپسوم</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                </div>
+            </div>
+        </div>
+        <div class="homeOurApproachImagePart">
+            <div class="div1">
+                <img src="<?php bloginfo('template_directory') ?>/img/OurApproach.jpg" alt="">
+                <div>
+                    <h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
+                    <span class="generalButton arrowButton" href="#">مشاهده</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="clkarenOurBlogSection mainView">
+    <span class="clkarenOurDoctorSubtitle">لورم ایپسوم</span>
+    <h2>لورم ایپسوم</h2>
+    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+    <div class="clkarenOurBlog"> 
+        <?php
+            $recent_posts_args = array(
+            'posts_per_page' => 4,
+            'orderby' => 'date',
+            'order' => 'DESC',
+            );
+            $recent_posts_query = new WP_Query($recent_posts_args);
+            if ($recent_posts_query->have_posts()) {
+            while ($recent_posts_query->have_posts()) {
+                $recent_posts_query->the_post();
+                ?>
+                    <a href="<?php echo esc_url(get_permalink()) ?>" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true" id="post-<?php the_ID(); ?>" <?php post_class('highRadius mediumMargined whiteBg'); ?>>
+                        <div class="archiveCardImg"><?php the_post_thumbnail() ?></div>
+                        <div class="cardText">
+                            <header class="entry-header">
+                                <?php if ( is_home() && ! is_front_page() ){ ?>
+                                    <h2 class="entry-title"><?php echo get_the_title() ?></h2>
+                                <?php } else{ ?>
+                                    <h3 class="entry-title"><?php echo get_the_title() ?></h3>
+                                <?php } ?>
+                            </header><!-- .entry-header -->
+                            <div class="archivePostFooter">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 7v5l2.5 1.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <span><?php echo get_the_date() ?></span>
+                            </div>
+                            <?php the_excerpt(); ?>
+                        
+                            <div class="readMore">
+                                <span>ادامه مطلب</span>
+                                <svg width="16" height="16" viewBox="0 0 0.375 0.375" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)"><path d="M.207.057a.025.025 0 0 1 .035 0L.355.17a.025.025 0 0 1 0 .035L.242.318A.025.025 0 0 1 .207.283l.068-.07H.038a.025.025 0 0 1 0-.05h.237L.207.093a.025.025 0 0 1 0-.035Z"/></svg>
+                            </div>
+                        </div>
+                    </a><!-- #post-<?php the_ID(); ?> -->
+                <?php
+            }
+            }
+            wp_reset_postdata();
+        ?>
     </div>
 </div>
 <?php

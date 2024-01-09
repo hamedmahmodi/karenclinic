@@ -107,7 +107,7 @@ a{
             padding: 50px 50px 10px 50px ;
             margin: -100px 20px 0 0;
             background-color: white;
-            border-radius: 10px;
+            border-radius: 20px;
             box-shadow: 0px 3px 30px 0px rgba(24.00000126050871, 22.000001393193834, 43.0000000000001, 0.14);
             @include sm{
                 width: 100% !important;
@@ -194,7 +194,6 @@ a{
     span{
         color: #e3b077;
         font-size: 14.5px;
-        display: block;
         font-weight: 400;
     }
     h2{
@@ -208,23 +207,14 @@ a{
         line-height: 30px;
         
     }
-    a{
-        background-color: #e3b077;
-        border-radius: 50px;
-        position: relative;
-        color: #fff;
-        padding: 10px 25px;
-        font-weight: 400;
-        display: block;
-        width: -moz-max-content;
-        width: max-content;
-        transition: all 0.3s;
-        border: none;
-        cursor: pointer;
-        margin-top: 40px;
-        &:hover{
-            transform: translateY(-5px);
-        }
+    .backgroundOverlay{
+        background-color: #18162B;
+        opacity: 0.8;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
     }
     .clkarenAboutUs{
         background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/doctors-discussing-cosmetic-surgery-options-over-a-client-e1632844985630.jpg);
@@ -246,21 +236,14 @@ a{
             }
             
         }
-        .backgroundOverlay{
-            background-color: #18162B;
-            opacity: 0.8;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            left: 0;
-            position: absolute;
-        }
+        
     }
     .clkarenAboutUsSection{
         padding: 120px 0 100px 0;
     }
     .clkarenChooseUsSection{
         display: flex;
+        flex-wrap: wrap;
         position: relative;
         justify-content: space-between;
         align-items: flex-start;
@@ -271,9 +254,28 @@ a{
             a{
                 color: #fff;
                 font-size: 20px;
+                background-color: #e3b077;
+                border-radius: 50px;
+                position: relative;
+                color: #fff;
+                padding: 10px 25px;
+                font-weight: 400;
+                display: block;
+                width: -moz-max-content;
+                width: max-content;
+                transition: all 0.3s;
+                border: none;
+                cursor: pointer;
+                margin-top: 40px;
+                &:hover{
+                    transform: translateY(-5px);
+                }
             }
         .clkarenChooseUsImg{
             width: 50%;
+            @include sm{
+                width: 100%;
+            }
             .ChooseUsBackground{
                 background-image: url(img/choose-us.jpg);
                 background-position: 150px 40%;
@@ -293,12 +295,31 @@ a{
             padding: 100px;
             position: relative;
             z-index: 5;
-            
+            @include sm{
+                width: 100%;
+                text-align: center;
+                a{
+                    margin: 40px  auto 0;
+                }
+            }
+            @include xs{
+                padding: 50px;
+            }
             .clkarenChooseUsCards{
                 display: flex;
+                flex-wrap: wrap;
                 margin-top: 30px;
                 .clkarenChooseUsCard{
                     width: 50%;
+                    @include md{
+                        width: 100%;
+                    }
+                    @include sm{
+                        width: 50%;
+                    }
+                    @include xs{
+                        width: 100%;
+                    }
                     span{
                         font-size: 30px;
                         display: inline-block;
@@ -318,31 +339,44 @@ a{
         text-align: center;
         span{
             font-size: 18px;
-            padding: 20px 0;
+            padding: 10px 0;
+            display: block;
         }
         p{
             width: 50%;
             margin: 10px auto;
+            @include sm{
+                width: 80%;
+            }
         }
         .clkarenOurDoctorCards{
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             margin-top: 50px;
+            
             .clkarenOurDoctorCard{
                 width: 32%;
                 position: relative;
+                overflow: hidden;
+                border-radius: 20px;
+                margin: 10px auto;
+                @include sm{
+                    width: 80%;
+                    margin-top: 20px;
+                }
                 img{
-                    border-radius: 10px;
+                    display: block;
                 }
                 .OurDoctorCardText{
                     position: absolute;
-                    bottom: 7%;
+                    bottom: 5%;
                     left: 50%;
                     transform: translateX(-50%);
                     width: 80%;
                     margin: auto;
                     background-color: $mainColorDark;
-                    border-radius: 10px;
+                    border-radius: 20px;
                     h3{
                         color: white;
                         margin-bottom: 0;
@@ -353,10 +387,186 @@ a{
                         padding: 5px 0 20px;
                     }
                 }
+                .OurDoctorCardSocialMedia{
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    width: 100%;
+                    opacity: 0;
+                    transition: .3s;
+                    svg{
+                        background-color: $offColor;
+                        padding: 8px;
+                        border-radius: 100%;
+                        margin: 10px;
+                    }
+                    &:hover{
+                        
+                    }
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.315);
+                    top: 100%;
+                    right: 0;
+                    opacity: 0;
+                    transition: .5s;
+                }
+                &:hover{
+                    &::before{
+                        top: 0;
+                        opacity: 100%;
+                    }
+                    .OurDoctorCardSocialMedia{
+                        top: 40%;
+                        opacity: 100%;
+                    }
+                }
             }
             
         }
         
+    }
+    .clkarenOurMotiveSection{
+        background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/woman-at-the-plastic-surgeon-e1632844852906.jpg);
+        background-position: 0% 40%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 120px 0;
+        position: relative;
+        color: white;
+        .ourNativeText{
+            position: relative;
+            z-index: 4;
+            text-align: center;
+            svg{
+                fill: white;
+                background-color: $offColor;
+                border-radius: 100%;
+                padding: 18px;
+            }
+            h2{
+                margin: 20px 0;
+            }
+            p{
+                color: white;
+                width: 40%;
+                margin: auto;
+                @include sm{
+                    width: 80%;
+                }
+            }
+            a{
+                color: #fff;
+                font-size: 20px;
+                background-color: #e3b077;
+                border-radius: 50px;
+                position: relative;
+                color: #fff;
+                padding: 10px 25px;
+                font-weight: 400;
+                width: -moz-max-content;
+                width: max-content;
+                transition: all 0.3s;
+                border: none;
+                cursor: pointer;
+                margin-top: 40px;
+                &:hover{
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+    .clkarenOurBlogSection{
+        text-align: center;
+        padding: 100px 0;
+        span{
+            padding: 10px;
+            display: block;
+            font-size: 18px;
+        }
+        p{
+            width: 50%;
+            margin: 10px auto 50px auto;
+            @include sm{
+                width: 80%;
+            }
+        }
+        .clkarenOurBlog{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            a{
+                width: 48%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px auto;
+                @include sm{
+                    width: 90%;
+                }
+                @include xs{
+                    flex-direction: column;
+                }
+                .archiveCardImg{
+                    width: 50%;
+                    @include xs{
+                        width: 100%;
+                    }
+                    img{
+                        height: 240px;
+                        object-fit: cover;
+                        display: block;
+                        border-radius: 20px;
+                    }
+                }
+                .cardText{
+                    text-align: right;
+                    width: 50%;
+                    padding-right: 25px;
+                    @include xs{
+                        width: 100%;
+                        padding: 0;
+                    }
+                    h3{
+                        margin: 0.5rem;
+                    }
+                    .archivePostFooter{
+                        display: flex;
+                        align-items: center;
+                        svg{
+                            fill: $textColorLight;
+                        }
+                        span{
+                            padding: 0 10px;
+                            color: $textColorLight;
+                        }
+                    }
+                    .readMore{
+                        display: flex;
+                        align-items: center;
+                        span{
+                            color: $offColor;
+                            margin-left: 5px;
+                            padding-right: 0;
+                        }
+                        svg{
+                            fill: $offColor;
+                        }
+                    }
+                    p{
+                        width: 100%;
+                        color: $textColorLight;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
     }
 }
 .generalSinglePostStyle{
@@ -433,7 +643,7 @@ a{
                 }
             }
             img{
-                border-radius: 10px;
+                border-radius: 20px;
             }
             p{
                 .alignleft {
@@ -456,7 +666,7 @@ a{
             .questionBox{
                 position: relative;
                 padding: 40px;
-                border-radius: 10px;
+                border-radius: 20px;
                 background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/cosmetician-holds-syringe-with-injection-of-botox-e1632845065292.jpg);
                 background-position: center center;
                 background-repeat: no-repeat;
@@ -493,7 +703,7 @@ a{
                 margin-top: 40px;
                 margin-bottom: 0px;
                 padding: 40px;
-                border-radius: 10px;
+                border-radius: 20px;
                 h2{
                     margin:  0 0 10px 0;
                 }
@@ -527,7 +737,7 @@ a{
     .comment-list{
         background-color: white;
         padding: 0px 40px;
-        border-radius: 10px;
+        border-radius: 20px;
         box-shadow: 0px 3px 30px 0px rgba(24.00000126050871, 22.000001393193834, 43.0000000000001, 0.14);
         li{
             &::before{
@@ -573,7 +783,7 @@ a{
     margin-top: 100px;
     a{
         img{
-            border-radius: 10px;
+            border-radius: 20px;
         }
         h2{
             margin-bottom: 0;
@@ -664,7 +874,7 @@ a{
                 align-items: center;
                 margin-top: 20px;
                 padding: 10px;
-                background-color: $offColor;
+                background-color: $backColorLight2;
                 border-radius: 5px;
                 width: 95%;
                 @include md{
@@ -688,7 +898,7 @@ a{
                         vertical-align: middle;
                         padding: 5px;
                         display: block;
-                        background-color: #f0c93a;
+                        background-color: $offColor;
                         border-radius: 5px;
                         margin-left: 15px;
                     }
