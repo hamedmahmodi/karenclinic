@@ -109,6 +109,7 @@ a {
 @media screen and (max-width: 768px) {
   .contactPageBack .mainContactUs .mainContactUsText {
     width: 100% !important;
+    padding: 70px 10px 10px 10px;
   }
 }
 .contactPageBack .mainContactUs .mainContactUsText h2 {
@@ -126,11 +127,22 @@ a {
 }
 .contactPageBack .mainContactUs .mainContactUsText .information {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
+}
+.contactPageBack .mainContactUs .mainContactUsText .information .columnInformation {
+  width: 50%;
+  text-align: right;
 }
 @media screen and (max-width: 768px) {
-  .contactPageBack .mainContactUs .mainContactUsText .information {
+  .contactPageBack .mainContactUs .mainContactUsText .information .columnInformation {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contactPageBack .mainContactUs .mainContactUsText .information .columnInformation {
+    width: 80%;
     text-align: center;
   }
 }
@@ -141,9 +153,11 @@ a {
 .contactPageBack .mainContactUs .mainContactUsText .information span {
   color: #676767;
 }
-.contactPageBack .mainContactUs .mainContactUsText .information .informationSvg {
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 768px) {
+  .contactPageBack .mainContactUs .mainContactUsText .information .informationSvg {
+    display: flex;
+    justify-content: center;
+  }
 }
 .contactPageBack .mainContactUs .mainContactUsText .information .informationSvg svg {
   padding: 10px;
@@ -252,16 +266,17 @@ a {
 
 .clkarenAboutUsPageBack span {
   color: #e3b077;
-  font-size: 14.5px;
+  font-size: 18px;
   font-weight: 400;
+  padding: 10px 0;
 }
 .clkarenAboutUsPageBack h2 {
   margin: 0;
-  font-size: 20px;
+  font-size: 40px;
   line-height: 50px;
 }
 .clkarenAboutUsPageBack p {
-  margin: 0;
+  margin: 10px 0 0 0;
   font-size: 15px;
   line-height: 30px;
 }
@@ -908,7 +923,7 @@ a {
 }
 .mainFooterBack .mainFooter .calssFooterColumn1 .socialMedia a svg {
   display: block;
-  fill: #18162b;
+  fill: white;
   vertical-align: middle;
 }
 .mainFooterBack .mainFooter .calssFooterColumn1 .socialMedia a:hover {

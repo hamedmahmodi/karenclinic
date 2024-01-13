@@ -56,7 +56,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         a{
             display: flex;
             align-items: center;
-            margin-right: 10px;
+            margin: 0 10px;
         }
     }
 }
@@ -64,23 +64,78 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     .mainDesctopHeader{
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
+        a{
+            color: white;
+        }
         .mainMenu{
             display: flex;
             margin-right: 15px;
+            justify-content: flex-end;
+            width: 70%;
             ul{
                 padding: 0;
                 margin: 0;
                 display: flex;
-                li{
+                #menu-item-76{
+                    position: relative;
                     &::before{
-                        display: none;
+                        content: url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 0.48 0.48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m0.08 0.16 0.16 0.16 0.16 -0.16' stroke='%23000000' stroke-width='0.04' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 16px;
+                        height: 16px;
+                        background-color: black;
                     }
+
+                }
+                li{
+                    padding:30px;
+                    
+                    // &::before{
+                    //     display: none;
+                    // }
                     a{
                         font-size: 14px;
-                        font-weight: 400;
+                        font-weight: 700;
                         color: $mainColorDark;
+                        transition: .3s;
+                        &:hover{
+                            color: $offColor;
+                        }
+                    }
+                    &:hover ul{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                    ul{
+                        z-index: 100;
+                        position: absolute;
+                        color: black;
+                        background-color: #fff;
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        border-radius: 10px;
+                        margin-top: 5px;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all 0.2s;
+                        width: 100px;
+                        transform: translateX(35%);
+                        li{
+                            margin: 0;
+                            padding: 15px;
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.571);
+                        }
+                        :last-child{
+                            border: none;
+                        }
+                    }
+                    
                     }
                 }
             }
@@ -90,14 +145,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             margin-right: auto;
         }
         
-    }
+    
 }
 .clkarenIntroSectionContainer{
     background-image: url('img/bannerone.jpg');
     height: 800px;
-    @include xs{
-        height: 350px;
-    }
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,12 +167,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         .introSectionContentPart{
             width: 50%;
             margin-top: 30px;
-            @include sm{
-                width: 100%;
-                backdrop-filter: blur(5px);
-                background: rgba(255,255,255,.7);
-                padding: 16px;   
-                border-radius: 20px;         
+            @include xs{
+                margin-top: 80px;
             }
             h1{
                 font-size: 52px;
@@ -130,17 +178,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 @include xs{
                     font-size: 18px;
                     line-height: 30px;
-                    text-align: center;
                     width: 100%;
                 }
+            }
+            @include sm{
+                width: 100%;
+                backdrop-filter: blur(5px);
+                padding: 16px;   
+                border-radius: 20px; 
+                h1{
+                    font-size: 30px;
+                    line-height: 40px;
+                }        
             }
             p{
                 font-size: 14px;
                 width: 85%;
                 margin-bottom: 25px;
-                @include xs{
-                    display: none;
-                }
+                
             }
             .introSectionBtnPart{
                 display: flex;
@@ -184,17 +239,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .clkarenHomeCantactUsSectionContainer{
     position: relative;
     top: -100px;
-    @include sm{
-        top: -30px;
-
-    }
     .clkarenHomeContactUsSection{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         .homeContactUsHowToHelpPart{
             width: 65%;
-            @include sm{
+            @include md{
                 width: 100%;
                 padding: 10px;
             }
@@ -239,9 +290,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 }
                 @include sm{
                     width: 100%;
-                    margin-top: 30px;
                     display: flex;
                     flex-wrap: wrap;
+                    flex-direction: column;
                     justify-content: space-between;
                     li{
                         width: 48%;
@@ -255,7 +306,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            @include xs{
+            @include md{
                 width: 100%;
                 margin-top: 30px;
             }
@@ -277,8 +328,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             }
             .consultationPhonPart{
                 display: flex;
-                align-items: center;
-                // justify-content: flex-end;
+                @include sm {
+                    flex-direction: column;
+                    text-align: right;
+                }
                 span{
                     &:first-child{
                         width: 45px;
@@ -366,7 +419,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         align-items: center;
         .homeAboutUsContentPart{
             width: 33%;
-            @include sm{
+            @include md{
                 width:100%;
             }
             span{
@@ -395,7 +448,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                     fill: $offColor;
                 }
                 &:hover{
-                    .abourUsCardIconPart{
+                    .aboutUsCardIconPart{
                         background-color: $offColor;
                         svg{
                             fill: #fff;
@@ -410,7 +463,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                         }
                     }
                 }
-                .abourUsCardIconPart{
+                .aboutUsCardIconPart{
                     width: 70px;
                     height: 70px;
                     display: flex;
@@ -444,7 +497,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         }
         .homeAboutUsImagePart{
             width: 55%;
-            @include sm{
+            @include md{
                 width: 100%;
                 margin-top: 20px;
             }
@@ -454,13 +507,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .homeAboutUsBtnContainer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     .homeAboutUsFounderPart{
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
+        margin-right: 10px;
         .founderPartImg{
             width: 70px;
             height: 70px;
@@ -497,6 +550,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 .clkarenHomeCounterContainer{
+    @include sm{
+        padding: 0 20px;
+    }
     .clkarenHomeCounter{
         background-color: $backColorLight2;
         display: flex;
@@ -511,6 +567,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @include sm{
+                width: 50%;
+            }
             .counterItemSvg{
                 display: flex;
                 align-items: center;
@@ -554,8 +613,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
+            @include sm{
+                display: block;
+            }
             .homeOurServicesHeaderTitle{
                 width: 33%;
+                @include sm{
+                    width: 70%;
+                }
                 span{
                     color: $offColor;
                     font-size: 18px;
@@ -572,6 +637,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 width: 45%;
                 font-size: 14.5px;
                 font-weight: 300;
+                display: block;
+                margin-bottom: 20px;
+                @include sm {
+                    width: 100%;
+                }
             }
             .ourServiceHeaderInnerBtn{
                 width: 15%;
@@ -592,6 +662,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 flex-direction: column;
                 justify-content: space-between;
                 margin-bottom: 150px;
+                @include md{
+                    width: 48%;
+                }
+                @include sm{
+                    width: 100%;
+                }
                 .ourServicesCardHeader{
                     // overflow: hidden;
                     border-radius: 20px;
@@ -644,6 +720,53 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         }
     }
 }
+.clkarenHomeImageSliderContainer{
+    margin: 100px 0;
+    .imageSliderParent{
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url(img/image-slider1.jpg);
+        background-size: cover;
+        .imageSlider{
+            color: white;
+            text-align: center;
+            flex: 0 0 calc(100% / 4);
+            max-width: calc(100% / 4);
+            height: 90vh;
+            border: 1px solid rgba(255, 255, 255, 0.393) ;
+            position: relative;
+            transition: .4s;
+            @include sm{
+                flex: 0 0 calc(100% / 2);
+                max-width: calc(100% / 2);
+            }
+            h2{
+                position: relative;
+                z-index: 6;
+                margin-top: 45px;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 0;
+                top: 0;
+                right: 0;
+                background-color: black;
+                transition: .4s;
+
+            }
+            &:hover{
+                &::after{
+                    top: 0;
+                    height: 130px;
+                    display: block;
+                }
+            } 
+        }
+        
+    }
+}
 .clkarenHomeOurApproachContainer{
     .clkarenOurApproachSection{
         display: flex;
@@ -652,18 +775,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         align-items: center;
         .homeOurApproachContentPart{
             width: 46%;
-            position: relative;
-            &::before{
-                content: '';
-                position: absolute;
-                width: 3px;
-                height: 50%;
-                top: 40%;
-                right: 5.5%;
-                background-color: $offColor;
-                opacity: 0.5;
-
-            }
             @include sm{
                 width:100%;
             }
@@ -683,64 +794,94 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 font-size: 16px;
                 line-height: 30px;
             }
-            .homeOurApproachCard{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                align-items: center;
-                margin: 20px 0;
-                .abourUsCardIconPart{
-                    background-color: $offColor;
-                    z-index: 5;
-                }
-                svg{
-                    fill: white;
-                }
-                &:hover{
-                    .abourUsCardIconPart{
-                        background-color: white;
-                        svg{
-                            fill: $offColor;
-                            stroke: $offColor;
-                        }
-                    }
-                    .middleCardIcon{
-                        background-color: #fff;
-                        svg{
-                            fill: $offColor;
-                            stroke: $offColor;
-                        }
-                    }
-                }
-                .abourUsCardIconPart{
-                    width: 70px;
-                    height: 70px;
+            .homeOurApproachCards{
+                .homeOurApproachCard{
                     display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
                     align-items: center;
-                    justify-content: center;
-                    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
-                    border-radius: 20px;
-                    transition: all 0.3s;
-                    
-                    &:hover{
-                        transform: translateY(-10px);
+                    margin: 20px 0;
+                    z-index: 6;
+                    position: relative;
+                    &:last-child{
+                        .aboutUsCardIconPart{
+                            &::before{
+                                display: none;
+                            }
+                        }
+                    }
+                    .aboutUsCardIconPart{
+                        position: relative;
+                        .aboutUsCardIconPartInner{
+                            background-color: $offColor;
+                            position: relative;
+                            width: 70px;
+                            height: 70px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+                            border-radius: 20px;
+                            transition: all 0.3s;
+                            z-index: 6;
+                            &:hover{
+                                transform: translateY(-10px);
+                            }
+                            svg{
+                                transition: all 0.3s;
+                            }
+                            
+                        }
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 3px;
+                            height: 110px;
+                            top: 0;
+                            right: 50%;
+                            background-color: $offColor;
+                            opacity: 0.5;
+
+                        }
+                        &:last-child(){
+                            &::before{
+                                content: none;
+                            }
+                        }
+                        &:hover{
+                            .aboutUsCardIconPartInner{
+                                background-color: white;
+                                svg{
+                                    fill: $offColor;
+                                }
+                            }
+                            .middleCardIcon{
+                                background-color: #fff;
+                                svg{
+                                    fill: $offColor;
+                                    stroke: $offColor;
+                                }
+                            }
+                        }
                     }
                     svg{
-                        transition: all 0.3s;
+                        fill: white;
+                        z-index: 6;
                     }
-                }
-                .OurApproachCardContentPart{
-                    width: calc(100% - 80px);
-                    padding-right: 20px;
-                    h3{
-                        margin: 0;
-                        font-size: 20px;
-                    }
-                    p{
-                        font-size: 16px;
-                        margin: 0;
-                        line-height: 25px;
-                        color: $textColorLight;
+                    
+                    .OurApproachCardContentPart{
+                        width: calc(100% - 80px);
+                        padding-right: 20px;
+                        h3{
+                            margin: 0;
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 16px;
+                            margin: 0;
+                            line-height: 25px;
+                            color: $textColorLight;
+                        }
                     }
                 }
             }
@@ -770,6 +911,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                     span{
                         padding-right: 0;
                     }
+                    &::before{
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-bottom: 20px solid white;
+                        position: absolute;
+                        top: calc(100% + 5px);
+                        right: 20px;
+                        bottom: 10px;
+                        transform: rotate(155deg);
+                        margin: auto;
+                    }
                 }
             }
             @include sm{
@@ -778,6 +933,66 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             }
         }
     }
+}
+.clkarenHomeViewContainer{
+    margin-top: 100px;
+    .clkarenHomeView{
+        height: 630px;
+        background-color: black;
+        background-image: url(img/view.jpg);
+        background-position: bottom left;
+        background-size: cover;
+        border-radius: 20px;
+        position: relative;
+        .imageSwiper{
+            position: absolute;
+            bottom: 3%;
+            right: 13%;
+            width: 30%;
+            background-color:#FFFFFF;
+            margin: 20px 10px;
+            border-radius: 20px;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+            @include md{
+                width: 40%;
+            }
+            @include sm{
+                width: 90%;
+                right: 50%;
+                transform: translateX(50%);
+                margin: auto;
+            }
+            }
+            .innerSwiper{
+                padding: 20px;
+                svg{
+                    fill: $offColor;
+                }
+                ul{
+                    padding: 0;
+                }
+                .homeAboutUsFounderPart {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    h3{
+                        margin: 0;
+                    }
+                    .founderPartImg {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 100%;
+                        overflow: hidden;
+                        border: 2px solid #e3b077;
+                    }
+                    .founderPartName {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    
 }
 .clkarenOurBlogSection{
     text-align: center;
@@ -847,7 +1062,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                         fill: $textColorLight;
                     }
                     span{
-                        padding: 0 10px;
+                        font-size: 14px;
+                        padding: 0 5px;
                         color: $textColorLight;
                     }
                 }

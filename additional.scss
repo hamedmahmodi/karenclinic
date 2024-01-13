@@ -43,6 +43,7 @@ a{
             width: 45%;
             @include sm{
                 width: 100% !important;
+                padding: 70px 10px 10px 10px;
             }
             h2{
                 color: $offColor;
@@ -59,11 +60,19 @@ a{
             }
             .information{
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: flex-start;
-                @include sm{
-
-                    text-align: center;
+                flex-wrap: wrap;
+                .columnInformation{
+                    width: 50%;
+                    text-align: right;
+                    @include sm{
+                        text-align: center;
+                    }
+                    @include xs{
+                        width: 80%;
+                        text-align: center;
+                    }
                 }
                 h2{
                     color: $textColorDark;
@@ -73,8 +82,10 @@ a{
                     color: $textColorLight;
                 }
                 .informationSvg{
-                    display: flex;
+                    @include sm{
+                        display: flex;
                     justify-content: center;
+                    }
                     svg{
                         padding: 10px;
                         border-radius: 5px;
@@ -193,16 +204,18 @@ a{
 .clkarenAboutUsPageBack{
     span{
         color: #e3b077;
-        font-size: 14.5px;
+        font-size: 18px;
         font-weight: 400;
+        padding: 10px 0;
+        // display: block;
     }
     h2{
         margin: 0;
-        font-size: 20px;
+        font-size: 40px;
         line-height: 50px;
     }
     p{
-        margin: 0;
+        margin: 10px 0 0 0;
         font-size: 15px;
         line-height: 30px;
         
@@ -838,7 +851,7 @@ a{
                     
                     svg{
                         display: block;
-                        fill: $mainColorDark ;
+                        fill: white ;
                         vertical-align: middle ;
                     }
                     &:hover{
