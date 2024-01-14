@@ -630,6 +630,94 @@ select {
   margin-right: -15px;
 }
 
+.mobilMenuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99999999;
+  display: none;
+}
+
+.showMobilMenuOverlay {
+  display: block;
+}
+
+.mobileMenuContainer {
+  position: fixed;
+  background-color: #fff;
+  top: 0px;
+  bottom: 0;
+  height: auto;
+  width: 280px;
+  right: -100%;
+  z-index: 999999991;
+  transition: all 0.4s;
+}
+.mobileMenuContainer .closeMenu {
+  margin: 20px;
+}
+.mobileMenuContainer .current-menu-item a {
+  color: #e3b077;
+}
+.mobileMenuContainer ul {
+  padding: 0;
+}
+.mobileMenuContainer li {
+  margin: 20px 0;
+}
+.mobileMenuContainer li::before {
+  display: none;
+}
+.mobileMenuContainer li a {
+  font-size: 13px;
+  font-weight: 500;
+  color: #18162b;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+.mobileMenuContainer li a svg {
+  margin-right: 5px;
+  transition: 0.4s;
+}
+.mobileMenuContainer li a:hover {
+  color: #e3b077;
+}
+.mobileMenuContainer li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+.mobileMenuContainer li ul {
+  z-index: 100;
+  color: black;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  display: none;
+}
+.mobileMenuContainer li ul li {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+.mobileMenuContainer li ul li a {
+  font-size: 12.5px;
+  font-weight: 400;
+}
+
+.showMenuMobile {
+  display: flex;
+  right: 0;
+  justify-content: space-between;
+  transition: 0.4s;
+}
+
 .clkarenTopHeaderContainer {
   background-color: #18162b;
 }
@@ -656,6 +744,11 @@ select {
   font-size: 13px;
   font-weight: 300;
 }
+@media screen and (max-width: 480px) {
+  .clkarenTopHeaderContainer .topHeaderLocationPart a span {
+    font-size: 10px;
+  }
+}
 .clkarenTopHeaderContainer .topHeaderIconPart a {
   display: flex;
   align-items: center;
@@ -671,37 +764,70 @@ select {
 .mainDesctopHeaderContainer .mainDesctopHeader a {
   color: white;
 }
+@media screen and (max-width: 480px) {
+  .mainDesctopHeaderContainer .mainDesctopHeader .desctopLogoPart svg {
+    width: 80px;
+    height: 60px;
+  }
+}
+.mainDesctopHeaderContainer .mainDesctopHeader .generalButtonDark {
+  padding: 5px 20px;
+}
+.mainDesctopHeaderContainer .mainDesctopHeader .menuMobile {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .mainDesctopHeaderContainer .mainDesctopHeader .menuMobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 10%;
+  }
+}
 .mainDesctopHeaderContainer .mainDesctopHeader .mainMenu {
   display: flex;
   margin-right: 15px;
   justify-content: flex-end;
   width: 70%;
 }
+@media screen and (max-width: 480px) {
+  .mainDesctopHeaderContainer .mainDesctopHeader .mainMenu {
+    display: none;
+  }
+}
+.mainDesctopHeaderContainer .mainDesctopHeader .mainMenu .menu-item-has-children {
+  display: flex;
+  align-items: center;
+}
+.mainDesctopHeaderContainer .mainDesctopHeader .mainMenu .menu-item-has-children svg {
+  margin-right: 5px;
+}
+.mainDesctopHeaderContainer .mainDesctopHeader .mainMenu .current-menu-item a {
+  color: #e3b077;
+}
 .mainDesctopHeaderContainer .mainDesctopHeader .mainMenu ul {
   padding: 0;
   margin: 0;
   display: flex;
 }
-.mainDesctopHeaderContainer .mainDesctopHeader .mainMenu ul #menu-item-76 {
-  position: relative;
-}
-.mainDesctopHeaderContainer .mainDesctopHeader .mainMenu ul #menu-item-76::before {
-  content: url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 0.48 0.48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m0.08 0.16 0.16 0.16 0.16 -0.16' stroke='%23000000' stroke-width='0.04' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 16px;
-  height: 16px;
-  background-color: black;
-}
 .mainDesctopHeaderContainer .mainDesctopHeader .mainMenu ul li {
   padding: 30px;
+}
+@media screen and (max-width: 768px) {
+  .mainDesctopHeaderContainer .mainDesctopHeader .mainMenu ul li {
+    padding: 10px;
+  }
+}
+.mainDesctopHeaderContainer .mainDesctopHeader .mainMenu ul li::before {
+  display: none;
 }
 .mainDesctopHeaderContainer .mainDesctopHeader .mainMenu ul li a {
   font-size: 14px;
   font-weight: 700;
   color: #18162b;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
 }
 .mainDesctopHeaderContainer .mainDesctopHeader .mainMenu ul li a:hover {
   color: #e3b077;
@@ -713,6 +839,7 @@ select {
 .mainDesctopHeaderContainer .mainDesctopHeader .mainMenu ul li ul {
   z-index: 100;
   position: absolute;
+  top: 70%;
   color: black;
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -725,7 +852,7 @@ select {
   opacity: 0;
   transition: all 0.2s;
   width: 100px;
-  transform: translateX(35%);
+  transform: translateX(5%);
 }
 .mainDesctopHeaderContainer .mainDesctopHeader .mainMenu ul li ul li {
   margin: 0;
@@ -1353,19 +1480,28 @@ select {
 
 .clkarenHomeImageSliderContainer {
   margin: 100px 0;
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+.clkarenHomeImageSliderContainer img {
+  position: relative;
+  transition: 0.4s;
 }
 .clkarenHomeImageSliderContainer .imageSliderParent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-image: url(img/image-slider1.jpg);
-  background-size: cover;
 }
 .clkarenHomeImageSliderContainer .imageSliderParent .imageSlider {
   color: white;
   text-align: center;
   flex: 0 0 25%;
   max-width: 25%;
-  height: 90vh;
   border: 1px solid rgba(255, 255, 255, 0.393);
   position: relative;
   transition: 0.4s;
@@ -1465,7 +1601,7 @@ select {
   content: "";
   position: absolute;
   width: 3px;
-  height: 110px;
+  height: 150px;
   top: 0;
   right: 50%;
   background-color: #e3b077;

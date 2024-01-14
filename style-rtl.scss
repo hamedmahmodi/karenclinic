@@ -25,6 +25,93 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'sass/breakpoints';
 @import 'sass/source';
 
+
+.mobilMenuOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99999999;
+    display: none;
+}
+.showMobilMenuOverlay{
+    display: block;
+}
+.mobileMenuContainer{
+    position: fixed;
+    background-color: #fff;
+    top: 0px;
+    bottom: 0;
+    height: auto;
+    width: 280px;
+    right: -100%;
+    z-index: 999999991;
+    transition: all 0.4s;
+    .closeMenu{
+        margin: 20px;
+    }
+    .current-menu-item{
+        a{
+            color: $offColor;
+        }
+    }
+    ul{
+        padding: 0;}
+        li{
+            margin: 20px 0;
+            &::before{
+                display: none;
+            }
+            a{
+                font-size: 13px;
+                font-weight: 500;
+                color: $mainColorDark;
+                transition: .3s;
+                display: flex;
+                align-items: center;
+                svg{
+                    margin-right: 5px;
+                    transition: .4s;
+                }
+                &:hover{
+                    color: $offColor;
+                }
+            }
+            &:hover ul{
+                visibility: visible;
+                opacity: 1;
+            }
+            ul{
+                z-index: 100;
+                color: black;
+                border-radius: 10px;
+                margin-top: 5px;
+                padding-right: 10px;
+                display: flex;
+                flex-direction: column;
+                width: 150px;
+                display: none;
+                li{
+                    margin: 0;
+                    padding: 5px;
+                    text-align: center;
+                    a{
+                        font-size: 12.5px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+.showMenuMobile{
+    display: flex;
+    right: 0;
+    justify-content: space-between;
+    transition: .4s;
+}
 .clkarenTopHeaderContainer{
     background-color: $mainColorDark;
     *{
@@ -49,6 +136,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 line-height: 20px;
                 font-size: 13px;
                 font-weight: 300;
+                @include xs{
+                    font-size: 10px;
+                }
             }
         }   
     }
@@ -66,42 +156,71 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        
         a{
             color: white;
+            // padding: 5px 20px;
+        }
+        @include xs{
+            .desctopLogoPart{
+                svg{
+                    width: 80px;
+                    height: 60px;
+                }
+            }
+        }
+        .generalButtonDark{
+            padding: 5px 20px;
+        }
+        .menuMobile{
+            display: none;
+            @include xs{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 10%;
+            }
         }
         .mainMenu{
             display: flex;
             margin-right: 15px;
             justify-content: flex-end;
             width: 70%;
+            @include xs{
+                display: none;
+            }
+            .menu-item-has-children{
+                display: flex;
+                align-items: center;
+                svg{
+                    margin-right: 5px;
+                }
+            }
+            .current-menu-item{
+                a{
+
+                    color: $offColor;
+                }
+            }
             ul{
                 padding: 0;
                 margin: 0;
                 display: flex;
-                #menu-item-76{
-                    position: relative;
-                    &::before{
-                        content: url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 0.48 0.48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m0.08 0.16 0.16 0.16 0.16 -0.16' stroke='%23000000' stroke-width='0.04' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        width: 16px;
-                        height: 16px;
-                        background-color: black;
-                    }
-
-                }
                 li{
                     padding:30px;
-                    
-                    // &::before{
-                    //     display: none;
-                    // }
+                    @include sm{
+                        padding: 10px;
+                    }
+                    &::before{
+                        display: none;
+                    }
                     a{
                         font-size: 14px;
                         font-weight: 700;
                         color: $mainColorDark;
                         transition: .3s;
+                        display: flex;
+                        align-items: center;
                         &:hover{
                             color: $offColor;
                         }
@@ -113,6 +232,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                     ul{
                         z-index: 100;
                         position: absolute;
+                        top: 70%;
                         color: black;
                         background-color: #fff;
                         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -125,7 +245,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                         opacity: 0;
                         transition: all 0.2s;
                         width: 100px;
-                        transform: translateX(35%);
+                        transform: translateX(5%);
                         li{
                             margin: 0;
                             padding: 15px;
@@ -365,7 +485,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         
     }
 }
-
 .homeAboutUsImagePart {
     display: flex;
     flex-wrap: wrap;
@@ -409,8 +528,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             object-fit: cover;
         }
     }
-}
-    
+} 
 .clkarenAboutUsSectionContainer{
     .clkarenAboutUsSection{
         display: flex;
@@ -548,7 +666,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         }
     }
 }
-
 .clkarenHomeCounterContainer{
     @include sm{
         padding: 0 20px;
@@ -605,7 +722,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         }
     }
 }
-
 .clkarenHomeOurServicesContainer{
     .clkarenHomeOurServices {
         .clkarenHomeOurServicesHeader{
@@ -722,17 +838,26 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 .clkarenHomeImageSliderContainer{
     margin: 100px 0;
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    img{
+        position: relative;
+        transition: .4s;
+    }
     .imageSliderParent{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-wrap: wrap;
-        background-image: url(img/image-slider1.jpg);
-        background-size: cover;
         .imageSlider{
             color: white;
             text-align: center;
             flex: 0 0 calc(100% / 4);
             max-width: calc(100% / 4);
-            height: 90vh;
             border: 1px solid rgba(255, 255, 255, 0.393) ;
             position: relative;
             transition: .4s;
@@ -836,7 +961,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                             content: '';
                             position: absolute;
                             width: 3px;
-                            height: 110px;
+                            height: 150px;
                             top: 0;
                             right: 50%;
                             background-color: $offColor;
