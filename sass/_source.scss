@@ -251,7 +251,7 @@ input{
 		border-radius: 45px;
 		color: $textColorDark;
 		font-size: 14px;
-		margin-right: -15px;
+		width: 100%;
 		@include placeholder{
 			color: #373c60;
 			opacity: 0.25;

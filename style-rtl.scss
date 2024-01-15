@@ -152,6 +152,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         }   
     }
     .topHeaderIconPart{
+        @include sm{
+            display: none;
+        }
         a{
             display: flex;
             align-items: center;
@@ -206,6 +209,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             .menu-item-has-children{
                 display: flex;
                 align-items: center;
+                cursor: pointer;
                 svg{
                     margin-right: 5px;
                 }
@@ -819,9 +823,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 }
                 @include sm{
                     width: 100%;
+                    .ourServicesCardHeader{
+                        height: 400px;
+                    }
                 }
                 .ourServicesCardHeader{
-                    // overflow: hidden;
                     border-radius: 20px;
                     position: relative;
                     img{
@@ -886,6 +892,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         @include sm{
             height: 100%;
             width: 100%;
+            object-fit: cover;
         }
     }
     .clkarenHomeImageSliderImage{
@@ -1134,7 +1141,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         background-size: cover;
         border-radius: 20px;
         position: relative;
-        margin: 0 15px !important;
         @include sm{
             height: 300px;
         }

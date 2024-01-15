@@ -14,24 +14,29 @@ get_header();
         </div>
     </div>
     <div class="clkarenHomeCounterContainer extraHighMargined">
-        <div class="clkarenHomeCounter mainView" id="counterNumbers">  
-            <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
-                <span class="counterItemSvg"><svg fill="#fff" width="50" viewBox="0 0 512 512"><path d="M231 437v37.9a15.3 15.3 0 0 0 10.9 14.7 14.7 14.7 0 0 0 4.6.7 15.2 15.2 0 0 0 12.7-6.8l31.6-46.5h158.5a40.7 40.7 0 0 0 40.7-40.7V68.7A40.7 40.7 0 0 0 449.3 28H79.7A40.7 40.7 0 0 0 39 68.7v327.6A40.7 40.7 0 0 0 79.7 437H204a8 8 0 0 0 8-8 8 8 0 0 0-8-8H79.7A24.6 24.6 0 0 1 55 396.3V68.7A24.6 24.6 0 0 1 79.7 44h369.6A24.6 24.6 0 0 1 474 68.7v327.6a24.6 24.6 0 0 1-24.7 24.7H286.6a7.9 7.9 0 0 0-6.6 3.5l-8.5 12.5-24.5 36v-70.7a8.2 8.2 0 0 0-7.5-8.3 8 8 0 0 0-8.5 8v19"/><path d="m262.1 323.2 152.1-152.1a25 25 0 0 0 0-35.4l-21-21a22.1 22.1 0 0 0-31.2 0l-110 110a10.7 10.7 0 0 1-15.2 0l-47.3-47.3a21.4 21.4 0 0 0-30.3 0l-21.4 21.4a25 25 0 0 0 0 35.4l88.9 89a25.2 25.2 0 0 0 35.4 0Zm-114.2-99.1a10.7 10.7 0 0 1 0-15.2l19.2-19.1a10.2 10.2 0 0 1 14.6 0l45 45a25 25 0 0 0 35.4 0l109-108.9a9.3 9.3 0 0 1 13.1 0l19.9 19.9a10.7 10.7 0 0 1 0 15.2L252 313.1a10.7 10.7 0 0 1-15.2 0Z"/></svg></span>
-                <div class="counterNumber"><span id="counter-1">98%</span></div>
-                <div class="counterTitle">رضایت بیمار</div>
-            </div>
-            <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
-                <span class="counterItemSvg"><svg fill="#fff" width="50" viewBox="0 0 512 512"><path d="M231 437v37.9a15.3 15.3 0 0 0 10.9 14.7 14.7 14.7 0 0 0 4.6.7 15.2 15.2 0 0 0 12.7-6.8l31.6-46.5h158.5a40.7 40.7 0 0 0 40.7-40.7V68.7A40.7 40.7 0 0 0 449.3 28H79.7A40.7 40.7 0 0 0 39 68.7v327.6A40.7 40.7 0 0 0 79.7 437H204a8 8 0 0 0 8-8 8 8 0 0 0-8-8H79.7A24.6 24.6 0 0 1 55 396.3V68.7A24.6 24.6 0 0 1 79.7 44h369.6A24.6 24.6 0 0 1 474 68.7v327.6a24.6 24.6 0 0 1-24.7 24.7H286.6a7.9 7.9 0 0 0-6.6 3.5l-8.5 12.5-24.5 36v-70.7a8.2 8.2 0 0 0-7.5-8.3 8 8 0 0 0-8.5 8v19"/><path d="m262.1 323.2 152.1-152.1a25 25 0 0 0 0-35.4l-21-21a22.1 22.1 0 0 0-31.2 0l-110 110a10.7 10.7 0 0 1-15.2 0l-47.3-47.3a21.4 21.4 0 0 0-30.3 0l-21.4 21.4a25 25 0 0 0 0 35.4l88.9 89a25.2 25.2 0 0 0 35.4 0Zm-114.2-99.1a10.7 10.7 0 0 1 0-15.2l19.2-19.1a10.2 10.2 0 0 1 14.6 0l45 45a25 25 0 0 0 35.4 0l109-108.9a9.3 9.3 0 0 1 13.1 0l19.9 19.9a10.7 10.7 0 0 1 0 15.2L252 313.1a10.7 10.7 0 0 1-15.2 0Z"/></svg></span>
-                <div class="counterNumber"><span id="counter-2">7</span><span>+</span></div>
-                <div class="counterTitle">پزشک متخصص</div>
-            </div>
-            <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
-                <span class="counterItemSvg"><svg fill="#fff" width="50" viewBox="0 0 512 512"><path d="M231 437v37.9a15.3 15.3 0 0 0 10.9 14.7 14.7 14.7 0 0 0 4.6.7 15.2 15.2 0 0 0 12.7-6.8l31.6-46.5h158.5a40.7 40.7 0 0 0 40.7-40.7V68.7A40.7 40.7 0 0 0 449.3 28H79.7A40.7 40.7 0 0 0 39 68.7v327.6A40.7 40.7 0 0 0 79.7 437H204a8 8 0 0 0 8-8 8 8 0 0 0-8-8H79.7A24.6 24.6 0 0 1 55 396.3V68.7A24.6 24.6 0 0 1 79.7 44h369.6A24.6 24.6 0 0 1 474 68.7v327.6a24.6 24.6 0 0 1-24.7 24.7H286.6a7.9 7.9 0 0 0-6.6 3.5l-8.5 12.5-24.5 36v-70.7a8.2 8.2 0 0 0-7.5-8.3 8 8 0 0 0-8.5 8v19"/><path d="m262.1 323.2 152.1-152.1a25 25 0 0 0 0-35.4l-21-21a22.1 22.1 0 0 0-31.2 0l-110 110a10.7 10.7 0 0 1-15.2 0l-47.3-47.3a21.4 21.4 0 0 0-30.3 0l-21.4 21.4a25 25 0 0 0 0 35.4l88.9 89a25.2 25.2 0 0 0 35.4 0Zm-114.2-99.1a10.7 10.7 0 0 1 0-15.2l19.2-19.1a10.2 10.2 0 0 1 14.6 0l45 45a25 25 0 0 0 35.4 0l109-108.9a9.3 9.3 0 0 1 13.1 0l19.9 19.9a10.7 10.7 0 0 1 0 15.2L252 313.1a10.7 10.7 0 0 1-15.2 0Z"/></svg></span>
-                <div class="counterNumber"><span id="counter-3">264</span><span>+</span></div>
-                <div class="counterTitle">مشاوره آنلاین</div>
-            </div>
+    <div class="clkarenHomeCounter mainView" id="counterNumbers">  
+        <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <span class="counterItemSvg"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#fff" viewBox="0 0 246.154 246.154"><path d="M207.692 61.538H169.23v-7.692a23.077 23.077 0 0 0-23.077-23.077H99.999a23.077 23.077 0 0 0-23.077 23.077v7.692h-38.46a15.385 15.385 0 0 0-15.385 15.385V200a15.385 15.385 0 0 0 15.385 15.385h169.231A15.385 15.385 0 0 0 223.078 200V76.923a15.385 15.385 0 0 0-15.385-15.385ZM92.308 53.846A7.692 7.692 0 0 1 100 46.154h46.154a7.692 7.692 0 0 1 7.692 7.692v7.692H92.308ZM207.693 200H38.462V76.923h169.231V200Zm-53.846-61.538a7.692 7.692 0 0 1-7.692 7.692H130.77v15.385a7.692 7.692 0 0 1-15.385 0v-15.385H100a7.692 7.692 0 0 1 0-15.385h15.385v-15.385a7.692 7.692 0 0 1 15.385 0v15.385h15.385a7.692 7.692 0 0 1 7.692 7.692Z"></path></svg></span>
+            <div class="counterNumber"><span id="counter-1">98</span><span class="plus">%</span></div>
+            <div class="counterTitle">رضایت بیمار</div>
+        </div>
+        <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <span class="counterItemSvg"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#fff" viewBox="0 0 256 256"><path d="M216 96a88 88 0 1 0-144 67.83V240a8 8 0 0 0 11.58 7.16L128 225l44.43 22.21a8.07 8.07 0 0 0 3.57.79 8 8 0 0 0 8-8v-76.17A87.85 87.85 0 0 0 216 96ZM56 96a72 72 0 1 1 72 72 72.08 72.08 0 0 1-72-72Zm112 131.06-36.43-18.21a8 8 0 0 0-7.16 0L88 227.06v-52.69a87.89 87.89 0 0 0 80 0ZM128 152a56 56 0 1 0-56-56 56.06 56.06 0 0 0 56 56Zm0-96a40 40 0 1 1-40 40 40 40 0 0 1 40-40Z"></path></svg></span>
+            <div class="counterNumber"><span class="plus">+</span><span id="counter-2">7</span></div>
+            <div class="counterTitle">پزشک متخصص</div>
+        </div>
+        <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <span class="counterItemSvg"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#fff" viewBox="0 0 256 256"><path d="M176 16H80a24 24 0 0 0-24 24v176a24 24 0 0 0 24 24h96a24 24 0 0 0 24-24V40a24 24 0 0 0-24-24Zm8 200a8 8 0 0 1-8 8H80a8 8 0 0 1-8-8V40a8 8 0 0 1 8-8h96a8 8 0 0 1 8 8ZM140 60a12 12 0 1 1-12-12 12 12 0 0 1 12 12Z"></path></svg></span>
+            <div class="counterNumber"><span class="plus">+</span><span id="counter-3">264</span></div>
+            <div class="counterTitle">مشاوره آنلاین</div>
+        </div>
+        <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <span class="counterItemSvg"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#fff" viewBox="0 0 256 256"><path d="M27.2 126.4a8 8 0 0 0 11.2-1.6 52 52 0 0 1 83.2 0 8 8 0 0 0 11.2 1.59 7.73 7.73 0 0 0 1.59-1.59 52 52 0 0 1 83.2 0 8 8 0 0 0 12.8-9.61A67.85 67.85 0 0 0 203 93.51a40 40 0 1 0-53.94 0 67.27 67.27 0 0 0-21 14.31 67.27 67.27 0 0 0-21-14.31 40 40 0 1 0-53.94 0A67.88 67.88 0 0 0 25.6 115.2a8 8 0 0 0 1.6 11.2ZM176 40a24 24 0 1 1-24 24 24 24 0 0 1 24-24Zm-96 0a24 24 0 1 1-24 24 24 24 0 0 1 24-24Zm123 157.51a40 40 0 1 0-53.94 0 67.27 67.27 0 0 0-21 14.31 67.27 67.27 0 0 0-21-14.31 40 40 0 1 0-53.94 0A67.88 67.88 0 0 0 25.6 219.2a8 8 0 1 0 12.8 9.6 52 52 0 0 1 83.2 0 8 8 0 0 0 11.2 1.59 7.73 7.73 0 0 0 1.59-1.59 52 52 0 0 1 83.2 0 8 8 0 0 0 12.8-9.61A67.85 67.85 0 0 0 203 197.51ZM80 144a24 24 0 1 1-24 24 24 24 0 0 1 24-24Zm96 0a24 24 0 1 1-24 24 24 24 0 0 1 24-24Z"></path></svg></span>
+            <div class="counterNumber"><span class="plus">+</span><span id="counter-4">264</span></div>
+            <div class="counterTitle">مشاوره آنلاین</div>
         </div>
     </div>
+</div>
     <div class="servicesEntryContent highMargined mainView">
         <!-- <div class="generalHeading highMargined centeredText bottomBorder">
             <h3 class="entryContentTitle">خدمت رسانی</h3>

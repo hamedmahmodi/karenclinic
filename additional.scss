@@ -147,6 +147,9 @@ a{
     background-size: cover;
     padding: 120px 0;
     position: relative;
+    @include xs{
+        padding: 80px 0;
+    }
     a{
         color: inherit ;
     }
@@ -236,6 +239,9 @@ a{
         background-size: cover;
         position: relative;
         padding: 120px 0;
+        @include xs{
+            padding: 80px 0;
+        }
         .aboutUsText{
             display: flex;
             justify-content: space-between;
@@ -252,7 +258,7 @@ a{
         
     }
     .clkarenAboutUsSection{
-        padding: 120px 0 100px 0;
+        padding: 100px 0 100px 0;
     }
     .clkarenChooseUsSection{
         display: flex;
@@ -590,6 +596,9 @@ a{
         background-size: cover;
         padding: 120px 0;
         position: relative;
+        @include xs{
+            padding: 60px 0 ;
+        }
         a{
             color: inherit ;
         }
@@ -634,6 +643,7 @@ a{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
         max-width: 1290px;
         margin: auto;
         .entry-content{
@@ -676,6 +686,11 @@ a{
         .generalSinglePopulated{
             width: 35%;
             padding: 100px 40px 10px 10px;
+            @include sm{
+                width: 90%;
+                margin: auto;
+                padding: 0;
+            }
             .questionBox{
                 position: relative;
                 padding: 40px;
@@ -794,6 +809,12 @@ a{
     grid-template-rows: repeat(3, 1fr);
     gap: 30px;
     margin-top: 100px;
+    @include sm{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include xs{
+        grid-template-columns: repeat(1, 1fr);
+    }
     a{
         img{
             border-radius: 20px;
@@ -893,9 +914,9 @@ a{
                 @include md{
                     width: 80% ;
                 }
-                @include xs{
-                    width: 60%;
-                }
+                // @include xs{
+                //     width: 60%;
+                // }
                 h4{
                     margin: 5px 0 3px 0;
                     font-size: 16px;  

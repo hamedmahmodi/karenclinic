@@ -213,6 +213,11 @@ a {
   padding: 120px 0;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .blogHeader {
+    padding: 80px 0;
+  }
+}
 .blogHeader a {
   color: inherit;
 }
@@ -297,6 +302,11 @@ a {
   position: relative;
   padding: 120px 0;
 }
+@media screen and (max-width: 480px) {
+  .clkarenAboutUsPageBack .clkarenAboutUs {
+    padding: 80px 0;
+  }
+}
 .clkarenAboutUsPageBack .clkarenAboutUs .aboutUsText {
   display: flex;
   justify-content: space-between;
@@ -310,7 +320,7 @@ a {
   margin: 0;
 }
 .clkarenAboutUsPageBack .clkarenAboutUsSection {
-  padding: 120px 0 100px 0;
+  padding: 100px 0 100px 0;
 }
 .clkarenAboutUsPageBack .clkarenChooseUsSection {
   display: flex;
@@ -668,6 +678,11 @@ a {
   padding: 120px 0;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .generalSinglePostStyle .entry-header {
+    padding: 60px 0;
+  }
+}
 .generalSinglePostStyle .entry-header a {
   color: inherit;
 }
@@ -710,6 +725,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   max-width: 1290px;
   margin: auto;
 }
@@ -751,6 +767,13 @@ a {
 .generalSinglePostStyle .entry-content-parent .generalSinglePopulated {
   width: 35%;
   padding: 100px 40px 10px 10px;
+}
+@media screen and (max-width: 768px) {
+  .generalSinglePostStyle .entry-content-parent .generalSinglePopulated {
+    width: 90%;
+    margin: auto;
+    padding: 0;
+  }
 }
 .generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox {
   position: relative;
@@ -866,6 +889,16 @@ a {
   gap: 30px;
   margin-top: 100px;
 }
+@media screen and (max-width: 768px) {
+  .archiveParent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .archiveParent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .archiveParent a img {
   border-radius: 20px;
 }
@@ -966,11 +999,6 @@ a {
 @media screen and (max-width: 992px) {
   .mainFooterBack .mainFooter .calssFooterColumn4 .callUs {
     width: 80%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .mainFooterBack .mainFooter .calssFooterColumn4 .callUs {
-    width: 60%;
   }
 }
 .mainFooterBack .mainFooter .calssFooterColumn4 .callUs h4 {
