@@ -25,20 +25,58 @@ $(document).ready(function(){
 
     $(".menu-item-has-children>a").append(svg);
 
+
+    
     $(".imageSlider1").hover(function(){
-        $(".clkarenHomeImageSliderContainer>img").attr("src", "http://localhost/karenclinic/wp-content/themes/karenclinic/img/image-slider1.jpg")
-        
+        $(".clkarenHomeImageSliderImage1").css({"transform": "scale(1.5)","z-index": "2","opacity":"100%"});
+        $(".clkarenHomeImageSliderImage2").css({"z-index": "1","opacity":"0"});
+        $(".clkarenHomeImageSliderImage3").css({"z-index": "1","opacity":"0"});
+        $(".clkarenHomeImageSliderImage4").css({"z-index": "1","opacity":"0"});
+        $(this).css('background-color','rgba(0, 0, 0, 0.148)');
     });
+    $(".imageSlider1").mouseleave(function(){
+        $(".clkarenHomeImageSliderImage1").css({"transform": "scale(1)"});
+        $(this).css('background-color','transparent');
+    });
+
+
     $(".imageSlider2").hover(function(){
-        $(".clkarenHomeImageSliderContainer>img").attr("src", "http://localhost/karenclinic/wp-content/themes/karenclinic/img/image-slider2.jpg")
-        
+        $(".clkarenHomeImageSliderImage1").css({"z-index": "1","opacity":"0"});
+        $(".clkarenHomeImageSliderImage2").css({"transform": "scale(1.5)","z-index": "2","opacity":"100%"});
+        $(".clkarenHomeImageSliderImage3").css({"z-index": "1","opacity":"0"});
+        $(".clkarenHomeImageSliderImage4").css({"z-index": "1","opacity":"0"});
+        $(this).css('background-color','rgba(0, 0, 0, 0.148)');
     });
+    $(".imageSlider2").mouseleave(function(){
+        $(".clkarenHomeImageSliderImage2").css({"transform": "scale(1)"});
+        $(this).css('background-color','transparent');
+    });
+
+
     $(".imageSlider3").hover(function(){
-        $(".clkarenHomeImageSliderContainer>img").attr("src", "http://localhost/karenclinic/wp-content/themes/karenclinic/img/image-slider3.jpg")
-        
+        $(".clkarenHomeImageSliderImage1").css({"z-index": "1","opacity":"0"});
+        $(".clkarenHomeImageSliderImage2").css({"z-index": "1","opacity":"0"});
+        $(".clkarenHomeImageSliderImage3").css({"transform": "scale(1.5)","z-index": "2","opacity":"100%"});
+        $(".clkarenHomeImageSliderImage4").css({"z-index": "1","opacity":"0"});
+        $(this).css('background-color','rgba(0, 0, 0, 0.148)');
     });
+    $(".imageSlider3").mouseleave(function(){
+        $(".clkarenHomeImageSliderImage3").css({"transform": "scale(1)"});
+        $(this).css('background-color','transparent');
+    });
+
+
     $(".imageSlider4").hover(function(){
-        $(".clkarenHomeImageSliderContainer>img").attr("src", "http://localhost/karenclinic/wp-content/themes/karenclinic/img/image-slider4.jpg")
-        
+        $(".clkarenHomeImageSliderImage1").css({"z-index": "1","opacity":"0"});
+        $(".clkarenHomeImageSliderImage2").css({"z-index": "1","opacity":"0"});
+        $(".clkarenHomeImageSliderImage3").css({"z-index": "1","opacity":"0"});
+        $(".clkarenHomeImageSliderImage4").css({"transform": "scale(1.5)","z-index": "2","opacity":"100%"});
+        $(this).css('background-color','rgba(0, 0, 0, 0.148)');
     });
+    $(".imageSlider4").mouseleave(function(){
+        $(".clkarenHomeImageSliderImage4").css({"transform": "scale(1)"});
+        $(this).css('background-color','transparent');
+    });
+
+
 })

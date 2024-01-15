@@ -220,7 +220,12 @@ get_header();
     </div>
 </div>
 <div class="clkarenHomeImageSliderContainer">
-    <img src="<?php bloginfo('template_directory') ?>/img/image-slider1.jpg" alt="">
+    <div class="clkarenHomeImageSliderImage">
+        <img class="clkarenHomeImageSliderImage1" src="<?php bloginfo('template_directory') ?>/img/image-slider1.jpg" alt="">
+        <img class="clkarenHomeImageSliderImage2" src="<?php bloginfo('template_directory') ?>/img/image-slider2.jpg" alt="">
+        <img class="clkarenHomeImageSliderImage3" src="<?php bloginfo('template_directory') ?>/img/image-slider3.jpg" alt="">
+        <img class="clkarenHomeImageSliderImage4" src="<?php bloginfo('template_directory') ?>/img/image-slider4.jpg" alt="">
+    </div>
     <div class="imageSliderParent">
         <a class="imageSlider imageSlider1" href="#">
             <h2>لورم ایپسوم</h2>

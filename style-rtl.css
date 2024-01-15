@@ -1485,8 +1485,28 @@ select {
   overflow: hidden;
 }
 .clkarenHomeImageSliderContainer img {
-  position: relative;
+  position: absolute;
   transition: 0.4s;
+}
+.clkarenHomeImageSliderContainer .clkarenHomeImageSliderImage {
+  position: relative;
+  background-color: black;
+}
+.clkarenHomeImageSliderContainer .clkarenHomeImageSliderImage1 {
+  position: absolute;
+  top: 0;
+}
+.clkarenHomeImageSliderContainer .clkarenHomeImageSliderImage2 {
+  position: absolute;
+  top: 0;
+}
+.clkarenHomeImageSliderContainer .clkarenHomeImageSliderImage3 {
+  position: absolute;
+  top: 0;
+}
+.clkarenHomeImageSliderContainer .clkarenHomeImageSliderImage4 {
+  position: absolute;
+  top: 0;
 }
 .clkarenHomeImageSliderContainer .imageSliderParent {
   position: absolute;
@@ -1496,6 +1516,7 @@ select {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
+  z-index: 10;
 }
 .clkarenHomeImageSliderContainer .imageSliderParent .imageSlider {
   color: white;

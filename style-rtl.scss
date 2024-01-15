@@ -842,8 +842,28 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     height: 90vh;
     overflow: hidden;
     img{
-        position: relative;
+        position: absolute;
         transition: .4s;
+    }
+    .clkarenHomeImageSliderImage{
+        position: relative;
+        background-color: black;
+    }
+    .clkarenHomeImageSliderImage1{
+        position: absolute;
+        top: 0;
+    }
+    .clkarenHomeImageSliderImage2{
+        position: absolute;
+        top: 0;
+    }
+    .clkarenHomeImageSliderImage3{
+        position: absolute;
+        top: 0;
+    }
+    .clkarenHomeImageSliderImage4{
+        position: absolute;
+        top: 0;
     }
     .imageSliderParent{
         position: absolute;
@@ -853,6 +873,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         height: 100%;
         display: flex;
         flex-wrap: wrap;
+        z-index: 10;
         .imageSlider{
             color: white;
             text-align: center;
