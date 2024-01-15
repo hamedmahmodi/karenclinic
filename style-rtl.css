@@ -478,6 +478,7 @@ select option {
 
 .generalButtonDark {
   background-color: #18162b;
+  color: white !important;
 }
 
 .arrowButton {
@@ -630,6 +631,19 @@ select {
   margin-right: -15px;
 }
 
+.generalButtonDarkMobile {
+  display: none !important;
+}
+@media screen and (max-width: 480px) {
+  .generalButtonDarkMobile {
+    display: block !important;
+    position: fixed !important;
+    bottom: 15px !important;
+    left: 15px !important;
+    z-index: 1000;
+  }
+}
+
 .mobilMenuOverlay {
   position: fixed;
   top: 0;
@@ -761,6 +775,11 @@ select {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .mainDesctopHeaderContainer .mainDesctopHeader .generalButton {
+    display: none;
+  }
+}
 .mainDesctopHeaderContainer .mainDesctopHeader a {
   color: white;
 }
@@ -787,8 +806,8 @@ select {
 .mainDesctopHeaderContainer .mainDesctopHeader .mainMenu {
   display: flex;
   margin-right: 15px;
-  justify-content: flex-end;
-  width: 70%;
+  margin-left: auto;
+  justify-content: flex-start;
 }
 @media screen and (max-width: 480px) {
   .mainDesctopHeaderContainer .mainDesctopHeader .mainMenu {
@@ -813,7 +832,7 @@ select {
 .mainDesctopHeaderContainer .mainDesctopHeader .mainMenu ul li {
   padding: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .mainDesctopHeaderContainer .mainDesctopHeader .mainMenu ul li {
     padding: 10px;
   }
@@ -948,16 +967,37 @@ select {
   display: flex;
   align-items: center;
 }
+.clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart .introSectionBtnPart .generalButtonPlay .buttonPlay {
+  display: flex;
+  position: relative;
+  margin-left: 20px;
+}
+.clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart .introSectionBtnPart .generalButtonPlay .buttonPlay::before, .clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart .introSectionBtnPart .generalButtonPlay .buttonPlay::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #e3b077;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 currentColor;
+  animation: jkit-ripple 3s infinite;
+  opacity: 0.6;
+  z-index: -1;
+}
+.clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart .introSectionBtnPart .generalButtonPlay .buttonPlay::after {
+  animation-delay: 0.3s;
+}
+.clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart .introSectionBtnPart .generalButtonPlay .buttonPlay svg {
+  background-color: #e3b077;
+  padding: 5px;
+  border-radius: 100%;
+}
 .clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart .introSectionBtnPart .generalButtonPlay span {
   color: black;
   font-weight: 500;
   display: block;
-}
-.clkarenIntroSectionContainer .clkarenIntroSection .introSectionContentPart .introSectionBtnPart .generalButtonPlay svg {
-  background-color: #e3b077;
-  margin-left: 10px;
-  padding: 5px;
-  border-radius: 100%;
 }
 .clkarenIntroSectionContainer .clkarenIntroSection .introSectionEmptyPart {
   width: 50%;
@@ -1073,7 +1113,6 @@ select {
 }
 @media screen and (max-width: 768px) {
   .clkarenHomeCantactUsSectionContainer .clkarenHomeContactUsSection .homeContactUsConsultationPart .consultationPhonPart {
-    flex-direction: column;
     text-align: right;
   }
 }
@@ -1384,7 +1423,7 @@ select {
   font-weight: 500;
 }
 .clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesHeader .homeOurServicesHeaderTitle h2 {
-  margin: 20px 0;
+  margin: 20px 0 0 0;
   font-size: 40px;
   line-height: 50px;
 }
@@ -1393,7 +1432,7 @@ select {
   font-size: 14.5px;
   font-weight: 300;
   display: block;
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 @media screen and (max-width: 768px) {
   .clkarenHomeOurServicesContainer .clkarenHomeOurServices .clkarenHomeOurServicesHeader .homeOurServicesHeaderParagraph {
@@ -1484,13 +1523,25 @@ select {
   height: 90vh;
   overflow: hidden;
 }
+@media screen and (max-width: 992px) {
+  .clkarenHomeImageSliderContainer {
+    height: 400px;
+  }
+}
 .clkarenHomeImageSliderContainer img {
   position: absolute;
   transition: 0.4s;
 }
+@media screen and (max-width: 768px) {
+  .clkarenHomeImageSliderContainer img {
+    height: 100%;
+    width: 100%;
+  }
+}
 .clkarenHomeImageSliderContainer .clkarenHomeImageSliderImage {
   position: relative;
   background-color: black;
+  height: 100%;
 }
 .clkarenHomeImageSliderContainer .clkarenHomeImageSliderImage1 {
   position: absolute;
@@ -1721,6 +1772,12 @@ select {
   background-size: cover;
   border-radius: 20px;
   position: relative;
+  margin: 0 15px !important;
+}
+@media screen and (max-width: 768px) {
+  .clkarenHomeViewContainer .clkarenHomeView {
+    height: 300px;
+  }
 }
 .clkarenHomeViewContainer .clkarenHomeView .imageSwiper {
   position: absolute;
@@ -1878,4 +1935,15 @@ select {
   width: 100%;
   color: #676767;
   margin-bottom: 0;
+}
+
+@keyframes jkit-ripple {
+  70% {
+    box-shadow: 0 0 0 15px currentColor;
+    opacity: 0;
+  }
+  100% {
+    box-shadow: 0 0 0 0 currentColor;
+    opacity: 0;
+  }
 }/*# sourceMappingURL=style-rtl.css.map */

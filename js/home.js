@@ -18,10 +18,10 @@ $(document).ready(function(){
         let objectCenter = $('#counterNumbers').offset().top + ($('#counterNumbers').outerHeight(true)/2);
 
         if(objectCenter && functionIsRan==false){
-            stepCounter('#counter-1', 1 , 85 , 1 , 1100);
-            stepCounter('#counter-2', 1 , 420 , 25 , 1100);
-            stepCounter('#counter-3', 1 , 2413 , 20 , 1100);
-            stepCounter('#counter-4', 1 , 3786 , 50 , 1100);
+            stepCounter('#counter-1', 1 , 98, 1 , 1100);
+            stepCounter('#counter-2', 1 , 7 , 1 , 1100);
+            stepCounter('#counter-3', 1 , 264 , 10 , 1100);
+            stepCounter('#counter-4', 1 , 264 , 10 , 1100);
             functionIsRan = true;
         }
     };

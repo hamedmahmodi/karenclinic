@@ -13,7 +13,12 @@ get_header();
             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
             <div class="introSectionBtnPart">
                 <a class="generalButton" href="#">دریافت نوبت</a>
-                <a class="generalButtonPlay" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#ffffff" viewBox="0 0 256 256"><path d="M240,128a15.74,15.74,0,0,1-7.6,13.51L88.32,229.65a16,16,0,0,1-16.2.3A15.86,15.86,0,0,1,64,216.13V39.87a15.86,15.86,0,0,1,8.12-13.82,16,16,0,0,1,16.2.3L232.4,114.49A15.74,15.74,0,0,1,240,128Z"></path></svg><span>تماشای ویدیو </span> </a>
+                <a class="generalButtonPlay" href="#">
+                    <div class="buttonPlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#ffffff" viewBox="0 0 256 256"><path d="M240,128a15.74,15.74,0,0,1-7.6,13.51L88.32,229.65a16,16,0,0,1-16.2.3A15.86,15.86,0,0,1,64,216.13V39.87a15.86,15.86,0,0,1,8.12-13.82,16,16,0,0,1,16.2.3L232.4,114.49A15.74,15.74,0,0,1,240,128Z"></path></svg>
+                    </div>
+                    <span>تماشای ویدیو </span>
+                </a>
             </div>
         </div>
         <div class="introSectionEmptyPart"></div>
@@ -100,7 +105,7 @@ get_header();
     <div class="clkarenHomeCounter mainView" id="counterNumbers">  
         <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
             <span class="counterItemSvg"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#fff" viewBox="0 0 246.154 246.154"><path d="M207.692 61.538H169.23v-7.692a23.077 23.077 0 0 0-23.077-23.077H99.999a23.077 23.077 0 0 0-23.077 23.077v7.692h-38.46a15.385 15.385 0 0 0-15.385 15.385V200a15.385 15.385 0 0 0 15.385 15.385h169.231A15.385 15.385 0 0 0 223.078 200V76.923a15.385 15.385 0 0 0-15.385-15.385ZM92.308 53.846A7.692 7.692 0 0 1 100 46.154h46.154a7.692 7.692 0 0 1 7.692 7.692v7.692H92.308ZM207.693 200H38.462V76.923h169.231V200Zm-53.846-61.538a7.692 7.692 0 0 1-7.692 7.692H130.77v15.385a7.692 7.692 0 0 1-15.385 0v-15.385H100a7.692 7.692 0 0 1 0-15.385h15.385v-15.385a7.692 7.692 0 0 1 15.385 0v15.385h15.385a7.692 7.692 0 0 1 7.692 7.692Z"/></svg></span>
-            <div class="counterNumber"><span id="counter-1">98%</span></div>
+            <div class="counterNumber"><span id="counter-1">98</span><span class="plus">%</span></div>
             <div class="counterTitle">رضایت بیمار</div>
         </div>
         <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
@@ -115,7 +120,7 @@ get_header();
         </div>
         <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
             <span class="counterItemSvg"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#fff" viewBox="0 0 256 256"><path d="M27.2 126.4a8 8 0 0 0 11.2-1.6 52 52 0 0 1 83.2 0 8 8 0 0 0 11.2 1.59 7.73 7.73 0 0 0 1.59-1.59 52 52 0 0 1 83.2 0 8 8 0 0 0 12.8-9.61A67.85 67.85 0 0 0 203 93.51a40 40 0 1 0-53.94 0 67.27 67.27 0 0 0-21 14.31 67.27 67.27 0 0 0-21-14.31 40 40 0 1 0-53.94 0A67.88 67.88 0 0 0 25.6 115.2a8 8 0 0 0 1.6 11.2ZM176 40a24 24 0 1 1-24 24 24 24 0 0 1 24-24Zm-96 0a24 24 0 1 1-24 24 24 24 0 0 1 24-24Zm123 157.51a40 40 0 1 0-53.94 0 67.27 67.27 0 0 0-21 14.31 67.27 67.27 0 0 0-21-14.31 40 40 0 1 0-53.94 0A67.88 67.88 0 0 0 25.6 219.2a8 8 0 1 0 12.8 9.6 52 52 0 0 1 83.2 0 8 8 0 0 0 11.2 1.59 7.73 7.73 0 0 0 1.59-1.59 52 52 0 0 1 83.2 0 8 8 0 0 0 12.8-9.61A67.85 67.85 0 0 0 203 197.51ZM80 144a24 24 0 1 1-24 24 24 24 0 0 1 24-24Zm96 0a24 24 0 1 1-24 24 24 24 0 0 1 24-24Z"/></svg></span>
-            <div class="counterNumber"><span class="plus">+</span><span id="counter-3">264</span></div>
+            <div class="counterNumber"><span class="plus">+</span><span id="counter-4">264</span></div>
             <div class="counterTitle">مشاوره آنلاین</div>
         </div>
     </div>

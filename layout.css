@@ -455,6 +455,7 @@ select option {
 
 .generalButtonDark {
   background-color: #18162b;
+  color: white !important;
 }
 
 .arrowButton {

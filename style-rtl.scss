@@ -25,7 +25,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'sass/breakpoints';
 @import 'sass/source';
 
-
+.generalButtonDarkMobile{
+    display: none !important;
+    @include xs{
+        display: block !important;
+        position: fixed !important;
+        bottom: 15px !important;
+        left: 15px !important;
+        z-index: 1000;
+    }
+}
 .mobilMenuOverlay{
     position: fixed;
     top: 0;
@@ -156,6 +165,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        .generalButton{
+            @include xs{
+                display: none;
+            }
+        }
         
         a{
             color: white;
@@ -184,8 +198,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         .mainMenu{
             display: flex;
             margin-right: 15px;
-            justify-content: flex-end;
-            width: 70%;
+            margin-left: auto;
+            justify-content: flex-start;
             @include xs{
                 display: none;
             }
@@ -208,7 +222,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 display: flex;
                 li{
                     padding:30px;
-                    @include sm{
+                    @include lg{
                         padding: 10px;
                     }
                     &::before{
@@ -334,17 +348,40 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 .generalButtonPlay{
                     display: flex;
                     align-items: center;
+                    .buttonPlay{
+                        display: flex;
+                        position: relative;
+                        margin-left: 20px;
+                        &::before , &::after{
+                            content: " ";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            color: $offColor;
+                            border-radius: 50%;
+                            box-shadow: 0 0 0 0 currentColor;
+                            animation: jkit-ripple 3s infinite;
+                            opacity: .6;
+                            z-index: -1;
+                        }
+                        &::after{
+                            animation-delay: .3s;
+                        
+                        }
+                        svg{
+                            background-color: $offColor;
+                            padding: 5px;
+                            border-radius: 100%;
+                        }
+                    }
                     span{
                         color: black;
                         font-weight: 500;
                         display: block;
                     }
-                    svg{
-                        background-color: $offColor;
-                        margin-left: 10px;
-                        padding: 5px;
-                        border-radius: 100%;
-                    }
+                    
                 }
             }
         }
@@ -449,7 +486,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
             .consultationPhonPart{
                 display: flex;
                 @include sm {
-                    flex-direction: column;
                     text-align: right;
                 }
                 span{
@@ -744,7 +780,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                     font-weight: 500;
                 }
                 h2{
-                    margin: 20px 0;
+                    margin: 20px 0 0 0;
                     font-size: 40px;
                     line-height: 50px;
                 }
@@ -754,7 +790,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 font-size: 14.5px;
                 font-weight: 300;
                 display: block;
-                margin-bottom: 20px;
+                margin: 10px 0;
                 @include sm {
                     width: 100%;
                 }
@@ -841,13 +877,21 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     position: relative;
     height: 90vh;
     overflow: hidden;
+    @include md {
+        height: 400px;
+    }
     img{
         position: absolute;
         transition: .4s;
+        @include sm{
+            height: 100%;
+            width: 100%;
+        }
     }
     .clkarenHomeImageSliderImage{
         position: relative;
         background-color: black;
+        height: 100%;
     }
     .clkarenHomeImageSliderImage1{
         position: absolute;
@@ -1090,6 +1134,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         background-size: cover;
         border-radius: 20px;
         position: relative;
+        margin: 0 15px !important;
+        @include sm{
+            height: 300px;
+        }
         .imageSwiper{
             position: absolute;
             bottom: 3%;
@@ -1234,3 +1282,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         }
     }
 }
+
+@keyframes jkit-ripple {
+    70% {
+        box-shadow: 0 0 0 15px currentColor;
+        opacity: 0;
+    }
+    100% {
+        box-shadow: 0 0 0 0 currentColor;
+        opacity: 0;
+    }
+  }
